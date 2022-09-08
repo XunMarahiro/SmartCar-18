@@ -1,0 +1,10 @@
+.\objects\hal_iwdg.o: Lib\hal_iwdg.c
+.\objects\hal_iwdg.o: Lib\hal_iwdg.h
+.\objects\hal_iwdg.o: Lib\types.h
+.\objects\hal_iwdg.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hal_iwdg.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\hal_iwdg.o: Lib\reg_iwdg.h
+.\objects\hal_iwdg.o: Lib\reg_common.h
+.\objects\hal_iwdg.o: .\CMSIS\core_cm3.h
+.\objects\hal_iwdg.o: .\CMSIS\cmsis_compiler.h
+.\objects\hal_iwdg.o: .\CMSIS\cmsis_armcc.h

@@ -1,0 +1,9 @@
+.\objects\hal_misc.o: Lib\HAL_misc.c
+.\objects\hal_misc.o: Lib\HAL_misc.h
+.\objects\hal_misc.o: .\User\HAL_device.h
+.\objects\hal_misc.o: .\User\MM32SPIN2xx_p.h
+.\objects\hal_misc.o: .\CMSIS\core_cm0.h
+.\objects\hal_misc.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hal_misc.o: .\CMSIS\core_cmInstr.h
+.\objects\hal_misc.o: .\CMSIS\core_cmFunc.h
+.\objects\hal_misc.o: .\User\system_MM32SPIN2xx_p.h

@@ -37,10 +37,15 @@ void TIM1_PWM(int arr,int psc){
 	TIM_OC2PreloadConfig(TIM1, TIM_OCPreload_Enable);
 	TIM_OC3Init(TIM1, &TIM_OCInitStruct);
 	TIM_OC3PreloadConfig(TIM1, TIM_OCPreload_Enable);
+		
 	
 	TIM_ARRPreloadConfig(TIM1, ENABLE);  
 	TIM_CtrlPWMOutputs(TIM1, ENABLE);
-	TIM_Cmd(TIM1,ENABLE);  
+	TIM_Cmd(TIM1,ENABLE);
+//	TIM_Cmd(TIM3,ENABLE);
+
+
+
 }
 
 void TIM3_PWM(int arr,int psc){
@@ -80,5 +85,6 @@ void TIM3_PWM(int arr,int psc){
 	
 	TIM_ARRPreloadConfig(TIM3, ENABLE);  
 	TIM_Cmd(TIM3,ENABLE);  
+
 }
 

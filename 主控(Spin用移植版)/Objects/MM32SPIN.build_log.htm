@@ -1,0 +1,123 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Xun 280160112@qq.com, Xun, LIC=SDA0P-MZZ2S-56JQ2-9UUI7-9KMDZ-83BW4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.25.2.0
+Toolchain Path:  C:\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DARMCM1.DLL V1.19.1.0
+Target DLL:      UL2CM3.DLL V1.160.12.0
+Dialog DLL:      TARMCM1.DLL V1.14.0.0
+ 
+<h2>Project:</h2>
+C:\Users\28016\OneDrive\桌面\智能车工程历史归档\主控spin\MM32SPIN.uvprojx
+Project File Date:  06/25/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling USART.C...
+HardWare\USART\USART.C(49): error:  #20: identifier "RCC_AHBENR_GPIOB" is undefined
+      RCC_AHBPeriphClockCmd(RCC_AHBENR_GPIOB, ENABLE);
+HardWare\USART\USART.C(67): error:  #20: identifier "RCC_APB1ENR_UART3" is undefined
+  	RCC_APB1PeriphClockCmd(RCC_APB1ENR_UART3, ENABLE);
+HardWare\USART\USART.C(71): error:  #136: struct "<unnamed>"  has no field "BaudRate"
+      UART_InitStruct.BaudRate = bundrate;
+HardWare\USART\USART.C(73): error:  #136: struct "<unnamed>"  has no field "WordLength"
+      UART_InitStruct.WordLength = UART_WordLength_8b;
+HardWare\USART\USART.C(74): error:  #136: struct "<unnamed>"  has no field "StopBits"
+      UART_InitStruct.StopBits = UART_StopBits_1;
+HardWare\USART\USART.C(76): error:  #136: struct "<unnamed>"  has no field "Parity"
+      UART_InitStruct.Parity = UART_Parity_No;
+HardWare\USART\USART.C(78): error:  #136: struct "<unnamed>"  has no field "HWFlowControl"
+      UART_InitStruct.HWFlowControl = UART_HWFlowControl_None;
+HardWare\USART\USART.C(78): error:  #20: identifier "UART_HWFlowControl_None" is undefined
+      UART_InitStruct.HWFlowControl = UART_HWFlowControl_None;
+HardWare\USART\USART.C(79): error:  #136: struct "<unnamed>"  has no field "Mode"
+      UART_InitStruct.Mode = UART_Mode_Rx | UART_Mode_Tx;
+HardWare\USART\USART.C(81): error:  #20: identifier "UART3" is undefined
+      UART_Init(UART3, &UART_InitStruct);
+HardWare\USART\USART.C(86): error:  #20: identifier "FILE" is undefined
+  int fputc(int ch, FILE *f)
+HardWare\USART\USART.C(91): warning:  #1-D: last line of file ends without a newline
+  }
+HardWare\USART\USART.C: 1 warning, 11 errors
+compiling main.c...
+.\User\SETTING.H(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\systick\systick.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+User\SETTING.H(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\IIC\IIC.H(13): warning:  #1295-D: Deprecated declaration IIC_GPIO_Init - give arg types
+  void IIC_GPIO_Init();
+.\HardWare\IIC\IIC.H(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\MPU6050\MPU6050.H(31): warning:  #1295-D: Deprecated declaration MPU6050_Init - give arg types
+  void MPU6050_Init();
+.\HardWare\MPU6050\MPU6050.H(33): warning:  #1-D: last line of file ends without a newline
+  #endif 
+.\HardWare\HMC5983\HMC5983.H(24): warning:  #1295-D: Deprecated declaration HMC5983_Init - give arg types
+  void HMC5983_Init();
+.\HardWare\HMC5983\HMC5983.H(25): warning:  #1295-D: Deprecated declaration HMC5983_Read - give arg types
+  double HMC5983_Read();
+.\HardWare\HMC5983\HMC5983.H(26): warning:  #1-D: last line of file ends without a newline
+  #endif 
+.\HardWare\GPS\GPS.H(5): warning:  #1295-D: Deprecated declaration GPS_UpDate - give arg types
+  void GPS_UpDate();
+.\HardWare\PWM\PWM.H(5): warning:  #1-D: last line of file ends without a newline
+  #endif
+User\main.c(14): error:  #20: identifier "UART4" is undefined
+  UART_SendData(UART4,0x14);//20速度初始值
+User\main.c: 12 warnings, 1 error
+compiling HAL_dma.c...
+compiling HAL_div.c...
+compiling HAL_crc.c...
+compiling HAL_comp.c...
+compiling system_MM32SPIN2xx_p.c...
+compiling HAL_adc.c...
+compiling HAL_exti.c...
+compiling HAL_gpio.c...
+compiling HAL_flash.c...
+compiling HAL_iwdg.c...
+compiling HAL_op.c...
+compiling HAL_misc.c...
+compiling HAL_i2c.c...
+compiling HAL_pwr.c...
+assembling startup_MM32SPIN2xx_p.s...
+compiling HAL_rcc.c...
+compiling HAL_syscfg.c...
+compiling HAL_wwdg.c...
+compiling HAL_spi.c...
+compiling HAL_uart.c...
+compiling HAL_tim.c...
+".\Objects\MM32SPIN.axf" - 12 Error(s), 13 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: MindMotion
+                http://www.mindmotion.com.cn/Download/MDK_KEIL/MindMotion.MM32SPIN2x_DFP.1.1.6.pack
+                MindMotion.MM32SPIN2x_DFP.1.1.6
+                MindMotion MM32SPIN2x Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

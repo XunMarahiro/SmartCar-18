@@ -1,0 +1,2015 @@
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+==============================================================================
+
+Section Cross References
+
+    startup_mm32f327x_keil.o(RESET) refers to startup_mm32f327x_keil.o(STACK) for __initial_sp
+    startup_mm32f327x_keil.o(RESET) refers to startup_mm32f327x_keil.o(.text) for Reset_Handler
+    startup_mm32f327x_keil.o(.text) refers to system_mm32f327x.o(i.SystemInit) for SystemInit
+    startup_mm32f327x_keil.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    usart.o(i.UART1_GPIO_Init) refers to hal_rcc.o(i.RCC_AHBPeriphClockCmd) for RCC_AHBPeriphClockCmd
+    usart.o(i.UART1_GPIO_Init) refers to hal_gpio.o(i.GPIO_PinAFConfig) for GPIO_PinAFConfig
+    usart.o(i.UART1_GPIO_Init) refers to hal_gpio.o(i.GPIO_StructInit) for GPIO_StructInit
+    usart.o(i.UART1_GPIO_Init) refers to hal_gpio.o(i.GPIO_Init) for GPIO_Init
+    usart.o(i.UART3_GPIO_Init) refers to hal_rcc.o(i.RCC_AHBPeriphClockCmd) for RCC_AHBPeriphClockCmd
+    usart.o(i.UART3_GPIO_Init) refers to hal_gpio.o(i.GPIO_PinAFConfig) for GPIO_PinAFConfig
+    usart.o(i.UART3_GPIO_Init) refers to hal_gpio.o(i.GPIO_StructInit) for GPIO_StructInit
+    usart.o(i.UART3_GPIO_Init) refers to hal_gpio.o(i.GPIO_Init) for GPIO_Init
+    usart.o(i.UART4_GPIO_Init) refers to hal_rcc.o(i.RCC_AHBPeriphClockCmd) for RCC_AHBPeriphClockCmd
+    usart.o(i.UART4_GPIO_Init) refers to hal_gpio.o(i.GPIO_PinAFConfig) for GPIO_PinAFConfig
+    usart.o(i.UART4_GPIO_Init) refers to hal_gpio.o(i.GPIO_StructInit) for GPIO_StructInit
+    usart.o(i.UART4_GPIO_Init) refers to hal_gpio.o(i.GPIO_Init) for GPIO_Init
+    usart.o(i.USART1_Init) refers to usart.o(i.UART1_GPIO_Init) for UART1_GPIO_Init
+    usart.o(i.USART1_Init) refers to hal_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    usart.o(i.USART1_Init) refers to hal_uart.o(i.UART_StructInit) for UART_StructInit
+    usart.o(i.USART1_Init) refers to hal_uart.o(i.UART_Init) for UART_Init
+    usart.o(i.USART1_Init) refers to hal_uart.o(i.UART_Cmd) for UART_Cmd
+    usart.o(i.USART3_Init) refers to usart.o(i.UART3_GPIO_Init) for UART3_GPIO_Init
+    usart.o(i.USART3_Init) refers to hal_rcc.o(i.RCC_APB1PeriphClockCmd) for RCC_APB1PeriphClockCmd
+    usart.o(i.USART3_Init) refers to hal_uart.o(i.UART_StructInit) for UART_StructInit
+    usart.o(i.USART3_Init) refers to hal_uart.o(i.UART_Init) for UART_Init
+    usart.o(i.USART3_Init) refers to hal_uart.o(i.UART_Cmd) for UART_Cmd
+    usart.o(i.USART4_Init) refers to usart.o(i.UART4_GPIO_Init) for UART4_GPIO_Init
+    usart.o(i.USART4_Init) refers to hal_rcc.o(i.RCC_APB1PeriphClockCmd) for RCC_APB1PeriphClockCmd
+    usart.o(i.USART4_Init) refers to hal_uart.o(i.UART_StructInit) for UART_StructInit
+    usart.o(i.USART4_Init) refers to hal_uart.o(i.UART_Init) for UART_Init
+    usart.o(i.USART4_Init) refers to hal_uart.o(i.UART_Cmd) for UART_Cmd
+    usart.o(i.fputc) refers to hal_uart.o(i.UART_SendData) for UART_SendData
+    usart.o(i.fputc) refers to hal_uart.o(i.UART_GetFlagStatus) for UART_GetFlagStatus
+    iic.o(i.I2C2_Ack) refers to hal_gpio.o(i.GPIO_WriteBit) for GPIO_WriteBit
+    iic.o(i.I2C2_Ack) refers to systick.o(i.DELAY_Us) for DELAY_Us
+    iic.o(i.I2C2_CheckDevice) refers to iic.o(i.I2C2_Start) for I2C2_Start
+    iic.o(i.I2C2_CheckDevice) refers to iic.o(i.I2C2_Send_Byte) for I2C2_Send_Byte
+    iic.o(i.I2C2_CheckDevice) refers to iic.o(i.I2C2_Wait_Ack) for I2C2_Wait_Ack
+    iic.o(i.I2C2_CheckDevice) refers to iic.o(i.I2C2_Stop) for I2C2_Stop
+    iic.o(i.I2C2_NAck) refers to hal_gpio.o(i.GPIO_WriteBit) for GPIO_WriteBit
+    iic.o(i.I2C2_NAck) refers to systick.o(i.DELAY_Us) for DELAY_Us
+    iic.o(i.I2C2_Read_Byte) refers to hal_gpio.o(i.GPIO_WriteBit) for GPIO_WriteBit
+    iic.o(i.I2C2_Read_Byte) refers to systick.o(i.DELAY_Us) for DELAY_Us
+    iic.o(i.I2C2_Read_Byte) refers to hal_gpio.o(i.GPIO_ReadInputDataBit) for GPIO_ReadInputDataBit
+    iic.o(i.I2C2_Read_NByte) refers to iic.o(i.I2C2_Start) for I2C2_Start
+    iic.o(i.I2C2_Read_NByte) refers to iic.o(i.I2C2_Send_Byte) for I2C2_Send_Byte
+    iic.o(i.I2C2_Read_NByte) refers to iic.o(i.I2C2_Wait_Ack) for I2C2_Wait_Ack
+    iic.o(i.I2C2_Read_NByte) refers to iic.o(i.I2C2_Stop) for I2C2_Stop
+    iic.o(i.I2C2_Read_NByte) refers to iic.o(i.I2C2_Read_Byte) for I2C2_Read_Byte
+    iic.o(i.I2C2_Read_NByte) refers to iic.o(i.I2C2_Ack) for I2C2_Ack
+    iic.o(i.I2C2_Read_NByte) refers to iic.o(i.I2C2_NAck) for I2C2_NAck
+    iic.o(i.I2C2_Read_REG) refers to iic.o(i.I2C2_Start) for I2C2_Start
+    iic.o(i.I2C2_Read_REG) refers to iic.o(i.I2C2_Send_Byte) for I2C2_Send_Byte
+    iic.o(i.I2C2_Read_REG) refers to iic.o(i.I2C2_Wait_Ack) for I2C2_Wait_Ack
+    iic.o(i.I2C2_Read_REG) refers to iic.o(i.I2C2_Stop) for I2C2_Stop
+    iic.o(i.I2C2_Read_REG) refers to iic.o(i.I2C2_Read_Byte) for I2C2_Read_Byte
+    iic.o(i.I2C2_Read_REG) refers to iic.o(i.I2C2_NAck) for I2C2_NAck
+    iic.o(i.I2C2_Send_Byte) refers to hal_gpio.o(i.GPIO_WriteBit) for GPIO_WriteBit
+    iic.o(i.I2C2_Send_Byte) refers to systick.o(i.DELAY_Us) for DELAY_Us
+    iic.o(i.I2C2_Start) refers to hal_gpio.o(i.GPIO_WriteBit) for GPIO_WriteBit
+    iic.o(i.I2C2_Start) refers to systick.o(i.DELAY_Us) for DELAY_Us
+    iic.o(i.I2C2_Start) refers to hal_gpio.o(i.GPIO_ReadInputDataBit) for GPIO_ReadInputDataBit
+    iic.o(i.I2C2_Stop) refers to hal_gpio.o(i.GPIO_WriteBit) for GPIO_WriteBit
+    iic.o(i.I2C2_Stop) refers to systick.o(i.DELAY_Us) for DELAY_Us
+    iic.o(i.I2C2_Stop) refers to hal_gpio.o(i.GPIO_ReadInputDataBit) for GPIO_ReadInputDataBit
+    iic.o(i.I2C2_Wait_Ack) refers to hal_gpio.o(i.GPIO_WriteBit) for GPIO_WriteBit
+    iic.o(i.I2C2_Wait_Ack) refers to systick.o(i.DELAY_Us) for DELAY_Us
+    iic.o(i.I2C2_Wait_Ack) refers to hal_gpio.o(i.GPIO_ReadInputDataBit) for GPIO_ReadInputDataBit
+    iic.o(i.I2C2_Write_NByte) refers to iic.o(i.I2C2_Start) for I2C2_Start
+    iic.o(i.I2C2_Write_NByte) refers to iic.o(i.I2C2_Send_Byte) for I2C2_Send_Byte
+    iic.o(i.I2C2_Write_NByte) refers to iic.o(i.I2C2_Wait_Ack) for I2C2_Wait_Ack
+    iic.o(i.I2C2_Write_NByte) refers to iic.o(i.I2C2_Stop) for I2C2_Stop
+    iic.o(i.I2C_Write_REG) refers to iic.o(i.I2C2_Start) for I2C2_Start
+    iic.o(i.I2C_Write_REG) refers to iic.o(i.I2C2_Send_Byte) for I2C2_Send_Byte
+    iic.o(i.I2C_Write_REG) refers to iic.o(i.I2C2_Wait_Ack) for I2C2_Wait_Ack
+    iic.o(i.I2C_Write_REG) refers to iic.o(i.I2C2_Stop) for I2C2_Stop
+    iic.o(i.IIC_GPIO_Init) refers to hal_rcc.o(i.RCC_AHBPeriphClockCmd) for RCC_AHBPeriphClockCmd
+    iic.o(i.IIC_GPIO_Init) refers to hal_gpio.o(i.GPIO_StructInit) for GPIO_StructInit
+    iic.o(i.IIC_GPIO_Init) refers to hal_gpio.o(i.GPIO_Init) for GPIO_Init
+    mpu6050.o(i.MPU6050_DATA_PRINT) refers to mpu6050.o(i.MPU6050_Read) for MPU6050_Read
+    mpu6050.o(i.MPU6050_DATA_PRINT) refers to printfa.o(i.__0printf) for __2printf
+    mpu6050.o(i.MPU6050_Init) refers to iic.o(i.I2C_Write_REG) for I2C_Write_REG
+    mpu6050.o(i.MPU6050_Init) refers to systick.o(i.DELAY_Ms) for DELAY_Ms
+    mpu6050.o(i.MPU6050_Read) refers to iic.o(i.I2C2_Read_REG) for I2C2_Read_REG
+    hmc5983.o(i.Find_Max_Min) refers to hmc5983.o(.data) for x
+    hmc5983.o(i.HMC5983_Init) refers to iic.o(i.I2C_Write_REG) for I2C_Write_REG
+    hmc5983.o(i.HMC5983_Init) refers to hmc5983.o(.data) for x_gain
+    hmc5983.o(i.HMC5983_Read) refers to hmc5983.o(i.HMC5983_Read_reg) for HMC5983_Read_reg
+    hmc5983.o(i.HMC5983_Read) refers to hmc5983.o(i.Find_Max_Min) for Find_Max_Min
+    hmc5983.o(i.HMC5983_Read) refers to hmc5983.o(i.Set_Offeset) for Set_Offeset
+    hmc5983.o(i.HMC5983_Read) refers to hmc5983.o(i.Middle_find) for Middle_find
+    hmc5983.o(i.HMC5983_Read) refers to hmc5983.o(i.rectangle) for rectangle
+    hmc5983.o(i.HMC5983_Read) refers to hmc5983.o(.data) for x1
+    hmc5983.o(i.HMC5983_Read_reg) refers to iic.o(i.I2C2_Read_REG) for I2C2_Read_REG
+    hmc5983.o(i.HMC5983_Read_reg) refers to iic.o(i.I2C_Write_REG) for I2C_Write_REG
+    hmc5983.o(i.Middle_find) refers to hmc5983.o(.data) for x_Max
+    hmc5983.o(i.Set_Offeset) refers to hmc5983.o(.data) for x_Max
+    hmc5983.o(i.rectangle) refers to dflti.o(.text) for __aeabi_i2d
+    hmc5983.o(i.rectangle) refers to atan2.o(i.atan2) for atan2
+    hmc5983.o(i.rectangle) refers to dmul.o(.text) for __aeabi_dmul
+    hmc5983.o(i.rectangle) refers to ddiv.o(.text) for __aeabi_ddiv
+    hmc5983.o(i.rectangle) refers to dadd.o(.text) for __aeabi_dadd
+    hmc5983.o(i.rectangle) refers to hmc5983.o(.data) for x_real
+    systick.o(i.DELAY_Init) refers to systick.o(.data) for sDelayNopNumber
+    systick.o(i.DELAY_Ms) refers to systick.o(.data) for sDelayNopNumber
+    systick.o(i.DELAY_Us) refers to systick.o(.data) for sDelayNopNumber
+    gps.o(i.Find_Way) refers to gps.o(i.Find_target) for Find_target
+    gps.o(i.Find_Way) refers to gps.o(.data) for History_Index
+    gps.o(i.Find_Way) refers to gps.o(.bss) for History_Point
+    gps.o(i.Find_target) refers to dadd.o(.text) for __aeabi_drsub
+    gps.o(i.Find_target) refers to siabs.o(.text) for abs
+    gps.o(i.Find_target) refers to dflti.o(.text) for __aeabi_i2d
+    gps.o(i.Find_target) refers to vector.o(i.xiangchajiao) for xiangchajiao
+    gps.o(i.Find_target) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    gps.o(i.Find_target) refers to gps.o(.data) for target
+    gps.o(i.GPS_UpDate) refers to gps.o(i.data_get) for data_get
+    gps.o(i.GPS_UpDate) refers to gps.o(i.wgs84_to_gcj02) for wgs84_to_gcj02
+    gps.o(i.GPS_UpDate) refers to printfa.o(i.__0printf) for __2printf
+    gps.o(i.GPS_UpDate) refers to gps.o(i.target_find) for target_find
+    gps.o(i.GPS_UpDate) refers to hal_uart.o(i.UART_SendData) for UART_SendData
+    gps.o(i.GPS_UpDate) refers to gps.o(.data) for weidu
+    gps.o(i.data_get) refers to hal_uart.o(i.UART_GetFlagStatus) for UART_GetFlagStatus
+    gps.o(i.data_get) refers to hal_uart.o(i.UART_ReceiveData) for UART_ReceiveData
+    gps.o(i.data_get) refers to gps.o(.data) for fg
+    gps.o(i.data_get) refers to gps.o(.bss) for Data_Buf
+    gps.o(i.target_find) refers to dadd.o(.text) for __aeabi_dsub
+    gps.o(i.target_find) refers to gps.o(i.Find_target) for Find_target
+    gps.o(i.target_find) refers to gps.o(i.Find_Way) for Find_Way
+    gps.o(i.target_find) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    gps.o(i.target_find) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    gps.o(i.target_find) refers to ddiv.o(.text) for __aeabi_ddiv
+    gps.o(i.target_find) refers to dmul.o(.text) for __aeabi_dmul
+    gps.o(i.target_find) refers to dfixui.o(.text) for __aeabi_d2uiz
+    gps.o(i.target_find) refers to gps.o(.data) for Way_Point
+    gps.o(i.transformlat) refers to sqrt.o(i.sqrt) for sqrt
+    gps.o(i.transformlat) refers to dmul.o(.text) for __aeabi_dmul
+    gps.o(i.transformlat) refers to dadd.o(.text) for __aeabi_dadd
+    gps.o(i.transformlat) refers to sin.o(i.sin) for sin
+    gps.o(i.transformlat) refers to ddiv.o(.text) for __aeabi_ddiv
+    gps.o(i.transformlat) refers to gps.o(.data) for pi
+    gps.o(i.transformlng) refers to sqrt.o(i.sqrt) for sqrt
+    gps.o(i.transformlng) refers to dmul.o(.text) for __aeabi_dmul
+    gps.o(i.transformlng) refers to dadd.o(.text) for __aeabi_dadd
+    gps.o(i.transformlng) refers to sin.o(i.sin) for sin
+    gps.o(i.transformlng) refers to ddiv.o(.text) for __aeabi_ddiv
+    gps.o(i.transformlng) refers to gps.o(.data) for pi
+    gps.o(i.wgs84_to_gcj02) refers to dadd.o(.text) for __aeabi_dsub
+    gps.o(i.wgs84_to_gcj02) refers to gps.o(i.transformlat) for transformlat
+    gps.o(i.wgs84_to_gcj02) refers to gps.o(i.transformlng) for transformlng
+    gps.o(i.wgs84_to_gcj02) refers to ddiv.o(.text) for __aeabi_ddiv
+    gps.o(i.wgs84_to_gcj02) refers to dmul.o(.text) for __aeabi_dmul
+    gps.o(i.wgs84_to_gcj02) refers to sin.o(i.sin) for sin
+    gps.o(i.wgs84_to_gcj02) refers to sqrt.o(i.sqrt) for sqrt
+    gps.o(i.wgs84_to_gcj02) refers to cos.o(i.cos) for cos
+    gps.o(i.wgs84_to_gcj02) refers to gps.o(.data) for pi
+    vector.o(i.xiangchajiao) refers to dmul.o(.text) for __aeabi_dmul
+    vector.o(i.xiangchajiao) refers to dadd.o(.text) for __aeabi_dadd
+    vector.o(i.xiangchajiao) refers to sqrt.o(i.sqrt) for sqrt
+    vector.o(i.xiangchajiao) refers to ddiv.o(.text) for __aeabi_ddiv
+    vector.o(i.xiangchajiao) refers to acos.o(i.acos) for acos
+    vector.o(i.xiangchajiao) refers to vector.o(.data) for P
+    pwm.o(i.PWM_GPIO_Init) refers to hal_rcc.o(i.RCC_AHBPeriphClockCmd) for RCC_AHBPeriphClockCmd
+    pwm.o(i.PWM_GPIO_Init) refers to hal_gpio.o(i.GPIO_PinAFConfig) for GPIO_PinAFConfig
+    pwm.o(i.PWM_GPIO_Init) refers to hal_gpio.o(i.GPIO_StructInit) for GPIO_StructInit
+    pwm.o(i.PWM_GPIO_Init) refers to hal_gpio.o(i.GPIO_Init) for GPIO_Init
+    pwm.o(i.PWM_Init) refers to pwm.o(i.PWM_GPIO_Init) for PWM_GPIO_Init
+    pwm.o(i.PWM_Init) refers to hal_rcc.o(i.RCC_APB1PeriphClockCmd) for RCC_APB1PeriphClockCmd
+    pwm.o(i.PWM_Init) refers to hal_tim.o(i.TIM_TimeBaseInit) for TIM_TimeBaseInit
+    pwm.o(i.PWM_Init) refers to hal_tim.o(i.TIM_OC1Init) for TIM_OC1Init
+    pwm.o(i.PWM_Init) refers to hal_tim.o(i.TIM_OC1PreloadConfig) for TIM_OC1PreloadConfig
+    pwm.o(i.PWM_Init) refers to hal_tim.o(i.TIM_ARRPreloadConfig) for TIM_ARRPreloadConfig
+    pwm.o(i.PWM_Init) refers to hal_tim.o(i.TIM_Cmd) for TIM_Cmd
+    context.o(i.nmea_error) refers to context.o(i.nmea_property) for nmea_property
+    context.o(i.nmea_error) refers to printfa.o(i.__0vsnprintf) for vsnprintf
+    context.o(i.nmea_property) refers to context.o(.data) for prop
+    context.o(i.nmea_trace) refers to context.o(i.nmea_property) for nmea_property
+    context.o(i.nmea_trace) refers to printfa.o(i.__0vsnprintf) for vsnprintf
+    context.o(i.nmea_trace_buff) refers to context.o(i.nmea_property) for nmea_property
+    generate.o(i.nmea_gen_GPGGA) refers to tok.o(i.nmea_printf) for nmea_printf
+    generate.o(i.nmea_gen_GPGGA) refers to generate.o(.conststring) for .conststring
+    generate.o(i.nmea_gen_GPGSA) refers to tok.o(i.nmea_printf) for nmea_printf
+    generate.o(i.nmea_gen_GPGSA) refers to generate.o(.conststring) for .conststring
+    generate.o(i.nmea_gen_GPGSV) refers to tok.o(i.nmea_printf) for nmea_printf
+    generate.o(i.nmea_gen_GPGSV) refers to generate.o(.conststring) for .conststring
+    generate.o(i.nmea_gen_GPRMC) refers to tok.o(i.nmea_printf) for nmea_printf
+    generate.o(i.nmea_gen_GPRMC) refers to generate.o(.conststring) for .conststring
+    generate.o(i.nmea_gen_GPVTG) refers to tok.o(i.nmea_printf) for nmea_printf
+    generate.o(i.nmea_generate) refers to generate.o(i.nmea_info2GPGGA) for nmea_info2GPGGA
+    generate.o(i.nmea_generate) refers to generate.o(i.nmea_gen_GPGGA) for nmea_gen_GPGGA
+    generate.o(i.nmea_generate) refers to generate.o(i.nmea_info2GPGSA) for nmea_info2GPGSA
+    generate.o(i.nmea_generate) refers to generate.o(i.nmea_gen_GPGSA) for nmea_gen_GPGSA
+    generate.o(i.nmea_generate) refers to generate.o(i.nmea_gsv_npack) for nmea_gsv_npack
+    generate.o(i.nmea_generate) refers to generate.o(i.nmea_info2GPGSV) for nmea_info2GPGSV
+    generate.o(i.nmea_generate) refers to generate.o(i.nmea_gen_GPGSV) for nmea_gen_GPGSV
+    generate.o(i.nmea_generate) refers to generate.o(i.nmea_info2GPRMC) for nmea_info2GPRMC
+    generate.o(i.nmea_generate) refers to generate.o(i.nmea_gen_GPRMC) for nmea_gen_GPRMC
+    generate.o(i.nmea_generate) refers to generate.o(i.nmea_info2GPVTG) for nmea_info2GPVTG
+    generate.o(i.nmea_generate) refers to generate.o(i.nmea_gen_GPVTG) for nmea_gen_GPVTG
+    generate.o(i.nmea_gsv_npack) refers to dflti.o(.text) for __aeabi_i2d
+    generate.o(i.nmea_gsv_npack) refers to ddiv.o(.text) for __aeabi_ddiv
+    generate.o(i.nmea_gsv_npack) refers to ceil.o(i.ceil) for ceil
+    generate.o(i.nmea_gsv_npack) refers to dfixi.o(.text) for __aeabi_d2iz
+    generate.o(i.nmea_info2GPGGA) refers to sentence.o(i.nmea_zero_GPGGA) for nmea_zero_GPGGA
+    generate.o(i.nmea_info2GPGGA) refers to memcpya.o(.text) for __aeabi_memcpy4
+    generate.o(i.nmea_info2GPGGA) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    generate.o(i.nmea_info2GPGSA) refers to sentence.o(i.nmea_zero_GPGSA) for nmea_zero_GPGSA
+    generate.o(i.nmea_info2GPGSV) refers to sentence.o(i.nmea_zero_GPGSV) for nmea_zero_GPGSV
+    generate.o(i.nmea_info2GPGSV) refers to generate.o(i.nmea_gsv_npack) for nmea_gsv_npack
+    generate.o(i.nmea_info2GPGSV) refers to memcpya.o(.text) for __aeabi_memcpy4
+    generate.o(i.nmea_info2GPRMC) refers to sentence.o(i.nmea_zero_GPRMC) for nmea_zero_GPRMC
+    generate.o(i.nmea_info2GPRMC) refers to memcpya.o(.text) for __aeabi_memcpy4
+    generate.o(i.nmea_info2GPRMC) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    generate.o(i.nmea_info2GPRMC) refers to ddiv.o(.text) for __aeabi_ddiv
+    generate.o(i.nmea_info2GPVTG) refers to sentence.o(i.nmea_zero_GPVTG) for nmea_zero_GPVTG
+    generate.o(i.nmea_info2GPVTG) refers to ddiv.o(.text) for __aeabi_ddiv
+    generator.o(i.__nmea_create_generator) refers to malloc.o(i.malloc) for malloc
+    generator.o(i.__nmea_create_generator) refers to context.o(i.nmea_error) for nmea_error
+    generator.o(i.__nmea_create_generator) refers to memseta.o(.text) for __aeabi_memclr4
+    generator.o(i.__nmea_create_generator) refers to generator.o(i.nmea_gen_add) for nmea_gen_add
+    generator.o(i.__nmea_create_generator) refers to generator.o(i.nmea_igen_noise_init) for nmea_igen_noise_init
+    generator.o(i.__nmea_create_generator) refers to generator.o(i.nmea_igen_noise_loop) for nmea_igen_noise_loop
+    generator.o(i.__nmea_create_generator) refers to generator.o(i.nmea_igen_noise_reset) for nmea_igen_noise_reset
+    generator.o(i.__nmea_create_generator) refers to generator.o(i.nmea_igen_static_init) for nmea_igen_static_init
+    generator.o(i.__nmea_create_generator) refers to generator.o(i.nmea_igen_static_loop) for nmea_igen_static_loop
+    generator.o(i.__nmea_create_generator) refers to generator.o(i.nmea_igen_static_reset) for nmea_igen_static_reset
+    generator.o(i.__nmea_create_generator) refers to generator.o(i.nmea_igen_rotate_init) for nmea_igen_rotate_init
+    generator.o(i.__nmea_create_generator) refers to generator.o(i.nmea_igen_rotate_loop) for nmea_igen_rotate_loop
+    generator.o(i.__nmea_create_generator) refers to generator.o(i.nmea_igen_rotate_reset) for nmea_igen_rotate_reset
+    generator.o(i.__nmea_create_generator) refers to generator.o(i.nmea_igen_pos_rmove_init) for nmea_igen_pos_rmove_init
+    generator.o(i.__nmea_create_generator) refers to generator.o(i.nmea_igen_pos_rmove_loop) for nmea_igen_pos_rmove_loop
+    generator.o(i.__nmea_create_generator) refers to generator.o(i.nmea_igen_pos_rmove_destroy) for nmea_igen_pos_rmove_destroy
+    generator.o(i.nmea_create_generator) refers to generator.o(i.__nmea_create_generator) for __nmea_create_generator
+    generator.o(i.nmea_create_generator) refers to generator.o(i.nmea_gen_init) for nmea_gen_init
+    generator.o(i.nmea_destroy_generator) refers to generator.o(i.nmea_gen_destroy) for nmea_gen_destroy
+    generator.o(i.nmea_gen_destroy) refers to malloc.o(i.free) for free
+    generator.o(i.nmea_gen_init) refers to info.o(i.nmea_zero_INFO) for nmea_zero_INFO
+    generator.o(i.nmea_generate_from) refers to generator.o(i.nmea_gen_loop) for nmea_gen_loop
+    generator.o(i.nmea_generate_from) refers to generate.o(i.nmea_generate) for nmea_generate
+    generator.o(i.nmea_igen_noise_loop) refers to generator.o(i.nmea_random) for nmea_random
+    generator.o(i.nmea_igen_noise_loop) refers to dfixi.o(.text) for __aeabi_d2iz
+    generator.o(i.nmea_igen_noise_loop) refers to dflti.o(.text) for __aeabi_i2d
+    generator.o(i.nmea_igen_pos_rmove_loop) refers to generator.o(i.nmea_random) for nmea_random
+    generator.o(i.nmea_igen_pos_rmove_loop) refers to dadd.o(.text) for __aeabi_dadd
+    generator.o(i.nmea_igen_pos_rmove_loop) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    generator.o(i.nmea_igen_pos_rmove_loop) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    generator.o(i.nmea_igen_pos_rmove_loop) refers to gmath.o(i.nmea_info2pos) for nmea_info2pos
+    generator.o(i.nmea_igen_pos_rmove_loop) refers to ddiv.o(.text) for __aeabi_ddiv
+    generator.o(i.nmea_igen_pos_rmove_loop) refers to gmath.o(i.nmea_move_horz) for nmea_move_horz
+    generator.o(i.nmea_igen_pos_rmove_loop) refers to gmath.o(i.nmea_pos2info) for nmea_pos2info
+    generator.o(i.nmea_igen_rotate_init) refers to generator.o(i.nmea_igen_rotate_reset) for nmea_igen_rotate_reset
+    generator.o(i.nmea_igen_rotate_loop) refers to dflti.o(.text) for __aeabi_i2d
+    generator.o(i.nmea_igen_rotate_loop) refers to time.o(i.nmea_time_now) for nmea_time_now
+    generator.o(i.nmea_igen_rotate_loop) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    generator.o(i.nmea_igen_rotate_loop) refers to dadd.o(.text) for __aeabi_dsub
+    generator.o(i.nmea_igen_rotate_loop) refers to dfixi.o(.text) for __aeabi_d2iz
+    generator.o(i.nmea_igen_rotate_reset) refers to dfixi.o(.text) for __aeabi_d2iz
+    generator.o(i.nmea_igen_rotate_reset) refers to dadd.o(.text) for __aeabi_dadd
+    generator.o(i.nmea_igen_static_init) refers to generator.o(i.nmea_igen_static_reset) for nmea_igen_static_reset
+    generator.o(i.nmea_igen_static_loop) refers to time.o(i.nmea_time_now) for nmea_time_now
+    generator.o(i.nmea_random) refers to rand.o(.text) for rand
+    generator.o(i.nmea_random) refers to dflti.o(.text) for __aeabi_i2d
+    generator.o(i.nmea_random) refers to dadd.o(.text) for __aeabi_drsub
+    generator.o(i.nmea_random) refers to dmul.o(.text) for __aeabi_dmul
+    generator.o(i.nmea_random) refers to ddiv.o(.text) for __aeabi_ddiv
+    generator.o(i.nmea_random) refers to generator.o(.data) for rand_max
+    gmath.o(i.nmea_calc_pdop) refers to pow.o(i.pow) for pow
+    gmath.o(i.nmea_calc_pdop) refers to dadd.o(.text) for __aeabi_dadd
+    gmath.o(i.nmea_calc_pdop) refers to sqrt.o(i.sqrt) for sqrt
+    gmath.o(i.nmea_degree2ndeg) refers to modf.o(i.modf) for modf
+    gmath.o(i.nmea_degree2ndeg) refers to dmul.o(.text) for __aeabi_dmul
+    gmath.o(i.nmea_degree2ndeg) refers to dadd.o(.text) for __aeabi_dadd
+    gmath.o(i.nmea_degree2radian) refers to dmul.o(.text) for __aeabi_dmul
+    gmath.o(i.nmea_distance) refers to dadd.o(.text) for __aeabi_dsub
+    gmath.o(i.nmea_distance) refers to cos.o(i.cos) for cos
+    gmath.o(i.nmea_distance) refers to dmul.o(.text) for __aeabi_dmul
+    gmath.o(i.nmea_distance) refers to sin.o(i.sin) for sin
+    gmath.o(i.nmea_distance) refers to acos.o(i.acos) for acos
+    gmath.o(i.nmea_distance_ellipsoid) refers to cdcmple.o(.text) for __aeabi_cdcmpeq
+    gmath.o(i.nmea_distance_ellipsoid) refers to dadd.o(.text) for __aeabi_dsub
+    gmath.o(i.nmea_distance_ellipsoid) refers to dmul.o(.text) for __aeabi_dmul
+    gmath.o(i.nmea_distance_ellipsoid) refers to tan.o(i.tan) for tan
+    gmath.o(i.nmea_distance_ellipsoid) refers to atan.o(i.atan) for atan
+    gmath.o(i.nmea_distance_ellipsoid) refers to sin.o(i.sin) for sin
+    gmath.o(i.nmea_distance_ellipsoid) refers to cos.o(i.cos) for cos
+    gmath.o(i.nmea_distance_ellipsoid) refers to sqrt.o(i.sqrt) for sqrt
+    gmath.o(i.nmea_distance_ellipsoid) refers to ddiv.o(.text) for __aeabi_ddiv
+    gmath.o(i.nmea_distance_ellipsoid) refers to asin.o(i.asin) for asin
+    gmath.o(i.nmea_distance_ellipsoid) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    gmath.o(i.nmea_dop2meters) refers to dmul.o(.text) for __aeabi_dmul
+    gmath.o(i.nmea_info2pos) refers to gmath.o(i.nmea_ndeg2radian) for nmea_ndeg2radian
+    gmath.o(i.nmea_meters2dop) refers to ddiv.o(.text) for __aeabi_ddiv
+    gmath.o(i.nmea_move_horz) refers to ddiv.o(.text) for __aeabi_ddiv
+    gmath.o(i.nmea_move_horz) refers to gmath.o(i.nmea_degree2radian) for nmea_degree2radian
+    gmath.o(i.nmea_move_horz) refers to cos.o(i.cos) for cos
+    gmath.o(i.nmea_move_horz) refers to sin.o(i.sin) for sin
+    gmath.o(i.nmea_move_horz) refers to dmul.o(.text) for __aeabi_dmul
+    gmath.o(i.nmea_move_horz) refers to dadd.o(.text) for __aeabi_dadd
+    gmath.o(i.nmea_move_horz) refers to asin.o(i.asin) for asin
+    gmath.o(i.nmea_move_horz) refers to atan2.o(i.atan2) for atan2
+    gmath.o(i.nmea_move_horz) refers to gmath.o(i.__ARM_isnan) for __ARM_isnan
+    gmath.o(i.nmea_move_horz_ellipsoid) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    gmath.o(i.nmea_move_horz_ellipsoid) refers to gmath.o(i.__ARM_isnan) for __ARM_isnan
+    gmath.o(i.nmea_move_horz_ellipsoid) refers to dadd.o(.text) for __aeabi_dsub
+    gmath.o(i.nmea_move_horz_ellipsoid) refers to dmul.o(.text) for __aeabi_dmul
+    gmath.o(i.nmea_move_horz_ellipsoid) refers to tan.o(i.tan) for tan
+    gmath.o(i.nmea_move_horz_ellipsoid) refers to sqrt.o(i.sqrt) for sqrt
+    gmath.o(i.nmea_move_horz_ellipsoid) refers to ddiv.o(.text) for __aeabi_ddiv
+    gmath.o(i.nmea_move_horz_ellipsoid) refers to sin.o(i.sin) for sin
+    gmath.o(i.nmea_move_horz_ellipsoid) refers to cos.o(i.cos) for cos
+    gmath.o(i.nmea_move_horz_ellipsoid) refers to atan2.o(i.atan2) for atan2
+    gmath.o(i.nmea_move_horz_ellipsoid) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    gmath.o(i.nmea_ndeg2degree) refers to ddiv.o(.text) for __aeabi_ddiv
+    gmath.o(i.nmea_ndeg2degree) refers to dfixi.o(.text) for __aeabi_d2iz
+    gmath.o(i.nmea_ndeg2degree) refers to dflti.o(.text) for __aeabi_i2d
+    gmath.o(i.nmea_ndeg2degree) refers to dmul.o(.text) for __aeabi_dmul
+    gmath.o(i.nmea_ndeg2degree) refers to dadd.o(.text) for __aeabi_drsub
+    gmath.o(i.nmea_ndeg2radian) refers to gmath.o(i.nmea_ndeg2degree) for nmea_ndeg2degree
+    gmath.o(i.nmea_ndeg2radian) refers to gmath.o(i.nmea_degree2radian) for nmea_degree2radian
+    gmath.o(i.nmea_pos2info) refers to gmath.o(i.nmea_radian2ndeg) for nmea_radian2ndeg
+    gmath.o(i.nmea_radian2degree) refers to ddiv.o(.text) for __aeabi_ddiv
+    gmath.o(i.nmea_radian2ndeg) refers to gmath.o(i.nmea_radian2degree) for nmea_radian2degree
+    gmath.o(i.nmea_radian2ndeg) refers to gmath.o(i.nmea_degree2ndeg) for nmea_degree2ndeg
+    info.o(i.nmea_zero_INFO) refers to memseta.o(.text) for __aeabi_memclr4
+    info.o(i.nmea_zero_INFO) refers to time.o(i.nmea_time_now) for nmea_time_now
+    parse.o(i._nmea_parse_time) refers to tok.o(i.nmea_scanf) for nmea_scanf
+    parse.o(i._nmea_parse_time) refers to context.o(i.nmea_error) for nmea_error
+    parse.o(i.nmea_GPRMC2info) refers to memcpya.o(.text) for __aeabi_memcpy4
+    parse.o(i.nmea_GPRMC2info) refers to dmul.o(.text) for __aeabi_dmul
+    parse.o(i.nmea_find_tail) refers to tok.o(i.nmea_atoi) for nmea_atoi
+    parse.o(i.nmea_pack_type) refers to memcmp.o(.text) for memcmp
+    parse.o(i.nmea_pack_type) refers to parse.o(.data) for pheads
+    parse.o(i.nmea_parse_GPGGA) refers to memseta.o(.text) for __aeabi_memclr4
+    parse.o(i.nmea_parse_GPGGA) refers to context.o(i.nmea_trace_buff) for nmea_trace_buff
+    parse.o(i.nmea_parse_GPGGA) refers to tok.o(i.nmea_scanf) for nmea_scanf
+    parse.o(i.nmea_parse_GPGGA) refers to context.o(i.nmea_error) for nmea_error
+    parse.o(i.nmea_parse_GPGGA) refers to strlen.o(.text) for strlen
+    parse.o(i.nmea_parse_GPGGA) refers to parse.o(i._nmea_parse_time) for _nmea_parse_time
+    parse.o(i.nmea_parse_GPGSA) refers to memseta.o(.text) for __aeabi_memclr4
+    parse.o(i.nmea_parse_GPGSA) refers to context.o(i.nmea_trace_buff) for nmea_trace_buff
+    parse.o(i.nmea_parse_GPGSA) refers to tok.o(i.nmea_scanf) for nmea_scanf
+    parse.o(i.nmea_parse_GPGSA) refers to context.o(i.nmea_error) for nmea_error
+    parse.o(i.nmea_parse_GPGSV) refers to memseta.o(.text) for __aeabi_memclr4
+    parse.o(i.nmea_parse_GPGSV) refers to context.o(i.nmea_trace_buff) for nmea_trace_buff
+    parse.o(i.nmea_parse_GPGSV) refers to tok.o(i.nmea_scanf) for nmea_scanf
+    parse.o(i.nmea_parse_GPGSV) refers to context.o(i.nmea_error) for nmea_error
+    parse.o(i.nmea_parse_GPGSV) refers to parse.o(.conststring) for .conststring
+    parse.o(i.nmea_parse_GPRMC) refers to memseta.o(.text) for __aeabi_memclr4
+    parse.o(i.nmea_parse_GPRMC) refers to context.o(i.nmea_trace_buff) for nmea_trace_buff
+    parse.o(i.nmea_parse_GPRMC) refers to tok.o(i.nmea_scanf) for nmea_scanf
+    parse.o(i.nmea_parse_GPRMC) refers to context.o(i.nmea_error) for nmea_error
+    parse.o(i.nmea_parse_GPRMC) refers to strlen.o(.text) for strlen
+    parse.o(i.nmea_parse_GPRMC) refers to parse.o(i._nmea_parse_time) for _nmea_parse_time
+    parse.o(i.nmea_parse_GPVTG) refers to memseta.o(.text) for __aeabi_memclr4
+    parse.o(i.nmea_parse_GPVTG) refers to context.o(i.nmea_trace_buff) for nmea_trace_buff
+    parse.o(i.nmea_parse_GPVTG) refers to tok.o(i.nmea_scanf) for nmea_scanf
+    parse.o(i.nmea_parse_GPVTG) refers to context.o(i.nmea_error) for nmea_error
+    parse.o(.data) refers to parse.o(.conststring) for .conststring
+    parser.o(i.nmea_parse) refers to parser.o(i.nmea_parser_push) for nmea_parser_push
+    parser.o(i.nmea_parse) refers to parse.o(i.nmea_GPGGA2info) for nmea_GPGGA2info
+    parser.o(i.nmea_parse) refers to parse.o(i.nmea_GPGSA2info) for nmea_GPGSA2info
+    parser.o(i.nmea_parse) refers to parse.o(i.nmea_GPGSV2info) for nmea_GPGSV2info
+    parser.o(i.nmea_parse) refers to parse.o(i.nmea_GPRMC2info) for nmea_GPRMC2info
+    parser.o(i.nmea_parse) refers to parse.o(i.nmea_GPVTG2info) for nmea_GPVTG2info
+    parser.o(i.nmea_parse) refers to malloc.o(i.free) for free
+    parser.o(i.nmea_parse) refers to parser.o(i.nmea_parser_pop) for nmea_parser_pop
+    parser.o(i.nmea_parser_destroy) refers to malloc.o(i.free) for free
+    parser.o(i.nmea_parser_destroy) refers to parser.o(i.nmea_parser_queue_clear) for nmea_parser_queue_clear
+    parser.o(i.nmea_parser_destroy) refers to memseta.o(.text) for __aeabi_memclr4
+    parser.o(i.nmea_parser_drop) refers to malloc.o(i.free) for free
+    parser.o(i.nmea_parser_init) refers to context.o(i.nmea_property) for nmea_property
+    parser.o(i.nmea_parser_init) refers to memseta.o(.text) for __aeabi_memclr4
+    parser.o(i.nmea_parser_init) refers to malloc.o(i.malloc) for malloc
+    parser.o(i.nmea_parser_init) refers to context.o(i.nmea_error) for nmea_error
+    parser.o(i.nmea_parser_pop) refers to malloc.o(i.free) for free
+    parser.o(i.nmea_parser_push) refers to parser.o(i.nmea_parser_real_push) for nmea_parser_real_push
+    parser.o(i.nmea_parser_queue_clear) refers to parser.o(i.nmea_parser_drop) for nmea_parser_drop
+    parser.o(i.nmea_parser_real_push) refers to parser.o(i.nmea_parser_buff_clear) for nmea_parser_buff_clear
+    parser.o(i.nmea_parser_real_push) refers to memcpya.o(.text) for __aeabi_memcpy
+    parser.o(i.nmea_parser_real_push) refers to parse.o(i.nmea_find_tail) for nmea_find_tail
+    parser.o(i.nmea_parser_real_push) refers to parse.o(i.nmea_pack_type) for nmea_pack_type
+    parser.o(i.nmea_parser_real_push) refers to malloc.o(i.malloc) for malloc
+    parser.o(i.nmea_parser_real_push) refers to parse.o(i.nmea_parse_GPGGA) for nmea_parse_GPGGA
+    parser.o(i.nmea_parser_real_push) refers to malloc.o(i.free) for free
+    parser.o(i.nmea_parser_real_push) refers to parse.o(i.nmea_parse_GPGSA) for nmea_parse_GPGSA
+    parser.o(i.nmea_parser_real_push) refers to parse.o(i.nmea_parse_GPGSV) for nmea_parse_GPGSV
+    parser.o(i.nmea_parser_real_push) refers to parse.o(i.nmea_parse_GPRMC) for nmea_parse_GPRMC
+    parser.o(i.nmea_parser_real_push) refers to parse.o(i.nmea_parse_GPVTG) for nmea_parse_GPVTG
+    parser.o(i.nmea_parser_real_push) refers to context.o(i.nmea_error) for nmea_error
+    sentence.o(i.nmea_zero_GPGGA) refers to memseta.o(.text) for __aeabi_memclr4
+    sentence.o(i.nmea_zero_GPGGA) refers to time.o(i.nmea_time_now) for nmea_time_now
+    sentence.o(i.nmea_zero_GPGSA) refers to memseta.o(.text) for __aeabi_memclr4
+    sentence.o(i.nmea_zero_GPGSV) refers to memseta.o(.text) for __aeabi_memclr4
+    sentence.o(i.nmea_zero_GPRMC) refers to memseta.o(.text) for __aeabi_memclr4
+    sentence.o(i.nmea_zero_GPRMC) refers to time.o(i.nmea_time_now) for nmea_time_now
+    sentence.o(i.nmea_zero_GPVTG) refers to memseta.o(.text) for __aeabi_memclr4
+    tok.o(i.nmea_atof) refers to memcpya.o(.text) for __aeabi_memcpy
+    tok.o(i.nmea_atof) refers to strtod.o(i.strtod) for strtod
+    tok.o(i.nmea_atoi) refers to memcpya.o(.text) for __aeabi_memcpy
+    tok.o(i.nmea_atoi) refers to strtol.o(.text) for strtol
+    tok.o(i.nmea_printf) refers to printfa.o(i.__0vsnprintf) for vsnprintf
+    tok.o(i.nmea_printf) refers to tok.o(i.nmea_calc_crc) for nmea_calc_crc
+    tok.o(i.nmea_printf) refers to printfa.o(i.__0snprintf) for __2snprintf
+    tok.o(i.nmea_printf) refers to memseta.o(.text) for __aeabi_memset
+    tok.o(i.nmea_scanf) refers to ctype_o.o(.text) for __rt_ctype_table
+    tok.o(i.nmea_scanf) refers to tok.o(i.nmea_atoi) for nmea_atoi
+    tok.o(i.nmea_scanf) refers to memchr.o(.text) for memchr
+    tok.o(i.nmea_scanf) refers to memcpya.o(.text) for __aeabi_memcpy
+    tok.o(i.nmea_scanf) refers to tok.o(i.nmea_atof) for nmea_atof
+    main.o(i.main) refers to usart.o(i.USART1_Init) for USART1_Init
+    main.o(i.main) refers to usart.o(i.USART3_Init) for USART3_Init
+    main.o(i.main) refers to usart.o(i.USART4_Init) for USART4_Init
+    main.o(i.main) refers to pwm.o(i.PWM_Init) for PWM_Init
+    main.o(i.main) refers to hal_uart.o(i.UART_SendData) for UART_SendData
+    main.o(i.main) refers to printfa.o(i.__0printf) for __2printf
+    main.o(i.main) refers to gps.o(i.GPS_UpDate) for GPS_UpDate
+    system_mm32f327x.o(i.SetSysClock) refers to system_mm32f327x.o(i.SetSysClockToXX) for SetSysClockToXX
+    system_mm32f327x.o(i.SetSysClockToXX) refers to system_mm32f327x.o(i.DELAY_xUs) for DELAY_xUs
+    system_mm32f327x.o(i.SetSysClockToXX) refers to system_mm32f327x.o(i.AutoCalPllFactor) for AutoCalPllFactor
+    system_mm32f327x.o(i.SetSysClockToXX) refers to system_mm32f327x.o(.data) for SystemCoreClock
+    system_mm32f327x.o(i.SystemInit) refers to system_mm32f327x.o(i.SetSysClock) for SetSysClock
+    hal_adc.o(i.ADC_DeInit) refers to hal_rcc.o(i.exRCC_APB2PeriphReset) for exRCC_APB2PeriphReset
+    hal_adc.o(i.ADC_RegularChannelConfig) refers to hal_adc.o(i.ADC_TempSensorVrefintCmd) for ADC_TempSensorVrefintCmd
+    hal_adc.o(i.ADC_TempSensorCmd) refers to hal_adc.o(i.ADC_TempSensorVrefintCmd) for ADC_TempSensorVrefintCmd
+    hal_adc.o(i.ADC_VrefintCmd) refers to hal_adc.o(i.ADC_TempSensorVrefintCmd) for ADC_TempSensorVrefintCmd
+    hal_bkp.o(i.BKP_DeInit) refers to hal_rcc.o(i.RCC_BackupResetCmd) for RCC_BackupResetCmd
+    hal_bkp.o(i.exBKP_Init) refers to hal_rcc.o(i.RCC_APB1PeriphClockCmd) for RCC_APB1PeriphClockCmd
+    hal_can.o(i.CAN_DeInit) refers to hal_rcc.o(i.exRCC_APB1PeriphReset) for exRCC_APB1PeriphReset
+    hal_can.o(i.CAN_Peli_Receive) refers to hal_can.o(i.CAN_FIFORelease) for CAN_FIFORelease
+    hal_can.o(i.CAN_Receive) refers to hal_can.o(i.CAN_FIFORelease) for CAN_FIFORelease
+    hal_dac.o(i.DAC_DeInit) refers to hal_rcc.o(i.exRCC_APB1PeriphReset) for exRCC_APB1PeriphReset
+    hal_eth.o(i.ETH_CheckFrameReceived) refers to hal_eth.o(.data) for DMARxDescToGet
+    hal_eth.o(i.ETH_DMARxDescChainInit) refers to hal_eth.o(.data) for DMARxDescToGet
+    hal_eth.o(i.ETH_DMARxDescChainInit) refers to hal_eth.o(.bss) for RX_Frame_Descriptor
+    hal_eth.o(i.ETH_DMATxDescChainInit) refers to hal_eth.o(.data) for DMATxDescToSet
+    hal_eth.o(i.ETH_DeInit) refers to hal_rcc.o(i.RCC_AHBPeriphResetCmd) for RCC_AHBPeriphResetCmd
+    hal_eth.o(i.ETH_GetRxPktSize) refers to hal_eth.o(i.ETH_GetDMARxDescFrameLength) for ETH_GetDMARxDescFrameLength
+    hal_eth.o(i.ETH_Get_Received_Frame) refers to hal_eth.o(.data) for DMARxDescToGet
+    hal_eth.o(i.ETH_Get_Received_Frame_interrupt) refers to hal_eth.o(.data) for DMARxDescToGet
+    hal_eth.o(i.ETH_Init) refers to hal_rcc.o(i.RCC_GetHCLKFreq) for RCC_GetHCLKFreq
+    hal_eth.o(i.ETH_Init) refers to hal_eth.o(i.ETH_WritePHYRegister) for ETH_WritePHYRegister
+    hal_eth.o(i.ETH_Init) refers to hal_eth.o(i.ETH_ReadPHYRegister) for ETH_ReadPHYRegister
+    hal_eth.o(i.ETH_PHYLoopBackCmd) refers to hal_eth.o(i.ETH_ReadPHYRegister) for ETH_ReadPHYRegister
+    hal_eth.o(i.ETH_PHYLoopBackCmd) refers to hal_eth.o(i.ETH_WritePHYRegister) for ETH_WritePHYRegister
+    hal_eth.o(i.ETH_Prepare_Transmit_Descriptors) refers to hal_eth.o(.data) for DMATxDescToSet
+    hal_eth.o(i.ETH_Start) refers to hal_eth.o(i.ETH_MACTransmissionCmd) for ETH_MACTransmissionCmd
+    hal_eth.o(i.ETH_Start) refers to hal_eth.o(i.ETH_MACReceptionCmd) for ETH_MACReceptionCmd
+    hal_eth.o(i.ETH_Start) refers to hal_eth.o(i.ETH_FlushTransmitFIFO) for ETH_FlushTransmitFIFO
+    hal_eth.o(i.ETH_Start) refers to hal_eth.o(i.ETH_DMATransmissionCmd) for ETH_DMATransmissionCmd
+    hal_eth.o(i.ETH_Start) refers to hal_eth.o(i.ETH_DMAReceptionCmd) for ETH_DMAReceptionCmd
+    hal_eth.o(i.ETH_Stop) refers to hal_eth.o(i.ETH_DMATransmissionCmd) for ETH_DMATransmissionCmd
+    hal_eth.o(i.ETH_Stop) refers to hal_eth.o(i.ETH_DMAReceptionCmd) for ETH_DMAReceptionCmd
+    hal_eth.o(i.ETH_Stop) refers to hal_eth.o(i.ETH_MACReceptionCmd) for ETH_MACReceptionCmd
+    hal_eth.o(i.ETH_Stop) refers to hal_eth.o(i.ETH_FlushTransmitFIFO) for ETH_FlushTransmitFIFO
+    hal_eth.o(i.ETH_Stop) refers to hal_eth.o(i.ETH_MACTransmissionCmd) for ETH_MACTransmissionCmd
+    hal_exti.o(i.EXTI_DeInit) refers to hal_exti.o(i.exEXTI_LineDisable) for exEXTI_LineDisable
+    hal_flash.o(i.FLASH_EnableWriteProtection) refers to hal_flash.o(i.FLASH_ProgramOptionHalfWord) for FLASH_ProgramOptionHalfWord
+    hal_flash.o(i.FLASH_EraseAllPages) refers to hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    hal_flash.o(i.FLASH_EraseOptionBytes) refers to hal_flash.o(i.FLASH_OPTB_Enable) for FLASH_OPTB_Enable
+    hal_flash.o(i.FLASH_EraseOptionBytes) refers to hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    hal_flash.o(i.FLASH_ErasePage) refers to hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    hal_flash.o(i.FLASH_ProgramHalfWord) refers to hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    hal_flash.o(i.FLASH_ProgramOptionByteData) refers to hal_flash.o(i.FLASH_OPTB_Enable) for FLASH_OPTB_Enable
+    hal_flash.o(i.FLASH_ProgramOptionByteData) refers to hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    hal_flash.o(i.FLASH_ProgramOptionHalfWord) refers to hal_flash.o(i.FLASH_OPTB_Enable) for FLASH_OPTB_Enable
+    hal_flash.o(i.FLASH_ProgramOptionHalfWord) refers to hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    hal_flash.o(i.FLASH_ProgramProtect) refers to hal_flash.o(i.FLASH_ProgramOptionHalfWord) for FLASH_ProgramOptionHalfWord
+    hal_flash.o(i.FLASH_ProgramWord) refers to hal_flash.o(i.FLASH_ProgramHalfWord) for FLASH_ProgramHalfWord
+    hal_flash.o(i.FLASH_UserOptionByteConfig) refers to hal_flash.o(i.FLASH_OPTB_Enable) for FLASH_OPTB_Enable
+    hal_flash.o(i.FLASH_UserOptionByteConfig) refers to hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    hal_flash.o(i.FLASH_WaitForLastOperation) refers to hal_flash.o(i.FLASH_GetStatus) for FLASH_GetStatus
+    hal_flash.o(i.exFLASH_EraseEE) refers to hal_flash.o(i.FLASH_Unlock) for FLASH_Unlock
+    hal_flash.o(i.exFLASH_EraseEE) refers to hal_flash.o(i.FLASH_ErasePage) for FLASH_ErasePage
+    hal_flash.o(i.exFLASH_EraseEE) refers to hal_flash.o(i.FLASH_Lock) for FLASH_Lock
+    hal_flash.o(i.exFLASH_Locate) refers to hal_flash.o(i.exFLASH_FindEmpty) for exFLASH_FindEmpty
+    hal_flash.o(i.exFLASH_ProgramEE) refers to hal_flash.o(i.FLASH_Unlock) for FLASH_Unlock
+    hal_flash.o(i.exFLASH_ProgramEE) refers to hal_flash.o(i.FLASH_ProgramHalfWord) for FLASH_ProgramHalfWord
+    hal_flash.o(i.exFLASH_ProgramEE) refers to hal_flash.o(i.FLASH_Lock) for FLASH_Lock
+    hal_flash.o(i.exFLASH_ReadEE) refers to hal_flash.o(i.exFLASH_Locate) for exFLASH_Locate
+    hal_flash.o(i.exFLASH_WriteEE) refers to hal_flash.o(i.exFLASH_Locate) for exFLASH_Locate
+    hal_flash.o(i.exFLASH_WriteEE) refers to hal_flash.o(i.exFLASH_EraseEE) for exFLASH_EraseEE
+    hal_flash.o(i.exFLASH_WriteEE) refers to hal_flash.o(i.exFLASH_ProgramEE) for exFLASH_ProgramEE
+    hal_gpio.o(i.GPIO_DeInit) refers to hal_rcc.o(i.RCC_AHBPeriphClockCmd) for RCC_AHBPeriphClockCmd
+    hal_i2c.o(i.I2C_CheckEvent) refers to hal_i2c.o(.data) for I2C_CMD_DIR
+    hal_i2c.o(i.I2C_DMACmd) refers to hal_i2c.o(.data) for I2C_DMA_DIR
+    hal_i2c.o(i.I2C_DeInit) refers to hal_rcc.o(i.exRCC_APB1PeriphReset) for exRCC_APB1PeriphReset
+    hal_i2c.o(i.I2C_GetFlagStatus) refers to hal_i2c.o(.data) for I2C_CMD_DIR
+    hal_i2c.o(i.I2C_ITConfig) refers to hal_i2c.o(i.I2C_ReadCmd) for I2C_ReadCmd
+    hal_i2c.o(i.I2C_Init) refers to hal_rcc.o(i.RCC_GetPCLK1Freq) for RCC_GetPCLK1Freq
+    hal_i2c.o(i.I2C_ReceiveData) refers to hal_i2c.o(.data) for I2C_CMD_DIR
+    hal_iwdg.o(i.IWDG_SetPrescaler) refers to hal_iwdg.o(i.PVU_CheckStatus) for PVU_CheckStatus
+    hal_iwdg.o(i.IWDG_SetReload) refers to hal_iwdg.o(i.RVU_CheckStatus) for RVU_CheckStatus
+    hal_iwdg.o(i.PVU_CheckStatus) refers to hal_iwdg.o(i.IWDG_GetFlagStatus) for IWDG_GetFlagStatus
+    hal_iwdg.o(i.RVU_CheckStatus) refers to hal_iwdg.o(i.IWDG_GetFlagStatus) for IWDG_GetFlagStatus
+    hal_pwr.o(i.PWR_DeInit) refers to hal_rcc.o(i.exRCC_APB1PeriphReset) for exRCC_APB1PeriphReset
+    hal_rcc.o(i.RCC_GetClocksFreq) refers to hal_rcc.o(i.RCC_GetSysClockFreq) for RCC_GetSysClockFreq
+    hal_rcc.o(i.RCC_GetClocksFreq) refers to hal_rcc.o(i.RCC_GetHCLKFreq) for RCC_GetHCLKFreq
+    hal_rcc.o(i.RCC_GetClocksFreq) refers to hal_rcc.o(i.RCC_GetPCLK1Freq) for RCC_GetPCLK1Freq
+    hal_rcc.o(i.RCC_GetClocksFreq) refers to hal_rcc.o(i.RCC_GetPCLK2Freq) for RCC_GetPCLK2Freq
+    hal_rcc.o(i.RCC_GetHCLKFreq) refers to hal_rcc.o(i.RCC_GetSysClockFreq) for RCC_GetSysClockFreq
+    hal_rcc.o(i.RCC_GetHCLKFreq) refers to hal_rcc.o(.data) for tbPresc
+    hal_rcc.o(i.RCC_GetPCLK1Freq) refers to hal_rcc.o(i.RCC_GetHCLKFreq) for RCC_GetHCLKFreq
+    hal_rcc.o(i.RCC_GetPCLK1Freq) refers to hal_rcc.o(.data) for tbPresc
+    hal_rcc.o(i.RCC_GetPCLK2Freq) refers to hal_rcc.o(i.RCC_GetHCLKFreq) for RCC_GetHCLKFreq
+    hal_rcc.o(i.RCC_GetPCLK2Freq) refers to hal_rcc.o(.data) for tbPresc
+    hal_rcc.o(i.RCC_PLLConfig) refers to memcpya.o(.text) for __aeabi_memcpy4
+    hal_rcc.o(i.RCC_PLLConfig) refers to hal_rcc.o(i.RCC_PLLDMDNConfig) for RCC_PLLDMDNConfig
+    hal_rcc.o(i.RCC_WaitForFlagStartUp) refers to hal_rcc.o(i.RCC_GetFlagStatus) for RCC_GetFlagStatus
+    hal_rcc.o(i.RCC_WaitForHSEStartUp) refers to hal_rcc.o(i.RCC_GetFlagStatus) for RCC_GetFlagStatus
+    hal_rcc.o(i.exRCC_SystickEnable) refers to hal_rcc.o(i.RCC_GetHCLKFreq) for RCC_GetHCLKFreq
+    hal_rtc.o(i.RTC_SetAlarm) refers to hal_rtc.o(i.RTC_EnterConfigMode) for RTC_EnterConfigMode
+    hal_rtc.o(i.RTC_SetAlarm) refers to hal_rtc.o(i.RTC_ExitConfigMode) for RTC_ExitConfigMode
+    hal_rtc.o(i.RTC_SetCounter) refers to hal_rtc.o(i.RTC_EnterConfigMode) for RTC_EnterConfigMode
+    hal_rtc.o(i.RTC_SetCounter) refers to hal_rtc.o(i.RTC_ExitConfigMode) for RTC_ExitConfigMode
+    hal_rtc.o(i.RTC_SetPrescaler) refers to hal_rtc.o(i.RTC_EnterConfigMode) for RTC_EnterConfigMode
+    hal_rtc.o(i.RTC_SetPrescaler) refers to hal_rtc.o(i.RTC_ExitConfigMode) for RTC_ExitConfigMode
+    hal_sdio.o(i.SDIO_DeInit) refers to hal_rcc.o(i.RCC_AHBPeriphResetCmd) for RCC_AHBPeriphResetCmd
+    hal_spi.o(i.I2S_Init) refers to hal_rcc.o(i.RCC_GetClocksFreq) for RCC_GetClocksFreq
+    hal_spi.o(i.SPI_DeInit) refers to hal_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    hal_spi.o(i.SPI_DeInit) refers to hal_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    hal_tim.o(i.TIM_DeInit) refers to hal_rcc.o(i.exRCC_APB2PeriphReset) for exRCC_APB2PeriphReset
+    hal_tim.o(i.TIM_DeInit) refers to hal_rcc.o(i.exRCC_APB1PeriphReset) for exRCC_APB1PeriphReset
+    hal_tim.o(i.TIM_ETRClockMode1Config) refers to hal_tim.o(i.TIM_ETRConfig) for TIM_ETRConfig
+    hal_tim.o(i.TIM_ETRClockMode2Config) refers to hal_tim.o(i.TIM_ETRConfig) for TIM_ETRConfig
+    hal_tim.o(i.TIM_ICInit) refers to hal_tim.o(i.TI1_Configure) for TI1_Configure
+    hal_tim.o(i.TIM_ICInit) refers to hal_tim.o(i.TIM_SetIC1Prescaler) for TIM_SetIC1Prescaler
+    hal_tim.o(i.TIM_ICInit) refers to hal_tim.o(i.TI2_Configure) for TI2_Configure
+    hal_tim.o(i.TIM_ICInit) refers to hal_tim.o(i.TIM_SetIC2Prescaler) for TIM_SetIC2Prescaler
+    hal_tim.o(i.TIM_ICInit) refers to hal_tim.o(i.TI3_Configure) for TI3_Configure
+    hal_tim.o(i.TIM_ICInit) refers to hal_tim.o(i.TIM_SetIC3Prescaler) for TIM_SetIC3Prescaler
+    hal_tim.o(i.TIM_ICInit) refers to hal_tim.o(i.TI4_Configure) for TI4_Configure
+    hal_tim.o(i.TIM_ICInit) refers to hal_tim.o(i.TIM_SetIC4Prescaler) for TIM_SetIC4Prescaler
+    hal_tim.o(i.TIM_ITRxExternalClockConfig) refers to hal_tim.o(i.TIM_SelectInputTrigger) for TIM_SelectInputTrigger
+    hal_tim.o(i.TIM_PWMIConfig) refers to hal_tim.o(i.TI1_Configure) for TI1_Configure
+    hal_tim.o(i.TIM_PWMIConfig) refers to hal_tim.o(i.TIM_SetIC1Prescaler) for TIM_SetIC1Prescaler
+    hal_tim.o(i.TIM_PWMIConfig) refers to hal_tim.o(i.TI2_Configure) for TI2_Configure
+    hal_tim.o(i.TIM_PWMIConfig) refers to hal_tim.o(i.TIM_SetIC2Prescaler) for TIM_SetIC2Prescaler
+    hal_tim.o(i.TIM_TIxExternalClockConfig) refers to hal_tim.o(i.TI2_Configure) for TI2_Configure
+    hal_tim.o(i.TIM_TIxExternalClockConfig) refers to hal_tim.o(i.TI1_Configure) for TI1_Configure
+    hal_tim.o(i.TIM_TIxExternalClockConfig) refers to hal_tim.o(i.TIM_SelectInputTrigger) for TIM_SelectInputTrigger
+    hal_uart.o(i.UART_DeInit) refers to hal_rcc.o(i.exRCC_APB1PeriphReset) for exRCC_APB1PeriphReset
+    hal_uart.o(i.UART_DeInit) refers to hal_rcc.o(i.exRCC_APB2PeriphReset) for exRCC_APB2PeriphReset
+    hal_uart.o(i.UART_Init) refers to hal_rcc.o(i.RCC_GetPCLK2Freq) for RCC_GetPCLK2Freq
+    hal_uart.o(i.UART_Init) refers to hal_rcc.o(i.RCC_GetPCLK1Freq) for RCC_GetPCLK1Freq
+    hal_uid.o(i.GetChipUID) refers to hal_uid.o(.bss) for device_id_data
+    hal_wwdg.o(i.WWDG_DeInit) refers to hal_rcc.o(i.exRCC_APB1PeriphReset) for exRCC_APB1PeriphReset
+    acos.o(i.__softfp_acos) refers (Special) to iusefp.o(.text) for __I$use$fp
+    acos.o(i.__softfp_acos) refers to acos.o(i.acos) for acos
+    acos.o(i.acos) refers (Special) to iusefp.o(.text) for __I$use$fp
+    acos.o(i.acos) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    acos.o(i.acos) refers to errno.o(i.__set_errno) for __set_errno
+    acos.o(i.acos) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    acos.o(i.acos) refers to dmul.o(.text) for __aeabi_dmul
+    acos.o(i.acos) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    acos.o(i.acos) refers to dadd.o(.text) for __aeabi_dadd
+    acos.o(i.acos) refers to ddiv.o(.text) for __aeabi_ddiv
+    acos.o(i.acos) refers to dscalb.o(.text) for __ARM_scalbn
+    acos.o(i.acos) refers to sqrt.o(i.sqrt) for sqrt
+    acos.o(i.acos) refers to acos.o(.constdata) for .constdata
+    acos.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    acos_x.o(i.____softfp_acos$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    acos_x.o(i.____softfp_acos$lsc) refers to acos_x.o(i.__acos$lsc) for __acos$lsc
+    acos_x.o(i.__acos$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    acos_x.o(i.__acos$lsc) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    acos_x.o(i.__acos$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    acos_x.o(i.__acos$lsc) refers to dmul.o(.text) for __aeabi_dmul
+    acos_x.o(i.__acos$lsc) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    acos_x.o(i.__acos$lsc) refers to dadd.o(.text) for __aeabi_dadd
+    acos_x.o(i.__acos$lsc) refers to ddiv.o(.text) for __aeabi_ddiv
+    acos_x.o(i.__acos$lsc) refers to dscalb.o(.text) for __ARM_scalbn
+    acos_x.o(i.__acos$lsc) refers to sqrt.o(i.sqrt) for sqrt
+    acos_x.o(i.__acos$lsc) refers to acos_x.o(.constdata) for .constdata
+    acos_x.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    asin.o(i.__softfp_asin) refers (Special) to iusefp.o(.text) for __I$use$fp
+    asin.o(i.__softfp_asin) refers to asin.o(i.asin) for asin
+    asin.o(i.asin) refers (Special) to iusefp.o(.text) for __I$use$fp
+    asin.o(i.asin) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    asin.o(i.asin) refers to dmul.o(.text) for __aeabi_dmul
+    asin.o(i.asin) refers to dadd.o(.text) for __aeabi_dadd
+    asin.o(i.asin) refers to errno.o(i.__set_errno) for __set_errno
+    asin.o(i.asin) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    asin.o(i.asin) refers to fpclassify.o(i.__ARM_fpclassify) for __ARM_fpclassify
+    asin.o(i.asin) refers to dunder.o(i.__mathlib_dbl_underflow) for __mathlib_dbl_underflow
+    asin.o(i.asin) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    asin.o(i.asin) refers to ddiv.o(.text) for __aeabi_ddiv
+    asin.o(i.asin) refers to dscalb.o(.text) for __ARM_scalbn
+    asin.o(i.asin) refers to sqrt.o(i.sqrt) for sqrt
+    asin.o(i.asin) refers to asin.o(.constdata) for .constdata
+    asin.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    asin_x.o(i.____softfp_asin$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    asin_x.o(i.____softfp_asin$lsc) refers to asin_x.o(i.__asin$lsc) for __asin$lsc
+    asin_x.o(i.__asin$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    asin_x.o(i.__asin$lsc) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    asin_x.o(i.__asin$lsc) refers to dmul.o(.text) for __aeabi_dmul
+    asin_x.o(i.__asin$lsc) refers to dadd.o(.text) for __aeabi_dadd
+    asin_x.o(i.__asin$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    asin_x.o(i.__asin$lsc) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    asin_x.o(i.__asin$lsc) refers to ddiv.o(.text) for __aeabi_ddiv
+    asin_x.o(i.__asin$lsc) refers to dscalb.o(.text) for __ARM_scalbn
+    asin_x.o(i.__asin$lsc) refers to sqrt.o(i.sqrt) for sqrt
+    asin_x.o(i.__asin$lsc) refers to asin_x.o(.constdata) for .constdata
+    asin_x.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan.o(i.__softfp_atan) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan.o(i.__softfp_atan) refers to atan.o(i.atan) for atan
+    atan.o(i.atan) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan.o(i.atan) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    atan.o(i.atan) refers to fpclassify.o(i.__ARM_fpclassify) for __ARM_fpclassify
+    atan.o(i.atan) refers to dunder.o(i.__mathlib_dbl_underflow) for __mathlib_dbl_underflow
+    atan.o(i.atan) refers to dadd.o(.text) for __aeabi_dadd
+    atan.o(i.atan) refers to dscalb.o(.text) for __ARM_scalbn
+    atan.o(i.atan) refers to ddiv.o(.text) for __aeabi_ddiv
+    atan.o(i.atan) refers to dmul.o(.text) for __aeabi_dmul
+    atan.o(i.atan) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    atan.o(i.atan) refers to atan.o(.constdata) for .constdata
+    atan.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan_x.o(i.____softfp_atan$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan_x.o(i.____softfp_atan$lsc) refers to atan_x.o(i.__atan$lsc) for __atan$lsc
+    atan_x.o(i.__atan$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan_x.o(i.__atan$lsc) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    atan_x.o(i.__atan$lsc) refers to dadd.o(.text) for __aeabi_dadd
+    atan_x.o(i.__atan$lsc) refers to dscalb.o(.text) for __ARM_scalbn
+    atan_x.o(i.__atan$lsc) refers to ddiv.o(.text) for __aeabi_ddiv
+    atan_x.o(i.__atan$lsc) refers to dmul.o(.text) for __aeabi_dmul
+    atan_x.o(i.__atan$lsc) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    atan_x.o(i.__atan$lsc) refers to atan_x.o(.constdata) for .constdata
+    atan_x.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan2.o(i.__softfp_atan2) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan2.o(i.__softfp_atan2) refers to atan2.o(i.atan2) for atan2
+    atan2.o(i.atan2) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan2.o(i.atan2) refers to dunder.o(i.__mathlib_dbl_infnan2) for __mathlib_dbl_infnan2
+    atan2.o(i.atan2) refers to atan.o(i.atan) for atan
+    atan2.o(i.atan2) refers to ddiv.o(.text) for __aeabi_ddiv
+    atan2.o(i.atan2) refers to dadd.o(.text) for __aeabi_dsub
+    atan2.o(i.atan2) refers to qnan.o(.constdata) for __mathlib_zero
+    atan2_x.o(i.____softfp_atan2$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan2_x.o(i.____softfp_atan2$lsc) refers to atan2_x.o(i.__atan2$lsc) for __atan2$lsc
+    atan2_x.o(i.__atan2$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan2_x.o(i.__atan2$lsc) refers to dunder.o(i.__mathlib_dbl_infnan2) for __mathlib_dbl_infnan2
+    atan2_x.o(i.__atan2$lsc) refers to atan.o(i.atan) for atan
+    atan2_x.o(i.__atan2$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    atan2_x.o(i.__atan2$lsc) refers to ddiv.o(.text) for __aeabi_ddiv
+    atan2_x.o(i.__atan2$lsc) refers to dadd.o(.text) for __aeabi_dsub
+    atan2_x.o(i.__atan2$lsc) refers to qnan.o(.constdata) for __mathlib_zero
+    ceil.o(i.__softfp_ceil) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ceil.o(i.__softfp_ceil) refers to ceil.o(i.ceil) for ceil
+    ceil.o(i.ceil) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ceil.o(i.ceil) refers to dadd.o(.text) for __aeabi_dadd
+    ceil.o(i.ceil) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    cos.o(i.__softfp_cos) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos.o(i.__softfp_cos) refers to cos.o(i.cos) for cos
+    cos.o(i.cos) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos.o(i.cos) refers to errno.o(i.__set_errno) for __set_errno
+    cos.o(i.cos) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    cos.o(i.cos) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    cos.o(i.cos) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    cos.o(i.cos) refers to sin_i.o(i.__kernel_sin) for __kernel_sin
+    cos.o(i.cos) refers to cos_i.o(i.__kernel_cos) for __kernel_cos
+    cos_x.o(i.____softfp_cos$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos_x.o(i.____softfp_cos$lsc) refers to cos_x.o(i.__cos$lsc) for __cos$lsc
+    cos_x.o(i.__cos$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos_x.o(i.__cos$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    cos_x.o(i.__cos$lsc) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    cos_x.o(i.__cos$lsc) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    cos_x.o(i.__cos$lsc) refers to sin_i.o(i.__kernel_sin) for __kernel_sin
+    cos_x.o(i.__cos$lsc) refers to cos_i.o(i.__kernel_cos) for __kernel_cos
+    modf.o(i.__softfp_modf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    modf.o(i.__softfp_modf) refers to modf.o(i.modf) for modf
+    modf.o(i.modf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    modf.o(i.modf) refers to dadd.o(.text) for __aeabi_dsub
+    pow.o(i.__softfp_pow) refers (Special) to iusefp.o(.text) for __I$use$fp
+    pow.o(i.__softfp_pow) refers to pow.o(i.pow) for pow
+    pow.o(i.pow) refers (Special) to iusefp.o(.text) for __I$use$fp
+    pow.o(i.pow) refers to dunder.o(i.__mathlib_dbl_infnan2) for __mathlib_dbl_infnan2
+    pow.o(i.pow) refers to errno.o(i.__set_errno) for __set_errno
+    pow.o(i.pow) refers to dunder.o(i.__mathlib_dbl_divzero) for __mathlib_dbl_divzero
+    pow.o(i.pow) refers to ddiv.o(.text) for __aeabi_ddiv
+    pow.o(i.pow) refers to sqrt.o(i.sqrt) for sqrt
+    pow.o(i.pow) refers to dmul.o(.text) for __aeabi_dmul
+    pow.o(i.pow) refers to dflti.o(.text) for __aeabi_i2d
+    pow.o(i.pow) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    pow.o(i.pow) refers to dunder.o(i.__mathlib_dbl_overflow) for __mathlib_dbl_overflow
+    pow.o(i.pow) refers to dunder.o(i.__mathlib_dbl_underflow) for __mathlib_dbl_underflow
+    pow.o(i.pow) refers to dadd.o(.text) for __aeabi_dsub
+    pow.o(i.pow) refers to dscalb.o(.text) for __ARM_scalbn
+    pow.o(i.pow) refers to qnan.o(.constdata) for __mathlib_zero
+    pow.o(i.pow) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    pow.o(i.pow) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    pow.o(i.pow) refers to pow.o(.constdata) for .constdata
+    pow.o(i.pow) refers to fpclassify.o(i.__ARM_fpclassify) for __ARM_fpclassify
+    pow.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    pow_x.o(i.____softfp_pow$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    pow_x.o(i.____softfp_pow$lsc) refers to pow_x.o(i.__pow$lsc) for __pow$lsc
+    pow_x.o(i.__pow$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    pow_x.o(i.__pow$lsc) refers to dunder.o(i.__mathlib_dbl_infnan2) for __mathlib_dbl_infnan2
+    pow_x.o(i.__pow$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    pow_x.o(i.__pow$lsc) refers to ddiv.o(.text) for __aeabi_ddiv
+    pow_x.o(i.__pow$lsc) refers to sqrt.o(i.sqrt) for sqrt
+    pow_x.o(i.__pow$lsc) refers to dmul.o(.text) for __aeabi_dmul
+    pow_x.o(i.__pow$lsc) refers to dflti.o(.text) for __aeabi_i2d
+    pow_x.o(i.__pow$lsc) refers to dadd.o(.text) for __aeabi_dsub
+    pow_x.o(i.__pow$lsc) refers to dscalb.o(.text) for __ARM_scalbn
+    pow_x.o(i.__pow$lsc) refers to qnan.o(.constdata) for __mathlib_zero
+    pow_x.o(i.__pow$lsc) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    pow_x.o(i.__pow$lsc) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    pow_x.o(i.__pow$lsc) refers to pow_x.o(.constdata) for .constdata
+    pow_x.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin.o(i.__softfp_sin) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin.o(i.__softfp_sin) refers to sin.o(i.sin) for sin
+    sin.o(i.sin) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin.o(i.sin) refers to errno.o(i.__set_errno) for __set_errno
+    sin.o(i.sin) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    sin.o(i.sin) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    sin.o(i.sin) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    sin.o(i.sin) refers to cos_i.o(i.__kernel_cos) for __kernel_cos
+    sin.o(i.sin) refers to sin_i.o(i.__kernel_sin) for __kernel_sin
+    sin_x.o(i.____softfp_sin$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin_x.o(i.____softfp_sin$lsc) refers to sin_x.o(i.__sin$lsc) for __sin$lsc
+    sin_x.o(i.__sin$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin_x.o(i.__sin$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    sin_x.o(i.__sin$lsc) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    sin_x.o(i.__sin$lsc) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    sin_x.o(i.__sin$lsc) refers to cos_i.o(i.__kernel_cos) for __kernel_cos
+    sin_x.o(i.__sin$lsc) refers to sin_i.o(i.__kernel_sin) for __kernel_sin
+    sqrt.o(i.__softfp_sqrt) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrt.o(i.__softfp_sqrt) refers to dsqrt.o(.text) for _dsqrt
+    sqrt.o(i.__softfp_sqrt) refers to errno.o(i.__set_errno) for __set_errno
+    sqrt.o(i.sqrt) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrt.o(i.sqrt) refers to dsqrt.o(.text) for _dsqrt
+    sqrt.o(i.sqrt) refers to errno.o(i.__set_errno) for __set_errno
+    sqrt_x.o(i.____softfp_sqrt$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrt_x.o(i.____softfp_sqrt$lsc) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    sqrt_x.o(i.____softfp_sqrt$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    sqrt_x.o(i.____softfp_sqrt$lsc) refers to dsqrt.o(.text) for _dsqrt
+    sqrt_x.o(i.__sqrt$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrt_x.o(i.__sqrt$lsc) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    sqrt_x.o(i.__sqrt$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    sqrt_x.o(i.__sqrt$lsc) refers to dsqrt.o(.text) for _dsqrt
+    strtod.o(i.__softfp_strtod) refers (Special) to iusefp.o(.text) for __I$use$fp
+    strtod.o(i.__softfp_strtod) refers to strtod.o(.text) for __strtod_int
+    strtod.o(i.strtod) refers (Special) to iusefp.o(.text) for __I$use$fp
+    strtod.o(i.strtod) refers to strtod.o(.text) for __strtod_int
+    tan.o(i.__softfp_tan) refers (Special) to iusefp.o(.text) for __I$use$fp
+    tan.o(i.__softfp_tan) refers to errno.o(i.__set_errno) for __set_errno
+    tan.o(i.__softfp_tan) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    tan.o(i.__softfp_tan) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    tan.o(i.__softfp_tan) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    tan.o(i.__softfp_tan) refers to tan_i.o(i.__kernel_tan) for __kernel_tan
+    tan.o(i.tan) refers (Special) to iusefp.o(.text) for __I$use$fp
+    tan.o(i.tan) refers to errno.o(i.__set_errno) for __set_errno
+    tan.o(i.tan) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    tan.o(i.tan) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    tan.o(i.tan) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    tan.o(i.tan) refers to tan_i.o(i.__kernel_tan) for __kernel_tan
+    tan_x.o(i.____softfp_tan$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    tan_x.o(i.____softfp_tan$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    tan_x.o(i.____softfp_tan$lsc) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    tan_x.o(i.____softfp_tan$lsc) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    tan_x.o(i.____softfp_tan$lsc) refers to tan_i.o(i.__kernel_tan) for __kernel_tan
+    tan_x.o(i.__tan$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    tan_x.o(i.__tan$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    tan_x.o(i.__tan$lsc) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    tan_x.o(i.__tan$lsc) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    tan_x.o(i.__tan$lsc) refers to tan_i.o(i.__kernel_tan) for __kernel_tan
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    ctype_o.o(.text) refers to ctype_o.o(.constdata) for .constdata
+    ctype_o.o(.constdata) refers to ctype_o.o(.constdata) for __ctype_table
+    isalnum_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isalpha_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isblank_o.o(.text) refers to ctype_o.o(.constdata) for __ctype_table
+    iscntrl_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isdigit_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isgraph_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    islower_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isprint_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    ispunct_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isspace_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isupper_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isxdigit_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    rand.o(.text) refers to rand.o(.data) for .data
+    printfb.o(i.__0fprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0fprintf$bare) refers to usart.o(i.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0printf$bare) refers to usart.o(i.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printfb.o(i.__0vfprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vfprintf$bare) refers to usart.o(i.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vprintf$bare) refers to usart.o(i.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printf0.o(i.__0fprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0fprintf$0) refers to usart.o(i.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0printf$0) refers to usart.o(i.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf0.o(i.__0vfprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vfprintf$0) refers to usart.o(i.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vprintf$0) refers to usart.o(i.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf1.o(i.__0fprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0fprintf$1) refers to usart.o(i.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0printf$1) refers to usart.o(i.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i.__0vfprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vfprintf$1) refers to usart.o(i.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vprintf$1) refers to usart.o(i.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf2.o(i.__0fprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0fprintf$2) refers to usart.o(i.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0printf$2) refers to usart.o(i.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf2.o(i.__0vfprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vfprintf$2) refers to usart.o(i.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vprintf$2) refers to usart.o(i.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf3.o(i.__0fprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0fprintf$3) refers to usart.o(i.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0printf$3) refers to usart.o(i.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i.__0vfprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vfprintf$3) refers to usart.o(i.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vprintf$3) refers to usart.o(i.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf4.o(i.__0fprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0fprintf$4) refers to usart.o(i.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0printf$4) refers to usart.o(i.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i.__0vfprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vfprintf$4) refers to usart.o(i.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vprintf$4) refers to usart.o(i.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf5.o(i.__0fprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0fprintf$5) refers to usart.o(i.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0printf$5) refers to usart.o(i.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i.__0vfprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vfprintf$5) refers to usart.o(i.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vprintf$5) refers to usart.o(i.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf6.o(i.__0fprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0fprintf$6) refers to usart.o(i.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0printf$6) refers to usart.o(i.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i.__0vfprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vfprintf$6) refers to usart.o(i.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vprintf$6) refers to usart.o(i.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_pre_padding) for _printf_pre_padding
+    printf6.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_post_padding) for _printf_post_padding
+    printf7.o(i.__0fprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0fprintf$7) refers to usart.o(i.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0printf$7) refers to usart.o(i.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i.__0vfprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vfprintf$7) refers to usart.o(i.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vprintf$7) refers to usart.o(i.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_pre_padding) for _printf_pre_padding
+    printf7.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_post_padding) for _printf_post_padding
+    printf8.o(i.__0fprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0fprintf$8) refers to usart.o(i.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0printf$8) refers to usart.o(i.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i.__0vfprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vfprintf$8) refers to usart.o(i.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vprintf$8) refers to usart.o(i.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_pre_padding) for _printf_pre_padding
+    printf8.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0fprintf) refers to usart.o(i.fputc) for fputc
+    printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0printf) refers to usart.o(i.fputc) for fputc
+    printfa.o(i.__0printf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0snprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0sprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0sprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vfprintf) refers to usart.o(i.fputc) for fputc
+    printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vprintf) refers to usart.o(i.fputc) for fputc
+    printfa.o(i.__0vprintf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0vsprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i._fp_digits) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._fp_digits) refers to dmul.o(.text) for __aeabi_dmul
+    printfa.o(i._fp_digits) refers to ddiv.o(.text) for __aeabi_ddiv
+    printfa.o(i._fp_digits) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    printfa.o(i._fp_digits) refers to dadd.o(.text) for __aeabi_dadd
+    printfa.o(i._fp_digits) refers to dfixul.o(.text) for __aeabi_d2ulz
+    printfa.o(i._fp_digits) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_pre_padding) for _printf_pre_padding
+    printfa.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i._printf_core) refers to printfa.o(i._fp_digits) for _fp_digits
+    printfa.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printfa.o(i._printf_post_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    malloc.o(i.free) refers to mvars.o(.data) for __microlib_freelist
+    malloc.o(i.malloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    malloc.o(i.malloc) refers to mvars.o(.data) for __microlib_freelist
+    malloc.o(i.malloc) refers to startup_mm32f327x_keil.o(HEAP) for __heap_base
+    mallocr.o(i.__free$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.__malloc$realloc) refers to mallocr.o(i.internal_alloc) for internal_alloc
+    mallocr.o(i.__malloc$realloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    mallocr.o(i.__malloc$realloc) refers to startup_mm32f327x_keil.o(HEAP) for __heap_base
+    mallocr.o(i.__malloc$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.internal_alloc) refers to memcpya.o(.text) for __aeabi_memcpy
+    mallocr.o(i.internal_alloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.realloc) refers to mallocr.o(i.__free$realloc) for __free$realloc
+    mallocr.o(i.realloc) refers to mallocr.o(i.internal_alloc) for internal_alloc
+    mallocr.o(i.realloc) refers to mallocr.o(i.__malloc$realloc) for __malloc$realloc
+    mallocr.o(i.realloc) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__aligned_malloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    malloca.o(i.__aligned_malloc) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__aligned_malloc) refers to startup_mm32f327x_keil.o(HEAP) for __heap_base
+    malloca.o(i.__free$memalign) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__malloc$memalign) refers to malloca.o(i.__aligned_malloc) for __aligned_malloc
+    mallocra.o(i.__aligned_malloc$realloc) refers to mallocra.o(i.internal_alloc) for internal_alloc
+    mallocra.o(i.__aligned_malloc$realloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    mallocra.o(i.__aligned_malloc$realloc) refers to startup_mm32f327x_keil.o(HEAP) for __heap_base
+    mallocra.o(i.__aligned_malloc$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.__free$realloc$memalign) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.__malloc$realloc$memalign) refers to mallocra.o(i.__aligned_malloc$realloc) for __aligned_malloc$realloc
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.__free$realloc$memalign) for __free$realloc$memalign
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.internal_alloc) for internal_alloc
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.__malloc$realloc$memalign) for __malloc$realloc$memalign
+    mallocra.o(i.__realloc$memalign) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.internal_alloc) refers to memcpya.o(.text) for __aeabi_memcpy
+    mallocra.o(i.internal_alloc) refers to mvars.o(.data) for __microlib_freelist
+    strtol.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    strtol.o(.text) refers to _strtoul.o(.text) for _strtoul
+    strtol.o(.text) refers to errno.o(i.__aeabi_errno_addr) for __aeabi_errno_addr
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dflti.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dflti.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfixi.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixi.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixui.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    cdcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cdrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos_i.o(i.__kernel_cos) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos_i.o(i.__kernel_cos) refers to dfixi.o(.text) for __aeabi_d2iz
+    cos_i.o(i.__kernel_cos) refers to dmul.o(.text) for __aeabi_dmul
+    cos_i.o(i.__kernel_cos) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    cos_i.o(i.__kernel_cos) refers to dadd.o(.text) for __aeabi_dsub
+    cos_i.o(i.__kernel_cos) refers to dscalb.o(.text) for __ARM_scalbn
+    cos_i.o(i.__kernel_cos) refers to cos_i.o(.constdata) for .constdata
+    cos_i.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dunder.o(i.__mathlib_dbl_divzero) refers to ddiv.o(.text) for __aeabi_ddiv
+    dunder.o(i.__mathlib_dbl_infnan) refers to dscalb.o(.text) for __ARM_scalbn
+    dunder.o(i.__mathlib_dbl_infnan2) refers to dadd.o(.text) for __aeabi_dadd
+    dunder.o(i.__mathlib_dbl_invalid) refers to ddiv.o(.text) for __aeabi_ddiv
+    dunder.o(i.__mathlib_dbl_overflow) refers to dscalb.o(.text) for __ARM_scalbn
+    dunder.o(i.__mathlib_dbl_posinfnan) refers to dmul.o(.text) for __aeabi_dmul
+    dunder.o(i.__mathlib_dbl_underflow) refers to dscalb.o(.text) for __ARM_scalbn
+    fpclassify.o(i.__ARM_fpclassify) refers (Special) to iusefp.o(.text) for __I$use$fp
+    poly.o(i.__kernel_poly) refers (Special) to iusefp.o(.text) for __I$use$fp
+    poly.o(i.__kernel_poly) refers to dmul.o(.text) for __aeabi_dmul
+    poly.o(i.__kernel_poly) refers to dadd.o(.text) for __aeabi_dadd
+    qnan.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    rred.o(i.__ieee754_rem_pio2) refers (Special) to iusefp.o(.text) for __I$use$fp
+    rred.o(i.__ieee754_rem_pio2) refers to dadd.o(.text) for __aeabi_dsub
+    rred.o(i.__ieee754_rem_pio2) refers to dmul.o(.text) for __aeabi_dmul
+    rred.o(i.__ieee754_rem_pio2) refers to dfixi.o(.text) for __aeabi_d2iz
+    rred.o(i.__ieee754_rem_pio2) refers to dflti.o(.text) for __aeabi_i2d
+    rred.o(i.__ieee754_rem_pio2) refers to dfltui.o(.text) for __aeabi_ui2d
+    rred.o(i.__ieee754_rem_pio2) refers to dscalb.o(.text) for __ARM_scalbn
+    rred.o(i.__ieee754_rem_pio2) refers to rred.o(.constdata) for .constdata
+    rred.o(i.__use_accurate_range_reduction) refers (Special) to iusefp.o(.text) for __I$use$fp
+    rred.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin_i.o(i.__kernel_sin) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin_i.o(i.__kernel_sin) refers to fpclassify.o(i.__ARM_fpclassify) for __ARM_fpclassify
+    sin_i.o(i.__kernel_sin) refers to dunder.o(i.__mathlib_dbl_underflow) for __mathlib_dbl_underflow
+    sin_i.o(i.__kernel_sin) refers to dmul.o(.text) for __aeabi_dmul
+    sin_i.o(i.__kernel_sin) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    sin_i.o(i.__kernel_sin) refers to dscalb.o(.text) for __ARM_scalbn
+    sin_i.o(i.__kernel_sin) refers to dadd.o(.text) for __aeabi_dsub
+    sin_i.o(i.__kernel_sin) refers to sin_i.o(.constdata) for .constdata
+    sin_i.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin_i_x.o(i.____kernel_sin$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin_i_x.o(i.____kernel_sin$lsc) refers to dmul.o(.text) for __aeabi_dmul
+    sin_i_x.o(i.____kernel_sin$lsc) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    sin_i_x.o(i.____kernel_sin$lsc) refers to dscalb.o(.text) for __ARM_scalbn
+    sin_i_x.o(i.____kernel_sin$lsc) refers to dadd.o(.text) for __aeabi_dsub
+    sin_i_x.o(i.____kernel_sin$lsc) refers to sin_i_x.o(.constdata) for .constdata
+    sin_i_x.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    tan_i.o(i.__kernel_tan) refers (Special) to iusefp.o(.text) for __I$use$fp
+    tan_i.o(i.__kernel_tan) refers to dfixi.o(.text) for __aeabi_d2iz
+    tan_i.o(i.__kernel_tan) refers to dadd.o(.text) for __aeabi_drsub
+    tan_i.o(i.__kernel_tan) refers to dmul.o(.text) for __aeabi_dmul
+    tan_i.o(i.__kernel_tan) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    tan_i.o(i.__kernel_tan) refers to dflti.o(.text) for __aeabi_i2d
+    tan_i.o(i.__kernel_tan) refers to ddiv.o(.text) for __aeabi_ddiv
+    tan_i.o(i.__kernel_tan) refers to dscalb.o(.text) for __ARM_scalbn
+    tan_i.o(i.__kernel_tan) refers to fpclassify.o(i.__ARM_fpclassify) for __ARM_fpclassify
+    tan_i.o(i.__kernel_tan) refers to dunder.o(i.__mathlib_dbl_underflow) for __mathlib_dbl_underflow
+    tan_i.o(i.__kernel_tan) refers to tan_i.o(.constdata) for .constdata
+    tan_i.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    tan_i_x.o(i.____kernel_tan$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    tan_i_x.o(i.____kernel_tan$lsc) refers to dfixi.o(.text) for __aeabi_d2iz
+    tan_i_x.o(i.____kernel_tan$lsc) refers to dadd.o(.text) for __aeabi_drsub
+    tan_i_x.o(i.____kernel_tan$lsc) refers to dmul.o(.text) for __aeabi_dmul
+    tan_i_x.o(i.____kernel_tan$lsc) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    tan_i_x.o(i.____kernel_tan$lsc) refers to dflti.o(.text) for __aeabi_i2d
+    tan_i_x.o(i.____kernel_tan$lsc) refers to ddiv.o(.text) for __aeabi_ddiv
+    tan_i_x.o(i.____kernel_tan$lsc) refers to dscalb.o(.text) for __ARM_scalbn
+    tan_i_x.o(i.____kernel_tan$lsc) refers to tan_i_x.o(.constdata) for .constdata
+    tan_i_x.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_mm32f327x_keil.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_mm32f327x_keil.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    errno.o(i.__aeabi_errno_addr) refers to errno.o(.data) for .data
+    errno.o(i.__read_errno) refers to errno.o(.data) for .data
+    errno.o(i.__set_errno) refers to errno.o(.data) for .data
+    _strtoul.o(.text) refers to _chval.o(.text) for _chval
+    _strtoul.o(.text) refers to errno.o(i.__aeabi_errno_addr) for __aeabi_errno_addr
+    strtod.o(.text) refers to scanf_fp.o(.text) for _scanf_real
+    strtod.o(.text) refers to _sgetc.o(.text) for _sgetc
+    strtod.o(.text) refers to isspace_o.o(.text) for isspace
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dsqrt.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dsqrt.o(.text) refers to depilogue.o(.text) for _double_round
+    dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+    isspace_c.o(.text) refers to ctype_c.o(.text) for __ctype_lookup
+    scanf_fp.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    scanf_fp.o(.text) refers to dfltul.o(.text) for __aeabi_ul2d
+    scanf_fp.o(.text) refers to dmul.o(.text) for __aeabi_dmul
+    scanf_fp.o(.text) refers to ddiv.o(.text) for __aeabi_ddiv
+    scanf_fp.o(.text) refers to scanf_fp.o(i._is_digit) for _is_digit
+    scanf_fp.o(.text) refers to d2f.o(.text) for __aeabi_d2f
+    dfltui.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ctype_c.o(.text) refers to ctype_c.o(.constdata) for .constdata
+    dfltul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    d2f.o(.text) refers to fepilogue.o(.text) for _float_round
+    scanf_fp.o(i._is_digit) refers (Special) to iusefp.o(.text) for __I$use$fp
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup_mm32f327x_keil.o(HEAP), (512 bytes).
+    Removing usart.o(.rev16_text), (4 bytes).
+    Removing usart.o(.revsh_text), (4 bytes).
+    Removing usart.o(.rrx_text), (6 bytes).
+    Removing iic.o(.rev16_text), (4 bytes).
+    Removing iic.o(.revsh_text), (4 bytes).
+    Removing iic.o(.rrx_text), (6 bytes).
+    Removing iic.o(i.I2C2_Ack), (76 bytes).
+    Removing iic.o(i.I2C2_CheckDevice), (48 bytes).
+    Removing iic.o(i.I2C2_NAck), (68 bytes).
+    Removing iic.o(i.I2C2_Read_Byte), (76 bytes).
+    Removing iic.o(i.I2C2_Read_NByte), (138 bytes).
+    Removing iic.o(i.I2C2_Read_REG), (112 bytes).
+    Removing iic.o(i.I2C2_Send_Byte), (88 bytes).
+    Removing iic.o(i.I2C2_Start), (84 bytes).
+    Removing iic.o(i.I2C2_Stop), (96 bytes).
+    Removing iic.o(i.I2C2_Wait_Ack), (100 bytes).
+    Removing iic.o(i.I2C2_Write_NByte), (110 bytes).
+    Removing iic.o(i.I2C_Write_REG), (92 bytes).
+    Removing iic.o(i.IIC_GPIO_Init), (48 bytes).
+    Removing mpu6050.o(.rev16_text), (4 bytes).
+    Removing mpu6050.o(.revsh_text), (4 bytes).
+    Removing mpu6050.o(.rrx_text), (6 bytes).
+    Removing mpu6050.o(i.MPU6050_DATA_PRINT), (196 bytes).
+    Removing mpu6050.o(i.MPU6050_Init), (90 bytes).
+    Removing mpu6050.o(i.MPU6050_Read), (54 bytes).
+    Removing hmc5983.o(.rev16_text), (4 bytes).
+    Removing hmc5983.o(.revsh_text), (4 bytes).
+    Removing hmc5983.o(.rrx_text), (6 bytes).
+    Removing hmc5983.o(i.Find_Max_Min), (160 bytes).
+    Removing hmc5983.o(i.HMC5983_Init), (60 bytes).
+    Removing hmc5983.o(i.HMC5983_Read), (212 bytes).
+    Removing hmc5983.o(i.HMC5983_Read_reg), (44 bytes).
+    Removing hmc5983.o(i.Middle_find), (120 bytes).
+    Removing hmc5983.o(i.Set_Offeset), (100 bytes).
+    Removing hmc5983.o(i.rectangle), (88 bytes).
+    Removing hmc5983.o(.bss), (24 bytes).
+    Removing hmc5983.o(.data), (96 bytes).
+    Removing systick.o(.rev16_text), (4 bytes).
+    Removing systick.o(.revsh_text), (4 bytes).
+    Removing systick.o(.rrx_text), (6 bytes).
+    Removing systick.o(i.DELAY_Init), (12 bytes).
+    Removing systick.o(i.DELAY_Ms), (44 bytes).
+    Removing systick.o(i.DELAY_Us), (36 bytes).
+    Removing systick.o(.data), (4 bytes).
+    Removing gps.o(.rev16_text), (4 bytes).
+    Removing gps.o(.revsh_text), (4 bytes).
+    Removing gps.o(.rrx_text), (6 bytes).
+    Removing pwm.o(.rev16_text), (4 bytes).
+    Removing pwm.o(.revsh_text), (4 bytes).
+    Removing pwm.o(.rrx_text), (6 bytes).
+    Removing context.o(i.nmea_error), (70 bytes).
+    Removing context.o(i.nmea_property), (8 bytes).
+    Removing context.o(i.nmea_trace), (70 bytes).
+    Removing context.o(i.nmea_trace_buff), (24 bytes).
+    Removing context.o(.data), (12 bytes).
+    Removing generate.o(i.nmea_gen_GPGGA), (128 bytes).
+    Removing generate.o(i.nmea_gen_GPGSA), (108 bytes).
+    Removing generate.o(i.nmea_gen_GPGSV), (104 bytes).
+    Removing generate.o(i.nmea_gen_GPRMC), (128 bytes).
+    Removing generate.o(i.nmea_gen_GPVTG), (116 bytes).
+    Removing generate.o(i.nmea_generate), (242 bytes).
+    Removing generate.o(i.nmea_gsv_npack), (56 bytes).
+    Removing generate.o(i.nmea_info2GPGGA), (128 bytes).
+    Removing generate.o(i.nmea_info2GPGSA), (92 bytes).
+    Removing generate.o(i.nmea_info2GPGSV), (122 bytes).
+    Removing generate.o(i.nmea_info2GPRMC), (184 bytes).
+    Removing generate.o(i.nmea_info2GPVTG), (68 bytes).
+    Removing generate.o(.conststring), (380 bytes).
+    Removing generator.o(i.__nmea_create_generator), (296 bytes).
+    Removing generator.o(i.nmea_create_generator), (30 bytes).
+    Removing generator.o(i.nmea_destroy_generator), (12 bytes).
+    Removing generator.o(i.nmea_gen_add), (24 bytes).
+    Removing generator.o(i.nmea_gen_destroy), (36 bytes).
+    Removing generator.o(i.nmea_gen_init), (88 bytes).
+    Removing generator.o(i.nmea_gen_loop), (42 bytes).
+    Removing generator.o(i.nmea_gen_reset), (26 bytes).
+    Removing generator.o(i.nmea_generate_from), (50 bytes).
+    Removing generator.o(i.nmea_igen_noise_init), (6 bytes).
+    Removing generator.o(i.nmea_igen_noise_loop), (464 bytes).
+    Removing generator.o(i.nmea_igen_noise_reset), (6 bytes).
+    Removing generator.o(i.nmea_igen_pos_rmove_destroy), (6 bytes).
+    Removing generator.o(i.nmea_igen_pos_rmove_init), (32 bytes).
+    Removing generator.o(i.nmea_igen_pos_rmove_loop), (276 bytes).
+    Removing generator.o(i.nmea_igen_rotate_init), (24 bytes).
+    Removing generator.o(i.nmea_igen_rotate_loop), (164 bytes).
+    Removing generator.o(i.nmea_igen_rotate_reset), (156 bytes).
+    Removing generator.o(i.nmea_igen_static_init), (24 bytes).
+    Removing generator.o(i.nmea_igen_static_loop), (16 bytes).
+    Removing generator.o(i.nmea_igen_static_reset), (130 bytes).
+    Removing generator.o(i.nmea_random), (88 bytes).
+    Removing generator.o(.data), (8 bytes).
+    Removing gmath.o(i.__ARM_isnan), (36 bytes).
+    Removing gmath.o(i.nmea_calc_pdop), (66 bytes).
+    Removing gmath.o(i.nmea_degree2ndeg), (80 bytes).
+    Removing gmath.o(i.nmea_degree2radian), (28 bytes).
+    Removing gmath.o(i.nmea_distance), (172 bytes).
+    Removing gmath.o(i.nmea_distance_ellipsoid), (2108 bytes).
+    Removing gmath.o(i.nmea_dop2meters), (24 bytes).
+    Removing gmath.o(i.nmea_info2pos), (36 bytes).
+    Removing gmath.o(i.nmea_meters2dop), (24 bytes).
+    Removing gmath.o(i.nmea_move_horz), (392 bytes).
+    Removing gmath.o(i.nmea_move_horz_ellipsoid), (2100 bytes).
+    Removing gmath.o(i.nmea_ndeg2degree), (100 bytes).
+    Removing gmath.o(i.nmea_ndeg2radian), (26 bytes).
+    Removing gmath.o(i.nmea_pos2info), (36 bytes).
+    Removing gmath.o(i.nmea_radian2degree), (28 bytes).
+    Removing gmath.o(i.nmea_radian2ndeg), (26 bytes).
+    Removing info.o(i.nmea_zero_INFO), (30 bytes).
+    Removing parse.o(i._nmea_parse_time), (196 bytes).
+    Removing parse.o(i.nmea_GPGGA2info), (168 bytes).
+    Removing parse.o(i.nmea_GPGSA2info), (196 bytes).
+    Removing parse.o(i.nmea_GPGSV2info), (276 bytes).
+    Removing parse.o(i.nmea_GPRMC2info), (220 bytes).
+    Removing parse.o(i.nmea_GPVTG2info), (104 bytes).
+    Removing parse.o(i.nmea_find_tail), (192 bytes).
+    Removing parse.o(i.nmea_pack_type), (164 bytes).
+    Removing parse.o(i.nmea_parse_GPGGA), (304 bytes).
+    Removing parse.o(i.nmea_parse_GPGSA), (268 bytes).
+    Removing parse.o(i.nmea_parse_GPGSV), (260 bytes).
+    Removing parse.o(i.nmea_parse_GPRMC), (332 bytes).
+    Removing parse.o(i.nmea_parse_GPVTG), (284 bytes).
+    Removing parse.o(.conststring), (105 bytes).
+    Removing parse.o(.data), (20 bytes).
+    Removing parser.o(i.nmea_parse), (208 bytes).
+    Removing parser.o(i.nmea_parser_buff_clear), (88 bytes).
+    Removing parser.o(i.nmea_parser_destroy), (100 bytes).
+    Removing parser.o(i.nmea_parser_drop), (120 bytes).
+    Removing parser.o(i.nmea_parser_init), (128 bytes).
+    Removing parser.o(i.nmea_parser_peek), (104 bytes).
+    Removing parser.o(i.nmea_parser_pop), (120 bytes).
+    Removing parser.o(i.nmea_parser_push), (50 bytes).
+    Removing parser.o(i.nmea_parser_queue_clear), (76 bytes).
+    Removing parser.o(i.nmea_parser_real_push), (536 bytes).
+    Removing parser.o(i.nmea_parser_top), (92 bytes).
+    Removing sentence.o(i.nmea_zero_GPGGA), (42 bytes).
+    Removing sentence.o(i.nmea_zero_GPGSA), (22 bytes).
+    Removing sentence.o(i.nmea_zero_GPGSV), (14 bytes).
+    Removing sentence.o(i.nmea_zero_GPRMC), (40 bytes).
+    Removing sentence.o(i.nmea_zero_GPVTG), (34 bytes).
+    Removing time.o(i.nmea_time_now), (48 bytes).
+    Removing tok.o(i.nmea_atof), (54 bytes).
+    Removing tok.o(i.nmea_atoi), (50 bytes).
+    Removing tok.o(i.nmea_calc_crc), (24 bytes).
+    Removing tok.o(i.nmea_printf), (112 bytes).
+    Removing tok.o(i.nmea_scanf), (538 bytes).
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.rrx_text), (6 bytes).
+    Removing main.o(.data), (4 bytes).
+    Removing system_mm32f327x.o(.rev16_text), (4 bytes).
+    Removing system_mm32f327x.o(.revsh_text), (4 bytes).
+    Removing system_mm32f327x.o(.rrx_text), (6 bytes).
+    Removing hal_adc.o(.rev16_text), (4 bytes).
+    Removing hal_adc.o(.revsh_text), (4 bytes).
+    Removing hal_adc.o(.rrx_text), (6 bytes).
+    Removing hal_adc.o(i.ADC_ANY_CH_Config), (70 bytes).
+    Removing hal_adc.o(i.ADC_ANY_Cmd), (22 bytes).
+    Removing hal_adc.o(i.ADC_ANY_NUM_Config), (10 bytes).
+    Removing hal_adc.o(i.ADC_AnalogWatchdogCmd), (22 bytes).
+    Removing hal_adc.o(i.ADC_AnalogWatchdogSingleChannelConfig), (18 bytes).
+    Removing hal_adc.o(i.ADC_AnalogWatchdogThresholdsConfig), (12 bytes).
+    Removing hal_adc.o(i.ADC_AutoInjectedConvCmd), (22 bytes).
+    Removing hal_adc.o(i.ADC_ClearFlag), (24 bytes).
+    Removing hal_adc.o(i.ADC_ClearITPendingBit), (24 bytes).
+    Removing hal_adc.o(i.ADC_Cmd), (22 bytes).
+    Removing hal_adc.o(i.ADC_DMACmd), (22 bytes).
+    Removing hal_adc.o(i.ADC_DeInit), (64 bytes).
+    Removing hal_adc.o(i.ADC_ExternalTrigConvCmd), (22 bytes).
+    Removing hal_adc.o(i.ADC_ExternalTrigConvConfig), (20 bytes).
+    Removing hal_adc.o(i.ADC_ExternalTrigInjectedConvCmd), (22 bytes).
+    Removing hal_adc.o(i.ADC_ExternalTrigInjectedConvertConfig), (16 bytes).
+    Removing hal_adc.o(i.ADC_GetChannelConvertedValue), (14 bytes).
+    Removing hal_adc.o(i.ADC_GetConversionValue), (8 bytes).
+    Removing hal_adc.o(i.ADC_GetDualModeConversionValue), (12 bytes).
+    Removing hal_adc.o(i.ADC_GetFlagStatus), (22 bytes).
+    Removing hal_adc.o(i.ADC_GetITStatus), (22 bytes).
+    Removing hal_adc.o(i.ADC_GetInjectedConversionValue), (20 bytes).
+    Removing hal_adc.o(i.ADC_GetInjectedCurrentConvertedValue), (10 bytes).
+    Removing hal_adc.o(i.ADC_GetSoftwareStartConvStatus), (10 bytes).
+    Removing hal_adc.o(i.ADC_ITConfig), (48 bytes).
+    Removing hal_adc.o(i.ADC_Init), (52 bytes).
+    Removing hal_adc.o(i.ADC_InjectedConvCmd), (22 bytes).
+    Removing hal_adc.o(i.ADC_InjectedSequencerChannelConfig), (40 bytes).
+    Removing hal_adc.o(i.ADC_InjectedSequencerConfig), (30 bytes).
+    Removing hal_adc.o(i.ADC_InjectedSequencerLengthConfig), (22 bytes).
+    Removing hal_adc.o(i.ADC_RegularChannelConfig), (116 bytes).
+    Removing hal_adc.o(i.ADC_SetInjectedOffset), (8 bytes).
+    Removing hal_adc.o(i.ADC_SoftwareStartConvCmd), (22 bytes).
+    Removing hal_adc.o(i.ADC_SoftwareStartInjectedConvCmd), (22 bytes).
+    Removing hal_adc.o(i.ADC_StructInit), (16 bytes).
+    Removing hal_adc.o(i.ADC_TempSensorCmd), (12 bytes).
+    Removing hal_adc.o(i.ADC_TempSensorVrefintCmd), (36 bytes).
+    Removing hal_adc.o(i.ADC_VrefintCmd), (12 bytes).
+    Removing hal_adc.o(i.exADC_TempSensorVrefintCmd), (76 bytes).
+    Removing hal_bkp.o(.rev16_text), (4 bytes).
+    Removing hal_bkp.o(.revsh_text), (4 bytes).
+    Removing hal_bkp.o(.rrx_text), (6 bytes).
+    Removing hal_bkp.o(i.BKP_ClearFlag), (20 bytes).
+    Removing hal_bkp.o(i.BKP_ClearITPendingBit), (20 bytes).
+    Removing hal_bkp.o(i.BKP_DeInit), (16 bytes).
+    Removing hal_bkp.o(i.BKP_GetFlagStatus), (16 bytes).
+    Removing hal_bkp.o(i.BKP_GetITStatus), (16 bytes).
+    Removing hal_bkp.o(i.BKP_ITConfig), (36 bytes).
+    Removing hal_bkp.o(i.BKP_RTCOutputConfig), (20 bytes).
+    Removing hal_bkp.o(i.BKP_ReadBackupRegister), (16 bytes).
+    Removing hal_bkp.o(i.BKP_SetRTCCalibrationValue), (20 bytes).
+    Removing hal_bkp.o(i.BKP_TamperPinCmd), (36 bytes).
+    Removing hal_bkp.o(i.BKP_TamperPinLevelConfig), (12 bytes).
+    Removing hal_bkp.o(i.BKP_WriteBackupRegister), (16 bytes).
+    Removing hal_bkp.o(i.exBKP_ImmRead), (44 bytes).
+    Removing hal_bkp.o(i.exBKP_ImmWrite), (40 bytes).
+    Removing hal_bkp.o(i.exBKP_Init), (36 bytes).
+    Removing hal_can.o(.rev16_text), (4 bytes).
+    Removing hal_can.o(.revsh_text), (4 bytes).
+    Removing hal_can.o(.rrx_text), (6 bytes).
+    Removing hal_can.o(i.CAN_AutoCfg_BaudParam), (122 bytes).
+    Removing hal_can.o(i.CAN_CancelTransmit), (6 bytes).
+    Removing hal_can.o(i.CAN_ClearDataOverflow), (10 bytes).
+    Removing hal_can.o(i.CAN_ClearITPendingBit), (8 bytes).
+    Removing hal_can.o(i.CAN_DeInit), (14 bytes).
+    Removing hal_can.o(i.CAN_FIFORelease), (10 bytes).
+    Removing hal_can.o(i.CAN_FilterInit), (20 bytes).
+    Removing hal_can.o(i.CAN_GetFlagStatus), (18 bytes).
+    Removing hal_can.o(i.CAN_GetITStatus), (22 bytes).
+    Removing hal_can.o(i.CAN_ITConfig), (18 bytes).
+    Removing hal_can.o(i.CAN_Init), (110 bytes).
+    Removing hal_can.o(i.CAN_Mode_Cmd), (8 bytes).
+    Removing hal_can.o(i.CAN_Peli_FilterInit), (88 bytes).
+    Removing hal_can.o(i.CAN_Peli_FilterStructInit), (20 bytes).
+    Removing hal_can.o(i.CAN_Peli_GetITStatus), (24 bytes).
+    Removing hal_can.o(i.CAN_Peli_GetLSBTransmitErrorCounter), (12 bytes).
+    Removing hal_can.o(i.CAN_Peli_GetLastErrorCode), (12 bytes).
+    Removing hal_can.o(i.CAN_Peli_GetReceiveErrorCounter), (12 bytes).
+    Removing hal_can.o(i.CAN_Peli_GetRxFIFOInfo), (12 bytes).
+    Removing hal_can.o(i.CAN_Peli_ITConfig), (32 bytes).
+    Removing hal_can.o(i.CAN_Peli_Init), (168 bytes).
+    Removing hal_can.o(i.CAN_Peli_Receive), (248 bytes).
+    Removing hal_can.o(i.CAN_Peli_SleepMode_Cmd), (36 bytes).
+    Removing hal_can.o(i.CAN_Peli_StructInit), (26 bytes).
+    Removing hal_can.o(i.CAN_Peli_Transmit), (212 bytes).
+    Removing hal_can.o(i.CAN_Peli_TransmitRepeat), (212 bytes).
+    Removing hal_can.o(i.CAN_Receive), (116 bytes).
+    Removing hal_can.o(i.CAN_ResetMode_Cmd), (24 bytes).
+    Removing hal_can.o(i.CAN_Sleep), (18 bytes).
+    Removing hal_can.o(i.CAN_StructInit), (24 bytes).
+    Removing hal_can.o(i.CAN_Transmit), (72 bytes).
+    Removing hal_can.o(i.CAN_WakeUp), (22 bytes).
+    Removing hal_comp.o(.rev16_text), (4 bytes).
+    Removing hal_comp.o(.revsh_text), (4 bytes).
+    Removing hal_comp.o(.rrx_text), (6 bytes).
+    Removing hal_comp.o(i.COMP_Cmd), (36 bytes).
+    Removing hal_comp.o(i.COMP_DeInit), (12 bytes).
+    Removing hal_comp.o(i.COMP_GetOutputLevel), (28 bytes).
+    Removing hal_comp.o(i.COMP_Init), (40 bytes).
+    Removing hal_comp.o(i.COMP_LockConfig), (20 bytes).
+    Removing hal_comp.o(i.COMP_SetCrv), (32 bytes).
+    Removing hal_comp.o(i.COMP_StructInit), (28 bytes).
+    Removing hal_comp.o(i.COMP_SwitchCmd), (36 bytes).
+    Removing hal_comp.o(i.exCOMP_CrvCmd), (36 bytes).
+    Removing hal_comp.o(i.exCOMP_CrvSrc), (16 bytes).
+    Removing hal_comp.o(i.exCOMP_SwitchCrv), (16 bytes).
+    Removing hal_crc.o(.rev16_text), (4 bytes).
+    Removing hal_crc.o(.revsh_text), (4 bytes).
+    Removing hal_crc.o(.rrx_text), (6 bytes).
+    Removing hal_crc.o(i.CRC_CalcBlockCRC), (36 bytes).
+    Removing hal_crc.o(i.CRC_CalcCRC), (16 bytes).
+    Removing hal_crc.o(i.CRC_GetCRC), (12 bytes).
+    Removing hal_crc.o(i.CRC_GetIDRegister), (12 bytes).
+    Removing hal_crc.o(i.CRC_ResetDR), (12 bytes).
+    Removing hal_crc.o(i.CRC_SetIDRegister), (12 bytes).
+    Removing hal_crs.o(.rev16_text), (4 bytes).
+    Removing hal_crs.o(.revsh_text), (4 bytes).
+    Removing hal_crs.o(.rrx_text), (6 bytes).
+    Removing hal_dac.o(.rev16_text), (4 bytes).
+    Removing hal_dac.o(.revsh_text), (4 bytes).
+    Removing hal_dac.o(.rrx_text), (6 bytes).
+    Removing hal_dac.o(i.DAC_Cmd), (40 bytes).
+    Removing hal_dac.o(i.DAC_DMACmd), (44 bytes).
+    Removing hal_dac.o(i.DAC_DeInit), (12 bytes).
+    Removing hal_dac.o(i.DAC_DualSoftwareTriggerCmd), (36 bytes).
+    Removing hal_dac.o(i.DAC_GetDataOutputValue), (20 bytes).
+    Removing hal_dac.o(i.DAC_Init), (48 bytes).
+    Removing hal_dac.o(i.DAC_SetChannel1Data), (16 bytes).
+    Removing hal_dac.o(i.DAC_SetChannel2Data), (16 bytes).
+    Removing hal_dac.o(i.DAC_SetDualChannelData), (32 bytes).
+    Removing hal_dac.o(i.DAC_SoftwareTriggerCmd), (44 bytes).
+    Removing hal_dac.o(i.DAC_StructInit), (12 bytes).
+    Removing hal_dac.o(i.DAC_WaveGenerationCmd), (40 bytes).
+    Removing hal_dbg.o(.rev16_text), (4 bytes).
+    Removing hal_dbg.o(.revsh_text), (4 bytes).
+    Removing hal_dbg.o(.rrx_text), (6 bytes).
+    Removing hal_dbg.o(i.DBGMCU_Configure), (40 bytes).
+    Removing hal_dma.o(.rev16_text), (4 bytes).
+    Removing hal_dma.o(.revsh_text), (4 bytes).
+    Removing hal_dma.o(.rrx_text), (6 bytes).
+    Removing hal_dma.o(i.DMA_ClearFlag), (28 bytes).
+    Removing hal_dma.o(i.DMA_ClearITPendingBit), (28 bytes).
+    Removing hal_dma.o(i.DMA_Cmd), (12 bytes).
+    Removing hal_dma.o(i.DMA_DeInit), (92 bytes).
+    Removing hal_dma.o(i.DMA_GetCurrDataCounter), (8 bytes).
+    Removing hal_dma.o(i.DMA_GetFlagStatus), (48 bytes).
+    Removing hal_dma.o(i.DMA_GetITStatus), (48 bytes).
+    Removing hal_dma.o(i.DMA_ITConfig), (18 bytes).
+    Removing hal_dma.o(i.DMA_Init), (70 bytes).
+    Removing hal_dma.o(i.DMA_SetCurrDataCounter), (4 bytes).
+    Removing hal_dma.o(i.DMA_StructInit), (28 bytes).
+    Removing hal_dma.o(i.exDMA_ClearITPendingBit), (76 bytes).
+    Removing hal_dma.o(i.exDMA_SetMemoryAddress), (4 bytes).
+    Removing hal_dma.o(i.exDMA_SetPeripheralAddress), (4 bytes).
+    Removing hal_dma.o(i.exDMA_SetTransmitLen), (4 bytes).
+    Removing hal_eth.o(.rev16_text), (4 bytes).
+    Removing hal_eth.o(.revsh_text), (4 bytes).
+    Removing hal_eth.o(.rrx_text), (6 bytes).
+    Removing hal_eth.o(i.ETH_BackPressureActivationCmd), (36 bytes).
+    Removing hal_eth.o(i.ETH_CheckFrameReceived), (208 bytes).
+    Removing hal_eth.o(i.ETH_DMAClearFlag), (12 bytes).
+    Removing hal_eth.o(i.ETH_DMAClearITPendingBit), (12 bytes).
+    Removing hal_eth.o(i.ETH_DMAITConfig), (32 bytes).
+    Removing hal_eth.o(i.ETH_DMAReceptionCmd), (36 bytes).
+    Removing hal_eth.o(i.ETH_DMARxDescChainInit), (100 bytes).
+    Removing hal_eth.o(i.ETH_DMARxDescReceiveITConfig), (22 bytes).
+    Removing hal_eth.o(i.ETH_DMATransmissionCmd), (36 bytes).
+    Removing hal_eth.o(i.ETH_DMATxDescBufferSizeConfig), (14 bytes).
+    Removing hal_eth.o(i.ETH_DMATxDescCRCCmd), (22 bytes).
+    Removing hal_eth.o(i.ETH_DMATxDescChainInit), (80 bytes).
+    Removing hal_eth.o(i.ETH_DMATxDescChecksumInsertionConfig), (8 bytes).
+    Removing hal_eth.o(i.ETH_DMATxDescFrameSegmentConfig), (8 bytes).
+    Removing hal_eth.o(i.ETH_DMATxDescSecondAddressChainedCmd), (22 bytes).
+    Removing hal_eth.o(i.ETH_DMATxDescShortFramePaddingCmd), (22 bytes).
+    Removing hal_eth.o(i.ETH_DMATxDescTransmitITConfig), (22 bytes).
+    Removing hal_eth.o(i.ETH_DeInit), (22 bytes).
+    Removing hal_eth.o(i.ETH_FlushTransmitFIFO), (20 bytes).
+    Removing hal_eth.o(i.ETH_GetBufferUnavailableMissedFrameCounter), (12 bytes).
+    Removing hal_eth.o(i.ETH_GetCurrentRxBufferAddress), (12 bytes).
+    Removing hal_eth.o(i.ETH_GetCurrentRxDescStartAddress), (12 bytes).
+    Removing hal_eth.o(i.ETH_GetCurrentTxBufferAddress), (12 bytes).
+    Removing hal_eth.o(i.ETH_GetCurrentTxDescStartAddress), (12 bytes).
+    Removing hal_eth.o(i.ETH_GetDMAFlagStatus), (16 bytes).
+    Removing hal_eth.o(i.ETH_GetDMAITStatus), (16 bytes).
+    Removing hal_eth.o(i.ETH_GetDMAOverflowStatus), (16 bytes).
+    Removing hal_eth.o(i.ETH_GetDMARxDescBufferSize), (20 bytes).
+    Removing hal_eth.o(i.ETH_GetDMARxDescFlagStatus), (10 bytes).
+    Removing hal_eth.o(i.ETH_GetDMARxDescFrameLength), (10 bytes).
+    Removing hal_eth.o(i.ETH_GetDMATxDescCollisionCount), (10 bytes).
+    Removing hal_eth.o(i.ETH_GetDMATxDescFlagStatus), (10 bytes).
+    Removing hal_eth.o(i.ETH_GetFlowControlBusyStatus), (16 bytes).
+    Removing hal_eth.o(i.ETH_GetFlushTransmitFIFOStatus), (12 bytes).
+    Removing hal_eth.o(i.ETH_GetMACAddress), (64 bytes).
+    Removing hal_eth.o(i.ETH_GetMMCITStatus), (68 bytes).
+    Removing hal_eth.o(i.ETH_GetMMCRegister), (12 bytes).
+    Removing hal_eth.o(i.ETH_GetPMTFlagStatus), (16 bytes).
+    Removing hal_eth.o(i.ETH_GetReceiveProcessState), (16 bytes).
+    Removing hal_eth.o(i.ETH_GetRxOverflowMissedFrameCounter), (16 bytes).
+    Removing hal_eth.o(i.ETH_GetRxPktSize), (42 bytes).
+    Removing hal_eth.o(i.ETH_GetSoftwareResetStatus), (16 bytes).
+    Removing hal_eth.o(i.ETH_GetTransmitProcessState), (16 bytes).
+    Removing hal_eth.o(i.ETH_Get_Received_Frame), (68 bytes).
+    Removing hal_eth.o(i.ETH_Get_Received_Frame_interrupt), (284 bytes).
+    Removing hal_eth.o(i.ETH_GlobalUnicastWakeUpCmd), (36 bytes).
+    Removing hal_eth.o(i.ETH_Init), (608 bytes).
+    Removing hal_eth.o(i.ETH_InitiatePauseControlFrame), (20 bytes).
+    Removing hal_eth.o(i.ETH_MACAddressConfig), (48 bytes).
+    Removing hal_eth.o(i.ETH_MACAddressFilterConfig), (44 bytes).
+    Removing hal_eth.o(i.ETH_MACAddressMaskBytesFilterConfig), (36 bytes).
+    Removing hal_eth.o(i.ETH_MACAddressPerfectFilterCmd), (44 bytes).
+    Removing hal_eth.o(i.ETH_MACReceptionCmd), (36 bytes).
+    Removing hal_eth.o(i.ETH_MACTransmissionCmd), (36 bytes).
+    Removing hal_eth.o(i.ETH_MMCCounterFreezeCmd), (44 bytes).
+    Removing hal_eth.o(i.ETH_MMCCounterFullPreset), (24 bytes).
+    Removing hal_eth.o(i.ETH_MMCCounterHalfPreset), (40 bytes).
+    Removing hal_eth.o(i.ETH_MMCCounterRolloverCmd), (44 bytes).
+    Removing hal_eth.o(i.ETH_MMCCountersReset), (24 bytes).
+    Removing hal_eth.o(i.ETH_MMCITConfig), (84 bytes).
+    Removing hal_eth.o(i.ETH_MMCResetOnReadCmd), (44 bytes).
+    Removing hal_eth.o(i.ETH_MagicPacketDetectionCmd), (36 bytes).
+    Removing hal_eth.o(i.ETH_PHYLoopBackCmd), (48 bytes).
+    Removing hal_eth.o(i.ETH_PowerDownCmd), (36 bytes).
+    Removing hal_eth.o(i.ETH_Prepare_Transmit_Descriptors), (220 bytes).
+    Removing hal_eth.o(i.ETH_ReadPHYRegister), (84 bytes).
+    Removing hal_eth.o(i.ETH_ResetWakeUpFrameFilterRegisterPointer), (20 bytes).
+    Removing hal_eth.o(i.ETH_ResumeDMAReception), (12 bytes).
+    Removing hal_eth.o(i.ETH_ResumeDMATransmission), (12 bytes).
+    Removing hal_eth.o(i.ETH_SetDMARxDescOwnBit), (10 bytes).
+    Removing hal_eth.o(i.ETH_SetDMATxDescOwnBit), (10 bytes).
+    Removing hal_eth.o(i.ETH_SetReceiveWatchdogTimer), (12 bytes).
+    Removing hal_eth.o(i.ETH_SetWakeUpFrameFilterRegister), (28 bytes).
+    Removing hal_eth.o(i.ETH_SoftwareReset), (20 bytes).
+    Removing hal_eth.o(i.ETH_Start), (32 bytes).
+    Removing hal_eth.o(i.ETH_Stop), (32 bytes).
+    Removing hal_eth.o(i.ETH_StructInit), (174 bytes).
+    Removing hal_eth.o(i.ETH_WakeUpFrameDetectionCmd), (36 bytes).
+    Removing hal_eth.o(i.ETH_WritePHYRegister), (68 bytes).
+    Removing hal_eth.o(.bss), (12 bytes).
+    Removing hal_eth.o(.data), (16 bytes).
+    Removing hal_exti.o(.rev16_text), (4 bytes).
+    Removing hal_exti.o(.revsh_text), (4 bytes).
+    Removing hal_exti.o(.rrx_text), (6 bytes).
+    Removing hal_exti.o(i.EXTI_ClearFlag), (12 bytes).
+    Removing hal_exti.o(i.EXTI_ClearITPendingBit), (12 bytes).
+    Removing hal_exti.o(i.EXTI_DeInit), (64 bytes).
+    Removing hal_exti.o(i.EXTI_GenerateSWInterrupt), (16 bytes).
+    Removing hal_exti.o(i.EXTI_GetFlagStatus), (24 bytes).
+    Removing hal_exti.o(i.EXTI_GetITStatus), (32 bytes).
+    Removing hal_exti.o(i.EXTI_Init), (216 bytes).
+    Removing hal_exti.o(i.EXTI_LineConfig), (60 bytes).
+    Removing hal_exti.o(i.EXTI_StructInit), (16 bytes).
+    Removing hal_exti.o(i.exEXTI_GetAllFlagStatus), (12 bytes).
+    Removing hal_exti.o(i.exEXTI_LineDisable), (48 bytes).
+    Removing hal_flash.o(.rev16_text), (4 bytes).
+    Removing hal_flash.o(.revsh_text), (4 bytes).
+    Removing hal_flash.o(.rrx_text), (6 bytes).
+    Removing hal_flash.o(i.FLASH_ClearFlag), (12 bytes).
+    Removing hal_flash.o(i.FLASH_EnableWriteProtection), (56 bytes).
+    Removing hal_flash.o(i.FLASH_EraseAllPages), (36 bytes).
+    Removing hal_flash.o(i.FLASH_EraseOptionBytes), (40 bytes).
+    Removing hal_flash.o(i.FLASH_ErasePage), (44 bytes).
+    Removing hal_flash.o(i.FLASH_GetFlagStatus), (36 bytes).
+    Removing hal_flash.o(i.FLASH_GetPrefetchBufferStatus), (16 bytes).
+    Removing hal_flash.o(i.FLASH_GetStatus), (52 bytes).
+    Removing hal_flash.o(i.FLASH_GetUserOptionByte), (12 bytes).
+    Removing hal_flash.o(i.FLASH_GetWriteProtectionOptionByte), (12 bytes).
+    Removing hal_flash.o(i.FLASH_HalfCycleAccessCmd), (28 bytes).
+    Removing hal_flash.o(i.FLASH_ITConfig), (32 bytes).
+    Removing hal_flash.o(i.FLASH_Lock), (20 bytes).
+    Removing hal_flash.o(i.FLASH_OPTB_Enable), (24 bytes).
+    Removing hal_flash.o(i.FLASH_PrefetchBufferCmd), (28 bytes).
+    Removing hal_flash.o(i.FLASH_ProgramHalfWord), (32 bytes).
+    Removing hal_flash.o(i.FLASH_ProgramOptionByteData), (76 bytes).
+    Removing hal_flash.o(i.FLASH_ProgramOptionHalfWord), (40 bytes).
+    Removing hal_flash.o(i.FLASH_ProgramProtect), (16 bytes).
+    Removing hal_flash.o(i.FLASH_ProgramWord), (34 bytes).
+    Removing hal_flash.o(i.FLASH_SetLatency), (20 bytes).
+    Removing hal_flash.o(i.FLASH_Unlock), (24 bytes).
+    Removing hal_flash.o(i.FLASH_UserOptionByteConfig), (72 bytes).
+    Removing hal_flash.o(i.FLASH_WaitForLastOperation), (56 bytes).
+    Removing hal_flash.o(i.exFLASH_EraseEE), (20 bytes).
+    Removing hal_flash.o(i.exFLASH_FindEmpty), (42 bytes).
+    Removing hal_flash.o(i.exFLASH_Locate), (64 bytes).
+    Removing hal_flash.o(i.exFLASH_ProgramEE), (48 bytes).
+    Removing hal_flash.o(i.exFLASH_ReadEE), (36 bytes).
+    Removing hal_flash.o(i.exFLASH_WriteEE), (122 bytes).
+    Removing hal_fsmc.o(.rev16_text), (4 bytes).
+    Removing hal_fsmc.o(.revsh_text), (4 bytes).
+    Removing hal_fsmc.o(.rrx_text), (6 bytes).
+    Removing hal_fsmc.o(i.FSMC_NORSRAMInit), (52 bytes).
+    Removing hal_fsmc.o(i.FSMC_NORSRAMStructInit), (24 bytes).
+    Removing hal_fsmc.o(i.FSMC_NORSRAM_BankStructInit), (28 bytes).
+    Removing hal_fsmc.o(i.FSMC_NORSRAM_Bank_Init), (244 bytes).
+    Removing hal_gpio.o(.rev16_text), (4 bytes).
+    Removing hal_gpio.o(.revsh_text), (4 bytes).
+    Removing hal_gpio.o(.rrx_text), (6 bytes).
+    Removing hal_gpio.o(i.GPIO_AFIODeInit), (68 bytes).
+    Removing hal_gpio.o(i.GPIO_DeInit), (108 bytes).
+    Removing hal_gpio.o(i.GPIO_PinLock), (18 bytes).
+    Removing hal_gpio.o(i.GPIO_PinLockConfig), (20 bytes).
+    Removing hal_gpio.o(i.GPIO_ReadInputData), (8 bytes).
+    Removing hal_gpio.o(i.GPIO_ReadInputDataBit), (16 bytes).
+    Removing hal_gpio.o(i.GPIO_ReadOutputData), (8 bytes).
+    Removing hal_gpio.o(i.GPIO_ReadOutputDataBit), (16 bytes).
+    Removing hal_gpio.o(i.GPIO_ResetBits), (4 bytes).
+    Removing hal_gpio.o(i.GPIO_SetBits), (4 bytes).
+    Removing hal_gpio.o(i.GPIO_Write), (4 bytes).
+    Removing hal_gpio.o(i.GPIO_WriteBit), (10 bytes).
+    Removing hal_gpio.o(i.exGPIO_PinAFConfig), (82 bytes).
+    Removing hal_i2c.o(.rev16_text), (4 bytes).
+    Removing hal_i2c.o(.revsh_text), (4 bytes).
+    Removing hal_i2c.o(.rrx_text), (6 bytes).
+    Removing hal_i2c.o(i.I2C_CheckEvent), (44 bytes).
+    Removing hal_i2c.o(i.I2C_ClearFlag), (128 bytes).
+    Removing hal_i2c.o(i.I2C_ClearITPendingBit), (128 bytes).
+    Removing hal_i2c.o(i.I2C_Cmd), (30 bytes).
+    Removing hal_i2c.o(i.I2C_DMACmd), (56 bytes).
+    Removing hal_i2c.o(i.I2C_DeInit), (48 bytes).
+    Removing hal_i2c.o(i.I2C_DualAddressCmd), (24 bytes).
+    Removing hal_i2c.o(i.I2C_GeneralCallCmd), (22 bytes).
+    Removing hal_i2c.o(i.I2C_GenerateSTART), (22 bytes).
+    Removing hal_i2c.o(i.I2C_GenerateSTOP), (54 bytes).
+    Removing hal_i2c.o(i.I2C_GetFlagStatus), (60 bytes).
+    Removing hal_i2c.o(i.I2C_GetITStatus), (16 bytes).
+    Removing hal_i2c.o(i.I2C_GetLastEvent), (16 bytes).
+    Removing hal_i2c.o(i.I2C_ITConfig), (34 bytes).
+    Removing hal_i2c.o(i.I2C_Init), (192 bytes).
+    Removing hal_i2c.o(i.I2C_OwnAddress2Config), (14 bytes).
+    Removing hal_i2c.o(i.I2C_ReadCmd), (8 bytes).
+    Removing hal_i2c.o(i.I2C_ReadRegister), (6 bytes).
+    Removing hal_i2c.o(i.I2C_ReceiveData), (20 bytes).
+    Removing hal_i2c.o(i.I2C_Send7bitAddress), (6 bytes).
+    Removing hal_i2c.o(i.I2C_SendData), (4 bytes).
+    Removing hal_i2c.o(i.I2C_SendSlaveAddress), (6 bytes).
+    Removing hal_i2c.o(i.I2C_SlaveConfigure), (22 bytes).
+    Removing hal_i2c.o(i.I2C_StructInit), (24 bytes).
+    Removing hal_i2c.o(.data), (4 bytes).
+    Removing hal_iwdg.o(.rev16_text), (4 bytes).
+    Removing hal_iwdg.o(.revsh_text), (4 bytes).
+    Removing hal_iwdg.o(.rrx_text), (6 bytes).
+    Removing hal_iwdg.o(i.IWDG_ClearIT), (20 bytes).
+    Removing hal_iwdg.o(i.IWDG_ClearITPendingBit), (20 bytes).
+    Removing hal_iwdg.o(i.IWDG_Enable), (16 bytes).
+    Removing hal_iwdg.o(i.IWDG_EnableIT), (20 bytes).
+    Removing hal_iwdg.o(i.IWDG_GetFlagStatus), (24 bytes).
+    Removing hal_iwdg.o(i.IWDG_GetReload), (12 bytes).
+    Removing hal_iwdg.o(i.IWDG_OverflowConfig), (28 bytes).
+    Removing hal_iwdg.o(i.IWDG_ReloadCounter), (16 bytes).
+    Removing hal_iwdg.o(i.IWDG_Reset), (20 bytes).
+    Removing hal_iwdg.o(i.IWDG_SetPrescaler), (20 bytes).
+    Removing hal_iwdg.o(i.IWDG_SetReload), (20 bytes).
+    Removing hal_iwdg.o(i.IWDG_WriteAccessCmd), (12 bytes).
+    Removing hal_iwdg.o(i.PVU_CheckStatus), (16 bytes).
+    Removing hal_iwdg.o(i.RVU_CheckStatus), (16 bytes).
+    Removing hal_misc.o(.rev16_text), (4 bytes).
+    Removing hal_misc.o(.revsh_text), (4 bytes).
+    Removing hal_misc.o(.rrx_text), (6 bytes).
+    Removing hal_misc.o(i.NVIC_Init), (108 bytes).
+    Removing hal_misc.o(i.NVIC_PriorityGroupConfig), (20 bytes).
+    Removing hal_misc.o(i.NVIC_SetVectorTable), (20 bytes).
+    Removing hal_misc.o(i.NVIC_SystemLPConfig), (32 bytes).
+    Removing hal_misc.o(i.SysTick_CLKSourceConfig), (40 bytes).
+    Removing hal_misc.o(i.exNVIC_Init), (108 bytes).
+    Removing hal_pwr.o(.rev16_text), (4 bytes).
+    Removing hal_pwr.o(.revsh_text), (4 bytes).
+    Removing hal_pwr.o(.rrx_text), (6 bytes).
+    Removing hal_pwr.o(i.PWR_BackupAccessCmd), (36 bytes).
+    Removing hal_pwr.o(i.PWR_ClearFlag), (20 bytes).
+    Removing hal_pwr.o(i.PWR_ClearPVDOFlag), (20 bytes).
+    Removing hal_pwr.o(i.PWR_DeInit), (12 bytes).
+    Removing hal_pwr.o(i.PWR_EnterSTANDBYMode), (52 bytes).
+    Removing hal_pwr.o(i.PWR_EnterSTOPMode), (48 bytes).
+    Removing hal_pwr.o(i.PWR_GetFlagStatus), (16 bytes).
+    Removing hal_pwr.o(i.PWR_GetPVDOFlagStatus), (16 bytes).
+    Removing hal_pwr.o(i.PWR_PVDCmd), (36 bytes).
+    Removing hal_pwr.o(i.PWR_PVDLevelConfig), (20 bytes).
+    Removing hal_pwr.o(i.PWR_WakeUpPinCmd), (36 bytes).
+    Removing hal_pwr.o(i.PWR_WakeUpPinXCmd), (40 bytes).
+    Removing hal_rcc.o(.rev16_text), (4 bytes).
+    Removing hal_rcc.o(.revsh_text), (4 bytes).
+    Removing hal_rcc.o(.rrx_text), (6 bytes).
+    Removing hal_rcc.o(i.RCC_ADCCLKConfig), (24 bytes).
+    Removing hal_rcc.o(i.RCC_ADC_ClockCmd), (124 bytes).
+    Removing hal_rcc.o(i.RCC_AHB2PeriphClockCmd), (32 bytes).
+    Removing hal_rcc.o(i.RCC_AHB2PeriphResetCmd), (32 bytes).
+    Removing hal_rcc.o(i.RCC_AHB3PeriphClockCmd), (32 bytes).
+    Removing hal_rcc.o(i.RCC_AHB3PeriphResetCmd), (32 bytes).
+    Removing hal_rcc.o(i.RCC_AHBPeriphReset), (24 bytes).
+    Removing hal_rcc.o(i.RCC_AHBPeriphResetCmd), (32 bytes).
+    Removing hal_rcc.o(i.RCC_APB1PeriphReset), (24 bytes).
+    Removing hal_rcc.o(i.RCC_APB1PeriphResetCmd), (32 bytes).
+    Removing hal_rcc.o(i.RCC_APB2PeriphReset), (24 bytes).
+    Removing hal_rcc.o(i.RCC_APB2PeriphResetCmd), (32 bytes).
+    Removing hal_rcc.o(i.RCC_BKP_ClockCmd), (72 bytes).
+    Removing hal_rcc.o(i.RCC_BackupResetCmd), (24 bytes).
+    Removing hal_rcc.o(i.RCC_CAN_ClockCmd), (44 bytes).
+    Removing hal_rcc.o(i.RCC_COMP_ClockCmd), (44 bytes).
+    Removing hal_rcc.o(i.RCC_CRC_ClockCmd), (44 bytes).
+    Removing hal_rcc.o(i.RCC_ClearFlag), (20 bytes).
+    Removing hal_rcc.o(i.RCC_ClearITPendingBit), (20 bytes).
+    Removing hal_rcc.o(i.RCC_ClockSecuritySystemCmd), (24 bytes).
+    Removing hal_rcc.o(i.RCC_DAC_ClockCmd), (44 bytes).
+    Removing hal_rcc.o(i.RCC_DMA_ClockCmd), (84 bytes).
+    Removing hal_rcc.o(i.RCC_DeInit), (76 bytes).
+    Removing hal_rcc.o(i.RCC_GPIO_ClockCmd), (288 bytes).
+    Removing hal_rcc.o(i.RCC_GetClocksFreq), (72 bytes).
+    Removing hal_rcc.o(i.RCC_GetFlagStatus), (60 bytes).
+    Removing hal_rcc.o(i.RCC_GetITStatus), (16 bytes).
+    Removing hal_rcc.o(i.RCC_GetSYSCLKSource), (16 bytes).
+    Removing hal_rcc.o(i.RCC_HCLKConfig), (20 bytes).
+    Removing hal_rcc.o(i.RCC_HSEConfig), (72 bytes).
+    Removing hal_rcc.o(i.RCC_HSICmd), (20 bytes).
+    Removing hal_rcc.o(i.RCC_ITConfig), (36 bytes).
+    Removing hal_rcc.o(i.RCC_LSEConfig), (68 bytes).
+    Removing hal_rcc.o(i.RCC_LSICmd), (24 bytes).
+    Removing hal_rcc.o(i.RCC_MCOConfig), (20 bytes).
+    Removing hal_rcc.o(i.RCC_PCLK1Config), (20 bytes).
+    Removing hal_rcc.o(i.RCC_PCLK2Config), (24 bytes).
+    Removing hal_rcc.o(i.RCC_PLLCmd), (24 bytes).
+    Removing hal_rcc.o(i.RCC_PLLConfig), (96 bytes).
+    Removing hal_rcc.o(i.RCC_PLLDMDNConfig), (32 bytes).
+    Removing hal_rcc.o(i.RCC_RTCCLKCmd), (24 bytes).
+    Removing hal_rcc.o(i.RCC_RTCCLKConfig), (20 bytes).
+    Removing hal_rcc.o(i.RCC_SYSCLKConfig), (20 bytes).
+    Removing hal_rcc.o(i.RCC_UART_ClockCmd), (312 bytes).
+    Removing hal_rcc.o(i.RCC_USBCLKConfig), (24 bytes).
+    Removing hal_rcc.o(i.RCC_WaitForFlagStartUp), (36 bytes).
+    Removing hal_rcc.o(i.RCC_WaitForHSEStartUp), (40 bytes).
+    Removing hal_rcc.o(i.exRCC_AHBPeriphReset), (24 bytes).
+    Removing hal_rcc.o(i.exRCC_APB1PeriphReset), (24 bytes).
+    Removing hal_rcc.o(i.exRCC_APB2PeriphReset), (24 bytes).
+    Removing hal_rcc.o(i.exRCC_BackupReset), (2 bytes).
+    Removing hal_rcc.o(i.exRCC_SystickDisable), (18 bytes).
+    Removing hal_rcc.o(i.exRCC_SystickEnable), (100 bytes).
+    Removing hal_rtc.o(.rev16_text), (4 bytes).
+    Removing hal_rtc.o(.revsh_text), (4 bytes).
+    Removing hal_rtc.o(.rrx_text), (6 bytes).
+    Removing hal_rtc.o(i.RTC_ClearFlag), (16 bytes).
+    Removing hal_rtc.o(i.RTC_ClearITPendingBit), (16 bytes).
+    Removing hal_rtc.o(i.RTC_EnterConfigMode), (20 bytes).
+    Removing hal_rtc.o(i.RTC_ExitConfigMode), (32 bytes).
+    Removing hal_rtc.o(i.RTC_GetCounter), (20 bytes).
+    Removing hal_rtc.o(i.RTC_GetDivider), (24 bytes).
+    Removing hal_rtc.o(i.RTC_GetFlagStatus), (16 bytes).
+    Removing hal_rtc.o(i.RTC_GetITStatus), (16 bytes).
+    Removing hal_rtc.o(i.RTC_ITConfig), (36 bytes).
+    Removing hal_rtc.o(i.RTC_SetAlarm), (28 bytes).
+    Removing hal_rtc.o(i.RTC_SetCounter), (28 bytes).
+    Removing hal_rtc.o(i.RTC_SetPrescaler), (28 bytes).
+    Removing hal_rtc.o(i.RTC_WaitForLastTask), (20 bytes).
+    Removing hal_rtc.o(i.RTC_WaitForSynchro), (32 bytes).
+    Removing hal_rtc.o(.data), (1 bytes).
+    Removing hal_sdio.o(.rev16_text), (4 bytes).
+    Removing hal_sdio.o(.revsh_text), (4 bytes).
+    Removing hal_sdio.o(.rrx_text), (6 bytes).
+    Removing hal_sdio.o(i.CmdError), (60 bytes).
+    Removing hal_sdio.o(i.CmdResp1Error), (120 bytes).
+    Removing hal_sdio.o(i.CmdResp2Error), (80 bytes).
+    Removing hal_sdio.o(i.CmdResp3Error), (48 bytes).
+    Removing hal_sdio.o(i.CmdResp6Error), (160 bytes).
+    Removing hal_sdio.o(i.CmdResp7Error), (72 bytes).
+    Removing hal_sdio.o(i.SDIO_CRCConfig), (32 bytes).
+    Removing hal_sdio.o(i.SDIO_ClearFlag), (16 bytes).
+    Removing hal_sdio.o(i.SDIO_ClearITPendingBit), (16 bytes).
+    Removing hal_sdio.o(i.SDIO_ClockSet), (20 bytes).
+    Removing hal_sdio.o(i.SDIO_Clock_Set), (44 bytes).
+    Removing hal_sdio.o(i.SDIO_CmdStructInit), (12 bytes).
+    Removing hal_sdio.o(i.SDIO_DMACmd), (56 bytes).
+    Removing hal_sdio.o(i.SDIO_DataStructInit), (16 bytes).
+    Removing hal_sdio.o(i.SDIO_DeInit), (22 bytes).
+    Removing hal_sdio.o(i.SDIO_GetDataCounter), (12 bytes).
+    Removing hal_sdio.o(i.SDIO_GetFlagStatus), (24 bytes).
+    Removing hal_sdio.o(i.SDIO_GetTimeOutCounter), (12 bytes).
+    Removing hal_sdio.o(i.SDIO_ITConfig), (32 bytes).
+    Removing hal_sdio.o(i.SDIO_Init), (56 bytes).
+    Removing hal_sdio.o(i.SDIO_ReadData), (12 bytes).
+    Removing hal_sdio.o(i.SDIO_Send_Cmd), (100 bytes).
+    Removing hal_sdio.o(i.SDIO_Send_Data_Cfg), (168 bytes).
+    Removing hal_sdio.o(i.SDIO_StructInit), (18 bytes).
+    Removing hal_sdio.o(i.SDIO_WriteData), (12 bytes).
+    Removing hal_sdio.o(i.SD_PowerOFF), (20 bytes).
+    Removing hal_spi.o(.rev16_text), (4 bytes).
+    Removing hal_spi.o(.revsh_text), (4 bytes).
+    Removing hal_spi.o(.rrx_text), (6 bytes).
+    Removing hal_spi.o(i.I2S_Cmd), (22 bytes).
+    Removing hal_spi.o(i.I2S_Init), (356 bytes).
+    Removing hal_spi.o(i.SPI_BiDirectionalLineConfig), (62 bytes).
+    Removing hal_spi.o(i.SPI_CSInternalSelected), (22 bytes).
+    Removing hal_spi.o(i.SPI_ClearITPendingBit), (8 bytes).
+    Removing hal_spi.o(i.SPI_Cmd), (22 bytes).
+    Removing hal_spi.o(i.SPI_DMACmd), (22 bytes).
+    Removing hal_spi.o(i.SPI_DataSizeConfig), (20 bytes).
+    Removing hal_spi.o(i.SPI_DataSizeTypeConfig), (16 bytes).
+    Removing hal_spi.o(i.SPI_DeInit), (96 bytes).
+    Removing hal_spi.o(i.SPI_FifoTrigger), (18 bytes).
+    Removing hal_spi.o(i.SPI_GetFlagStatus), (16 bytes).
+    Removing hal_spi.o(i.SPI_GetITStatus), (16 bytes).
+    Removing hal_spi.o(i.SPI_ITConfig), (34 bytes).
+    Removing hal_spi.o(i.SPI_Init), (136 bytes).
+    Removing hal_spi.o(i.SPI_NSSInternalSoftwareConfig), (22 bytes).
+    Removing hal_spi.o(i.SPI_ReceiveData), (48 bytes).
+    Removing hal_spi.o(i.SPI_RxBytes), (4 bytes).
+    Removing hal_spi.o(i.SPI_SendData), (40 bytes).
+    Removing hal_spi.o(i.SPI_SlaveAdjust), (22 bytes).
+    Removing hal_spi.o(i.SPI_StructInit), (32 bytes).
+    Removing hal_spi.o(i.exSPI_CSInternalSelected), (22 bytes).
+    Removing hal_spi.o(i.exSPI_DMACmd), (22 bytes).
+    Removing hal_spi.o(i.exSPI_DataEdgeAdjust), (52 bytes).
+    Removing hal_spi.o(i.exSPI_ITCmd), (22 bytes).
+    Removing hal_spi.o(i.exSPI_ITConfig), (18 bytes).
+    Removing hal_tim.o(.rev16_text), (4 bytes).
+    Removing hal_tim.o(.revsh_text), (4 bytes).
+    Removing hal_tim.o(.rrx_text), (6 bytes).
+    Removing hal_tim.o(i.TI1_Configure), (32 bytes).
+    Removing hal_tim.o(i.TI2_Configure), (36 bytes).
+    Removing hal_tim.o(i.TI3_Configure), (36 bytes).
+    Removing hal_tim.o(i.TI4_Configure), (38 bytes).
+    Removing hal_tim.o(i.TIM_BDTRConfig), (30 bytes).
+    Removing hal_tim.o(i.TIM_BDTRStructInit), (18 bytes).
+    Removing hal_tim.o(i.TIM_CCPreloadControl), (22 bytes).
+    Removing hal_tim.o(i.TIM_CCxCmd), (20 bytes).
+    Removing hal_tim.o(i.TIM_CCxNCmd), (24 bytes).
+    Removing hal_tim.o(i.TIM_ClearFlag), (8 bytes).
+    Removing hal_tim.o(i.TIM_ClearITPendingBit), (8 bytes).
+    Removing hal_tim.o(i.TIM_ClearOC1Ref), (12 bytes).
+    Removing hal_tim.o(i.TIM_ClearOC2Ref), (14 bytes).
+    Removing hal_tim.o(i.TIM_ClearOC3Ref), (12 bytes).
+    Removing hal_tim.o(i.TIM_ClearOC4Ref), (14 bytes).
+    Removing hal_tim.o(i.TIM_ClearOC5Ref), (12 bytes).
+    Removing hal_tim.o(i.TIM_CounterModeConfig), (12 bytes).
+    Removing hal_tim.o(i.TIM_CtrlPWMOutputs), (22 bytes).
+    Removing hal_tim.o(i.TIM_DMACmd), (18 bytes).
+    Removing hal_tim.o(i.TIM_DMAConfig), (8 bytes).
+    Removing hal_tim.o(i.TIM_DeInit), (140 bytes).
+    Removing hal_tim.o(i.TIM_DirectOutput), (22 bytes).
+    Removing hal_tim.o(i.TIM_ETRClockMode1Config), (32 bytes).
+    Removing hal_tim.o(i.TIM_ETRClockMode2Config), (32 bytes).
+    Removing hal_tim.o(i.TIM_ETRConfig), (44 bytes).
+    Removing hal_tim.o(i.TIM_EncoderInterfaceConfig), (42 bytes).
+    Removing hal_tim.o(i.TIM_ForcedOC1Config), (12 bytes).
+    Removing hal_tim.o(i.TIM_ForcedOC2Config), (14 bytes).
+    Removing hal_tim.o(i.TIM_ForcedOC3Config), (12 bytes).
+    Removing hal_tim.o(i.TIM_ForcedOC4Config), (14 bytes).
+    Removing hal_tim.o(i.TIM_GenerateEvent), (4 bytes).
+    Removing hal_tim.o(i.TIM_GetCapture1), (6 bytes).
+    Removing hal_tim.o(i.TIM_GetCapture2), (6 bytes).
+    Removing hal_tim.o(i.TIM_GetCapture3), (6 bytes).
+    Removing hal_tim.o(i.TIM_GetCapture4), (6 bytes).
+    Removing hal_tim.o(i.TIM_GetCapture5), (6 bytes).
+    Removing hal_tim.o(i.TIM_GetCounter), (6 bytes).
+    Removing hal_tim.o(i.TIM_GetFlagStatus), (16 bytes).
+    Removing hal_tim.o(i.TIM_GetITStatus), (22 bytes).
+    Removing hal_tim.o(i.TIM_GetPrescaler), (8 bytes).
+    Removing hal_tim.o(i.TIM_ICInit), (118 bytes).
+    Removing hal_tim.o(i.TIM_ICStructInit), (18 bytes).
+    Removing hal_tim.o(i.TIM_ITConfig), (18 bytes).
+    Removing hal_tim.o(i.TIM_ITRxExternalClockConfig), (24 bytes).
+    Removing hal_tim.o(i.TIM_InternalClockConfig), (10 bytes).
+    Removing hal_tim.o(i.TIM_OC1FastConfig), (12 bytes).
+    Removing hal_tim.o(i.TIM_OC1NPolarityConfig), (12 bytes).
+    Removing hal_tim.o(i.TIM_OC1PolarityConfig), (12 bytes).
+    Removing hal_tim.o(i.TIM_OC2FastConfig), (14 bytes).
+    Removing hal_tim.o(i.TIM_OC2Init), (100 bytes).
+    Removing hal_tim.o(i.TIM_OC2NPolarityConfig), (14 bytes).
+    Removing hal_tim.o(i.TIM_OC2PolarityConfig), (14 bytes).
+    Removing hal_tim.o(i.TIM_OC2PreloadConfig), (14 bytes).
+    Removing hal_tim.o(i.TIM_OC3FastConfig), (12 bytes).
+    Removing hal_tim.o(i.TIM_OC3Init), (100 bytes).
+    Removing hal_tim.o(i.TIM_OC3NPolarityConfig), (14 bytes).
+    Removing hal_tim.o(i.TIM_OC3PolarityConfig), (14 bytes).
+    Removing hal_tim.o(i.TIM_OC3PreloadConfig), (12 bytes).
+    Removing hal_tim.o(i.TIM_OC4FastConfig), (14 bytes).
+    Removing hal_tim.o(i.TIM_OC4Init), (76 bytes).
+    Removing hal_tim.o(i.TIM_OC4PolarityConfig), (14 bytes).
+    Removing hal_tim.o(i.TIM_OC4PreloadConfig), (14 bytes).
+    Removing hal_tim.o(i.TIM_OC5FastConfig), (12 bytes).
+    Removing hal_tim.o(i.TIM_OC5Init), (76 bytes).
+    Removing hal_tim.o(i.TIM_OC5PolarityConfig), (14 bytes).
+    Removing hal_tim.o(i.TIM_OC5PreloadConfig), (12 bytes).
+    Removing hal_tim.o(i.TIM_OCStructInit), (20 bytes).
+    Removing hal_tim.o(i.TIM_PWMIConfig), (128 bytes).
+    Removing hal_tim.o(i.TIM_PWMShiftConfig), (18 bytes).
+    Removing hal_tim.o(i.TIM_PrescalerConfig), (6 bytes).
+    Removing hal_tim.o(i.TIM_SelectCCDMA), (22 bytes).
+    Removing hal_tim.o(i.TIM_SelectCOM), (22 bytes).
+    Removing hal_tim.o(i.TIM_SelectHallSensor), (22 bytes).
+    Removing hal_tim.o(i.TIM_SelectInputTrigger), (12 bytes).
+    Removing hal_tim.o(i.TIM_SelectMasterSlaveMode), (12 bytes).
+    Removing hal_tim.o(i.TIM_SelectOCxM), (86 bytes).
+    Removing hal_tim.o(i.TIM_SelectOnePulseMode), (12 bytes).
+    Removing hal_tim.o(i.TIM_SelectOutputTrigger), (12 bytes).
+    Removing hal_tim.o(i.TIM_SelectSlaveMode), (12 bytes).
+    Removing hal_tim.o(i.TIM_SetAutoreload), (4 bytes).
+    Removing hal_tim.o(i.TIM_SetCCR1FALL), (16 bytes).
+    Removing hal_tim.o(i.TIM_SetCCR2FALL), (16 bytes).
+    Removing hal_tim.o(i.TIM_SetCCR3FALL), (16 bytes).
+    Removing hal_tim.o(i.TIM_SetCCR4FALL), (16 bytes).
+    Removing hal_tim.o(i.TIM_SetCCR5FALL), (16 bytes).
+    Removing hal_tim.o(i.TIM_SetClockDivision), (12 bytes).
+    Removing hal_tim.o(i.TIM_SetCompare1), (28 bytes).
+    Removing hal_tim.o(i.TIM_SetCompare2), (28 bytes).
+    Removing hal_tim.o(i.TIM_SetCompare3), (28 bytes).
+    Removing hal_tim.o(i.TIM_SetCompare4), (28 bytes).
+    Removing hal_tim.o(i.TIM_SetCompare5), (6 bytes).
+    Removing hal_tim.o(i.TIM_SetCounter), (28 bytes).
+    Removing hal_tim.o(i.TIM_SetIC1Plority), (22 bytes).
+    Removing hal_tim.o(i.TIM_SetIC1Prescaler), (12 bytes).
+    Removing hal_tim.o(i.TIM_SetIC2Plority), (22 bytes).
+    Removing hal_tim.o(i.TIM_SetIC2Prescaler), (14 bytes).
+    Removing hal_tim.o(i.TIM_SetIC3Plority), (22 bytes).
+    Removing hal_tim.o(i.TIM_SetIC3Prescaler), (12 bytes).
+    Removing hal_tim.o(i.TIM_SetIC4Plority), (22 bytes).
+    Removing hal_tim.o(i.TIM_SetIC4Prescaler), (14 bytes).
+    Removing hal_tim.o(i.TIM_TIxExternalClockConfig), (62 bytes).
+    Removing hal_tim.o(i.TIM_TimeBaseStructInit), (18 bytes).
+    Removing hal_tim.o(i.TIM_UpdateDisableConfig), (22 bytes).
+    Removing hal_tim.o(i.TIM_UpdateRequestConfig), (12 bytes).
+    Removing hal_uart.o(.rev16_text), (4 bytes).
+    Removing hal_uart.o(.revsh_text), (4 bytes).
+    Removing hal_uart.o(.rrx_text), (6 bytes).
+    Removing hal_uart.o(i.UART_AutoBaudRateCmd), (22 bytes).
+    Removing hal_uart.o(i.UART_AutoBaudRateSet), (182 bytes).
+    Removing hal_uart.o(i.UART_ClearITPendingBit), (4 bytes).
+    Removing hal_uart.o(i.UART_DMACmd), (14 bytes).
+    Removing hal_uart.o(i.UART_DeInit), (144 bytes).
+    Removing hal_uart.o(i.UART_Enable9bit), (14 bytes).
+    Removing hal_uart.o(i.UART_GetITStatus), (16 bytes).
+    Removing hal_uart.o(i.UART_HalfDuplexCmd), (14 bytes).
+    Removing hal_uart.o(i.UART_ITConfig), (18 bytes).
+    Removing hal_uart.o(i.UART_ReceiverWakeUpCmd), (14 bytes).
+    Removing hal_uart.o(i.UART_SendBreak), (10 bytes).
+    Removing hal_uart.o(i.UART_Set9bitAutomaticToggle), (14 bytes).
+    Removing hal_uart.o(i.UART_Set9bitLevel), (14 bytes).
+    Removing hal_uart.o(i.UART_Set9bitPolarity), (12 bytes).
+    Removing hal_uart.o(i.UART_SetGuardTime), (14 bytes).
+    Removing hal_uart.o(i.UART_SetRXAddress), (12 bytes).
+    Removing hal_uart.o(i.UART_SetRXMASK), (12 bytes).
+    Removing hal_uart.o(i.UART_SmartCardCmd), (12 bytes).
+    Removing hal_uart.o(i.UART_SmartCardNACKCmd), (14 bytes).
+    Removing hal_uart.o(i.UART_WakeUpConfig), (12 bytes).
+    Removing hal_uid.o(.rev16_text), (4 bytes).
+    Removing hal_uid.o(.revsh_text), (4 bytes).
+    Removing hal_uid.o(.rrx_text), (6 bytes).
+    Removing hal_uid.o(i.GetChipUID), (36 bytes).
+    Removing hal_uid.o(.bss), (12 bytes).
+    Removing hal_ver.o(.rev16_text), (4 bytes).
+    Removing hal_ver.o(.revsh_text), (4 bytes).
+    Removing hal_ver.o(.rrx_text), (6 bytes).
+    Removing hal_ver.o(i.Get_ChipsetDEVID), (12 bytes).
+    Removing hal_ver.o(i.Get_ChipsetREVID), (16 bytes).
+    Removing hal_ver.o(i.Get_ChipsetUIDw0), (12 bytes).
+    Removing hal_ver.o(i.Get_ChipsetUIDw1), (12 bytes).
+    Removing hal_ver.o(i.Get_ChipsetUIDw2), (12 bytes).
+    Removing hal_ver.o(i.Get_MM32LibReleaseDate), (8 bytes).
+    Removing hal_ver.o(i.Get_MM32LibVersion), (6 bytes).
+    Removing hal_wwdg.o(.rev16_text), (4 bytes).
+    Removing hal_wwdg.o(.revsh_text), (4 bytes).
+    Removing hal_wwdg.o(.rrx_text), (6 bytes).
+    Removing hal_wwdg.o(i.WWDG_ClearFlag), (20 bytes).
+    Removing hal_wwdg.o(i.WWDG_DeInit), (12 bytes).
+    Removing hal_wwdg.o(i.WWDG_Enable), (16 bytes).
+    Removing hal_wwdg.o(i.WWDG_EnableIT), (20 bytes).
+    Removing hal_wwdg.o(i.WWDG_GetCounter), (16 bytes).
+    Removing hal_wwdg.o(i.WWDG_GetFlagStatus), (20 bytes).
+    Removing hal_wwdg.o(i.WWDG_SetCounter), (16 bytes).
+    Removing hal_wwdg.o(i.WWDG_SetPrescaler), (20 bytes).
+    Removing hal_wwdg.o(i.WWDG_SetWindowValue), (20 bytes).
+    Removing dfltul.o(.text), (24 bytes).
+    Removing d2f.o(.text), (56 bytes).
+    Removing fepilogue.o(.text), (110 bytes).
+
+826 unused section(s) (total 39772 bytes) removed from the image.

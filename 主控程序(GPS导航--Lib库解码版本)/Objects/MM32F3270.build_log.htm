@@ -1,0 +1,313 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Xun 280160112@qq.com, Xun, LIC=SDA0P-MZZ2S-56JQ2-9UUI7-9KMDZ-83BW4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.25.2.0
+Toolchain Path:  C:\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+C:\Users\28016\OneDrive\桌面\智能车工程历史归档\主控程序(GPS导航--Lib库解码版本)\MM32F3270.uvprojx
+Project File Date:  07/11/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_mm32f327x_keil.s...
+compiling kalman.c...
+HardWare\kalman\kalman.c(1): warning:  #1-D: last line of file ends without a newline
+  #include "kalman.h"
+HardWare\kalman\kalman.h(4): warning:  #1-D: last line of file ends without a newline
+  #endif
+HardWare\kalman\kalman.c: 2 warnings, 0 errors
+compiling vector.c...
+HardWare\vector\vector.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+HardWare\vector\vector.c(5): warning:  #1-D: last line of file ends without a newline
+  }
+HardWare\vector\vector.c: 2 warnings, 0 errors
+compiling context.c...
+HardWare\GPS-Lib\nmea/context.h(34): warning:  #1295-D: Deprecated declaration nmea_property - give arg types
+  nmeaPROPERTY * nmea_property();
+HardWare\GPS-Lib\context.c: 1 warning, 0 errors
+compiling generate.c...
+compiling USART.C...
+.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\systick\systick.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+HardWare\USART\USART.C(131): warning:  #1-D: last line of file ends without a newline
+  }
+HardWare\USART\USART.C: 4 warnings, 0 errors
+compiling HMC5983.C...
+.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\systick\systick.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\IIC\IIC.H(13): warning:  #1295-D: Deprecated declaration IIC_GPIO_Init - give arg types
+  void IIC_GPIO_Init();
+.\HardWare\IIC\IIC.H(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+HardWare\HMC5983\HMC5983.H(24): warning:  #1295-D: Deprecated declaration HMC5983_Init - give arg types
+  void HMC5983_Init();
+HardWare\HMC5983\HMC5983.H(25): warning:  #1295-D: Deprecated declaration HMC5983_Read - give arg types
+  double HMC5983_Read();
+HardWare\HMC5983\HMC5983.H(26): warning:  #1-D: last line of file ends without a newline
+  #endif 
+HardWare\HMC5983\HMC5983.C(10): warning:  #177-D: variable "rec"  was declared but never referenced
+  	double rec;
+HardWare\HMC5983\HMC5983.C(66): warning:  #1-D: last line of file ends without a newline
+  }
+HardWare\HMC5983\HMC5983.C(66): warning:  #940-D: missing return statement at end of non-void function "HMC5983_Read" 
+  }
+HardWare\HMC5983\HMC5983.C: 11 warnings, 0 errors
+compiling GPS.C...
+.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\systick\systick.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+HardWare\GPS\GPS.H(5): warning:  #1295-D: Deprecated declaration GPS_UpDate - give arg types
+  void GPS_UpDate();
+.\HardWare\vector\vector.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+HardWare\GPS\GPS.C(79): warning:  #223-D: function "abs" declared implicitly
+  	N_target=xiangchajiao(lng,lat,abs(lng),0);
+HardWare\GPS\GPS.C(99): warning:  #177-D: variable "N_target"  was declared but never referenced
+  	double N_target;
+HardWare\GPS\GPS.C(100): warning:  #177-D: variable "W_target"  was declared but never referenced
+  	double W_target;
+HardWare\GPS\GPS.C(139): warning:  #224-D: the format string requires additional arguments
+  	printf("纬度:%d\r\n经度:%d\r\n可见卫星数量%d\r\n");//debug 
+HardWare\GPS\GPS.C: 9 warnings, 0 errors
+compiling IIC.C...
+.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\systick\systick.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+HardWare\IIC\IIC.H(13): warning:  #1295-D: Deprecated declaration IIC_GPIO_Init - give arg types
+  void IIC_GPIO_Init();
+HardWare\IIC\IIC.H(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+HardWare\IIC\IIC.C: 5 warnings, 0 errors
+compiling MPU6050.C...
+.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\systick\systick.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\IIC\IIC.H(13): warning:  #1295-D: Deprecated declaration IIC_GPIO_Init - give arg types
+  void IIC_GPIO_Init();
+.\HardWare\IIC\IIC.H(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+HardWare\MPU6050\MPU6050.H(31): warning:  #1295-D: Deprecated declaration MPU6050_Init - give arg types
+  void MPU6050_Init();
+HardWare\MPU6050\MPU6050.H(33): warning:  #1-D: last line of file ends without a newline
+  #endif 
+HardWare\MPU6050\MPU6050.C(32): warning:  #1-D: last line of file ends without a newline
+  }
+HardWare\MPU6050\MPU6050.C: 8 warnings, 0 errors
+compiling PWM.C...
+HardWare\PWM\PWM.H(5): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\systick\systick.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+HardWare\PWM\PWM.C(40): warning:  #1-D: last line of file ends without a newline
+  }
+HardWare\PWM\PWM.C: 5 warnings, 0 errors
+compiling systick.c...
+.\HardWare\systick\systick.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+HardWare\systick\systick.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+HardWare\systick\systick.c: 3 warnings, 0 errors
+compiling generator.c...
+HardWare\GPS-Lib\nmea/context.h(34): warning:  #1295-D: Deprecated declaration nmea_property - give arg types
+  nmeaPROPERTY * nmea_property();
+HardWare\GPS-Lib\generator.c: 1 warning, 0 errors
+compiling info.c...
+compiling parse.c...
+HardWare\GPS-Lib\nmea/context.h(34): warning:  #1295-D: Deprecated declaration nmea_property - give arg types
+  nmeaPROPERTY * nmea_property();
+HardWare\GPS-Lib\parse.c: 1 warning, 0 errors
+compiling parser.c...
+HardWare\GPS-Lib\nmea/context.h(34): warning:  #1295-D: Deprecated declaration nmea_property - give arg types
+  nmeaPROPERTY * nmea_property();
+HardWare\GPS-Lib\parser.c: 1 warning, 0 errors
+compiling sentence.c...
+compiling gmath.c...
+HardWare\GPS-Lib\gmath.c(166): warning:  #550-D: variable "tan_sigma"  was set but never used
+          double tmp1, tmp2, tan_sigma, sin_alpha, cos_alpha, C, lambda_prev; 
+HardWare\GPS-Lib\gmath.c(264): warning:  #550-D: variable "tan_sigma1"  was set but never used
+      double tan_sigma1, sigma1, sin_alpha, cos_alpha, sqr_cos_alpha, sqr_u, A, B;
+HardWare\GPS-Lib\gmath.c(264): warning:  #550-D: variable "cos_alpha"  was set but never used
+      double tan_sigma1, sigma1, sin_alpha, cos_alpha, sqr_cos_alpha, sqr_u, A, B;
+HardWare\GPS-Lib\gmath.c: 3 warnings, 0 errors
+compiling time.c...
+compiling tok.c...
+compiling hal_crc.c...
+compiling hal_comp.c...
+compiling system_mm32f327x.c...
+compiling hal_dbg.c...
+compiling hal_bkp.c...
+compiling hal_adc.c...
+compiling hal_can.c...
+compiling hal_crs.c...
+compiling main.c...
+.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\systick\systick.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\IIC\IIC.H(13): warning:  #1295-D: Deprecated declaration IIC_GPIO_Init - give arg types
+  void IIC_GPIO_Init();
+.\HardWare\IIC\IIC.H(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\MPU6050\MPU6050.H(31): warning:  #1295-D: Deprecated declaration MPU6050_Init - give arg types
+  void MPU6050_Init();
+.\HardWare\MPU6050\MPU6050.H(33): warning:  #1-D: last line of file ends without a newline
+  #endif 
+.\HardWare\HMC5983\HMC5983.H(24): warning:  #1295-D: Deprecated declaration HMC5983_Init - give arg types
+  void HMC5983_Init();
+.\HardWare\HMC5983\HMC5983.H(25): warning:  #1295-D: Deprecated declaration HMC5983_Read - give arg types
+  double HMC5983_Read();
+.\HardWare\HMC5983\HMC5983.H(26): warning:  #1-D: last line of file ends without a newline
+  #endif 
+.\HardWare\GPS\GPS.H(5): warning:  #1295-D: Deprecated declaration GPS_UpDate - give arg types
+  void GPS_UpDate();
+.\HardWare\PWM\PWM.H(5): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HardWare\vector\vector.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+User\main.c: 13 warnings, 0 errors
+compiling hal_dac.c...
+compiling hal_dma.c...
+compiling hal_exti.c...
+compiling hal_flash.c...
+compiling hal_fsmc.c...
+compiling hal_iwdg.c...
+compiling hal_misc.c...
+compiling hal_gpio.c...
+Lib\hal_gpio.c(50): warning:  #1296-D: extended constant initialiser used
+          case (u32)GPIOA:
+Lib\hal_gpio.c(53): warning:  #1296-D: extended constant initialiser used
+          case (u32)GPIOB:
+Lib\hal_gpio.c(56): warning:  #1296-D: extended constant initialiser used
+          case (u32)GPIOC:
+Lib\hal_gpio.c(59): warning:  #1296-D: extended constant initialiser used
+          case (u32)GPIOD:
+Lib\hal_gpio.c(62): warning:  #1296-D: extended constant initialiser used
+          case (u32)GPIOE:
+Lib\hal_gpio.c: 5 warnings, 0 errors
+compiling hal_rtc.c...
+compiling hal_eth.c...
+compiling hal_i2c.c...
+Lib\hal_i2c.c(46): warning:  #1296-D: extended constant initialiser used
+          case (u32)I2C1:  // I2C1_BASE:
+Lib\hal_i2c.c(49): warning:  #1296-D: extended constant initialiser used
+          case (u32)I2C2:  // I2C2_BASE:
+Lib\hal_i2c.c: 2 warnings, 0 errors
+compiling hal_pwr.c...
+compiling hal_uid.c...
+compiling hal_ver.c...
+compiling hal_rcc.c...
+Lib\hal_rcc.c(928): warning:  #1296-D: extended constant initialiser used
+          case (u32)GPIOA:
+Lib\hal_rcc.c(931): warning:  #1296-D: extended constant initialiser used
+          case (u32)GPIOB:
+Lib\hal_rcc.c(934): warning:  #1296-D: extended constant initialiser used
+          case (u32)GPIOC:
+Lib\hal_rcc.c(937): warning:  #1296-D: extended constant initialiser used
+          case (u32)GPIOD:
+Lib\hal_rcc.c(940): warning:  #1296-D: extended constant initialiser used
+          case (u32)GPIOE:
+Lib\hal_rcc.c(943): warning:  #1296-D: extended constant initialiser used
+          case (u32)GPIOF:
+Lib\hal_rcc.c(946): warning:  #1296-D: extended constant initialiser used
+          case (u32)GPIOG:
+Lib\hal_rcc.c(949): warning:  #1296-D: extended constant initialiser used
+          case (u32)GPIOH:
+Lib\hal_rcc.c: 8 warnings, 0 errors
+compiling hal_sdio.c...
+compiling hal_spi.c...
+Lib\hal_spi.c(48): warning:  #1296-D: extended constant initialiser used
+          case (u32)SPI2:  // SPI2_BASE:
+Lib\hal_spi.c(52): warning:  #1296-D: extended constant initialiser used
+          case (u32)SPI3:  // SPI3_BASE:
+Lib\hal_spi.c(56): warning:  #1296-D: extended constant initialiser used
+          case (u32)SPI1:  // SPI1_BASE:
+Lib\hal_spi.c: 3 warnings, 0 errors
+compiling hal_tim.c...
+Lib\hal_tim.c(45): warning:  #1296-D: extended constant initialiser used
+          case (u32)TIM1:
+Lib\hal_tim.c(48): warning:  #1296-D: extended constant initialiser used
+          case (u32)TIM2:
+Lib\hal_tim.c(51): warning:  #1296-D: extended constant initialiser used
+          case (u32)TIM3:
+Lib\hal_tim.c(54): warning:  #1296-D: extended constant initialiser used
+          case (u32)TIM4:
+Lib\hal_tim.c(58): warning:  #1296-D: extended constant initialiser used
+          case (u32)TIM5:
+Lib\hal_tim.c(61): warning:  #1296-D: extended constant initialiser used
+          case (u32)TIM6:
+Lib\hal_tim.c(64): warning:  #1296-D: extended constant initialiser used
+          case (u32)TIM7:
+Lib\hal_tim.c(68): warning:  #1296-D: extended constant initialiser used
+          case (u32)TIM8:
+Lib\hal_tim.c: 8 warnings, 0 errors
+compiling hal_uart.c...
+compiling hal_wwdg.c...
+linking...
+.\Objects\MM32F3270.axf: Error: L6218E: Undefined symbol __aeabi_assert (referred from gmath.o).
+.\Objects\MM32F3270.axf: Error: L6218E: Undefined symbol time (referred from time.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 2 error messages.
+".\Objects\MM32F3270.axf" - 2 Error(s), 95 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: MindMotion
+                http://www.mindmotion.com.cn/Download/MDK_KEIL/MindMotion.MM32F3270_DFP.1.0.5.pack
+                MindMotion.MM32F3270_DFP.1.0.5
+                MindMotion MM32F3270 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil\ARM\PACK\MindMotion\MM32F3270_DFP\1.0.5\Device\MM32F327x\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>

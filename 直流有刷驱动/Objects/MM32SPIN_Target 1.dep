@@ -1,0 +1,368 @@
+Dependencies for Project 'MM32SPIN', Target 'Target 1': (DO NOT MODIFY !)
+F (.\User\main.c)(0x62D9C7AC)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (User\HAL_device.h)(0x5D8DDCC4)
+I (User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (.\Lib\HAL_conf.h)(0x5D902724)
+I (.\Lib\HAL_adc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_crc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_comp.h)(0x5D8DDCC4)
+I (.\Lib\HAL_dma.h)(0x5D8DDCC4)
+I (.\Lib\HAL_div.h)(0x5D8DDCC4)
+I (.\Lib\HAL_exti.h)(0x5D8DDCC4)
+I (.\Lib\HAL_flash.h)(0x5D8DDCF8)
+I (.\Lib\HAL_gpio.h)(0x6235AD1A)
+I (.\Lib\HAL_i2c.h)(0x5D8DDCC4)
+I (.\Lib\HAL_iwdg.h)(0x5D8DDCC4)
+I (.\Lib\HAL_op.h)(0x5D90263A)
+I (.\Lib\HAL_pwr.h)(0x5D8DDCC4)
+I (.\Lib\HAL_rcc.h)(0x626BCAFA)
+I (.\Lib\HAL_spi.h)(0x5D8DDCC4)
+I (.\Lib\HAL_tim.h)(0x5D8DDCC4)
+I (.\Lib\HAL_uart.h)(0x5D8DDCC4)
+I (.\Lib\HAL_wwdg.h)(0x5D8DDCC4)
+I (.\Lib\HAL_misc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_syscfg.h)(0x5D8DDCC4)
+I (.\HardWare\USART\USART.H)(0x6274B740)
+I (.\HardWare\NVIC\NIVC.H)(0x62370FFE)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (.\HardWare\PWM\PWM.H)(0x6273FA68)
+I (.\HardWare\RCC\RCC.H)(0x62529CEB)
+I (.\HardWare\ADC\ADC.H)(0x6274B5CE)
+F (.\User\system_MM32SPIN2xx_p.c)(0x627B1A07)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\system_mm32spin2xx_p.o --omf_browse .\objects\system_mm32spin2xx_p.crf --depend .\objects\system_mm32spin2xx_p.d)
+I (User\HAL_device.h)(0x5D8DDCC4)
+I (User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+F (.\HardWare\USART\USART.C)(0x62D9C247)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
+I (HardWare\USART\USART.H)(0x6274B740)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (.\Lib\HAL_conf.h)(0x5D902724)
+I (.\Lib\HAL_adc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_crc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_comp.h)(0x5D8DDCC4)
+I (.\Lib\HAL_dma.h)(0x5D8DDCC4)
+I (.\Lib\HAL_div.h)(0x5D8DDCC4)
+I (.\Lib\HAL_exti.h)(0x5D8DDCC4)
+I (.\Lib\HAL_flash.h)(0x5D8DDCF8)
+I (.\Lib\HAL_gpio.h)(0x6235AD1A)
+I (.\Lib\HAL_i2c.h)(0x5D8DDCC4)
+I (.\Lib\HAL_iwdg.h)(0x5D8DDCC4)
+I (.\Lib\HAL_op.h)(0x5D90263A)
+I (.\Lib\HAL_pwr.h)(0x5D8DDCC4)
+I (.\Lib\HAL_rcc.h)(0x626BCAFA)
+I (.\Lib\HAL_spi.h)(0x5D8DDCC4)
+I (.\Lib\HAL_tim.h)(0x5D8DDCC4)
+I (.\Lib\HAL_uart.h)(0x5D8DDCC4)
+I (.\Lib\HAL_wwdg.h)(0x5D8DDCC4)
+I (.\Lib\HAL_misc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_syscfg.h)(0x5D8DDCC4)
+F (.\HardWare\NVIC\NVIC.C)(0x626BA5DB)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\nvic.o --omf_browse .\objects\nvic.crf --depend .\objects\nvic.d)
+I (HardWare\NVIC\NIVC.H)(0x62370FFE)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (.\Lib\HAL_conf.h)(0x5D902724)
+I (.\Lib\HAL_adc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_crc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_comp.h)(0x5D8DDCC4)
+I (.\Lib\HAL_dma.h)(0x5D8DDCC4)
+I (.\Lib\HAL_div.h)(0x5D8DDCC4)
+I (.\Lib\HAL_exti.h)(0x5D8DDCC4)
+I (.\Lib\HAL_flash.h)(0x5D8DDCF8)
+I (.\Lib\HAL_gpio.h)(0x6235AD1A)
+I (.\Lib\HAL_i2c.h)(0x5D8DDCC4)
+I (.\Lib\HAL_iwdg.h)(0x5D8DDCC4)
+I (.\Lib\HAL_op.h)(0x5D90263A)
+I (.\Lib\HAL_pwr.h)(0x5D8DDCC4)
+I (.\Lib\HAL_rcc.h)(0x626BCAFA)
+I (.\Lib\HAL_spi.h)(0x5D8DDCC4)
+I (.\Lib\HAL_tim.h)(0x5D8DDCC4)
+I (.\Lib\HAL_uart.h)(0x5D8DDCC4)
+I (.\Lib\HAL_wwdg.h)(0x5D8DDCC4)
+I (.\Lib\HAL_misc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_syscfg.h)(0x5D8DDCC4)
+F (.\HardWare\PWM\PWM.C)(0x62C96B65)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
+I (HardWare\PWM\PWM.H)(0x6273FA68)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (.\Lib\HAL_conf.h)(0x5D902724)
+I (.\Lib\HAL_adc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_crc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_comp.h)(0x5D8DDCC4)
+I (.\Lib\HAL_dma.h)(0x5D8DDCC4)
+I (.\Lib\HAL_div.h)(0x5D8DDCC4)
+I (.\Lib\HAL_exti.h)(0x5D8DDCC4)
+I (.\Lib\HAL_flash.h)(0x5D8DDCF8)
+I (.\Lib\HAL_gpio.h)(0x6235AD1A)
+I (.\Lib\HAL_i2c.h)(0x5D8DDCC4)
+I (.\Lib\HAL_iwdg.h)(0x5D8DDCC4)
+I (.\Lib\HAL_op.h)(0x5D90263A)
+I (.\Lib\HAL_pwr.h)(0x5D8DDCC4)
+I (.\Lib\HAL_rcc.h)(0x626BCAFA)
+I (.\Lib\HAL_spi.h)(0x5D8DDCC4)
+I (.\Lib\HAL_tim.h)(0x5D8DDCC4)
+I (.\Lib\HAL_uart.h)(0x5D8DDCC4)
+I (.\Lib\HAL_wwdg.h)(0x5D8DDCC4)
+I (.\Lib\HAL_misc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_syscfg.h)(0x5D8DDCC4)
+F (.\HardWare\RCC\RCC.C)(0x6274BFDB)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\rcc.o --omf_browse .\objects\rcc.crf --depend .\objects\rcc.d)
+I (HardWare\RCC\RCC.H)(0x62529CEB)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (.\Lib\HAL_conf.h)(0x5D902724)
+I (.\Lib\HAL_adc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_crc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_comp.h)(0x5D8DDCC4)
+I (.\Lib\HAL_dma.h)(0x5D8DDCC4)
+I (.\Lib\HAL_div.h)(0x5D8DDCC4)
+I (.\Lib\HAL_exti.h)(0x5D8DDCC4)
+I (.\Lib\HAL_flash.h)(0x5D8DDCF8)
+I (.\Lib\HAL_gpio.h)(0x6235AD1A)
+I (.\Lib\HAL_i2c.h)(0x5D8DDCC4)
+I (.\Lib\HAL_iwdg.h)(0x5D8DDCC4)
+I (.\Lib\HAL_op.h)(0x5D90263A)
+I (.\Lib\HAL_pwr.h)(0x5D8DDCC4)
+I (.\Lib\HAL_rcc.h)(0x626BCAFA)
+I (.\Lib\HAL_spi.h)(0x5D8DDCC4)
+I (.\Lib\HAL_tim.h)(0x5D8DDCC4)
+I (.\Lib\HAL_uart.h)(0x5D8DDCC4)
+I (.\Lib\HAL_wwdg.h)(0x5D8DDCC4)
+I (.\Lib\HAL_misc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_syscfg.h)(0x5D8DDCC4)
+F (.\HardWare\ADC\ADC.C)(0x6274B5D4)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (HardWare\ADC\ADC.H)(0x6274B5CE)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (.\Lib\HAL_conf.h)(0x5D902724)
+I (.\Lib\HAL_adc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_crc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_comp.h)(0x5D8DDCC4)
+I (.\Lib\HAL_dma.h)(0x5D8DDCC4)
+I (.\Lib\HAL_div.h)(0x5D8DDCC4)
+I (.\Lib\HAL_exti.h)(0x5D8DDCC4)
+I (.\Lib\HAL_flash.h)(0x5D8DDCF8)
+I (.\Lib\HAL_gpio.h)(0x6235AD1A)
+I (.\Lib\HAL_i2c.h)(0x5D8DDCC4)
+I (.\Lib\HAL_iwdg.h)(0x5D8DDCC4)
+I (.\Lib\HAL_op.h)(0x5D90263A)
+I (.\Lib\HAL_pwr.h)(0x5D8DDCC4)
+I (.\Lib\HAL_rcc.h)(0x626BCAFA)
+I (.\Lib\HAL_spi.h)(0x5D8DDCC4)
+I (.\Lib\HAL_tim.h)(0x5D8DDCC4)
+I (.\Lib\HAL_uart.h)(0x5D8DDCC4)
+I (.\Lib\HAL_wwdg.h)(0x5D8DDCC4)
+I (.\Lib\HAL_misc.h)(0x5D8DDCC4)
+I (.\Lib\HAL_syscfg.h)(0x5D8DDCC4)
+F (.\Lib\HAL_adc.c)(0x5D8DDCC2)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_adc.o --omf_browse .\objects\hal_adc.crf --depend .\objects\hal_adc.d)
+I (Lib\HAL_adc.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (Lib\HAL_rcc.h)(0x626BCAFA)
+F (.\Lib\HAL_comp.c)(0x5D8DDCC2)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_comp.o --omf_browse .\objects\hal_comp.crf --depend .\objects\hal_comp.d)
+I (Lib\HAL_comp.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+F (.\Lib\HAL_crc.c)(0x5D8DDCC2)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_crc.o --omf_browse .\objects\hal_crc.crf --depend .\objects\hal_crc.d)
+I (Lib\HAL_crc.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+F (.\Lib\HAL_div.c)(0x5D8DDCC2)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_div.o --omf_browse .\objects\hal_div.crf --depend .\objects\hal_div.d)
+I (Lib\HAL_div.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+F (.\Lib\HAL_dma.c)(0x5D8DDCC2)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_dma.o --omf_browse .\objects\hal_dma.crf --depend .\objects\hal_dma.d)
+I (Lib\HAL_dma.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+F (.\Lib\HAL_exti.c)(0x5D8DDCC2)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_exti.o --omf_browse .\objects\hal_exti.crf --depend .\objects\hal_exti.d)
+I (Lib\HAL_exti.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+F (.\Lib\HAL_flash.c)(0x5D8DDCC4)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_flash.o --omf_browse .\objects\hal_flash.crf --depend .\objects\hal_flash.d)
+I (Lib\HAL_flash.h)(0x5D8DDCF8)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+F (.\Lib\HAL_gpio.c)(0x5D8DDCC4)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_gpio.o --omf_browse .\objects\hal_gpio.crf --depend .\objects\hal_gpio.d)
+I (Lib\HAL_gpio.h)(0x6235AD1A)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (Lib\HAL_rcc.h)(0x626BCAFA)
+F (.\Lib\HAL_i2c.c)(0x5D8DDCC4)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_i2c.o --omf_browse .\objects\hal_i2c.crf --depend .\objects\hal_i2c.d)
+I (Lib\HAL_i2c.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (Lib\HAL_rcc.h)(0x626BCAFA)
+F (.\Lib\HAL_iwdg.c)(0x5D8DDCC4)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_iwdg.o --omf_browse .\objects\hal_iwdg.crf --depend .\objects\hal_iwdg.d)
+I (Lib\HAL_iwdg.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+F (.\Lib\HAL_misc.c)(0x5D8DDCC4)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_misc.o --omf_browse .\objects\hal_misc.crf --depend .\objects\hal_misc.d)
+I (Lib\HAL_misc.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+F (.\Lib\HAL_op.c)(0x5D90338E)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_op.o --omf_browse .\objects\hal_op.crf --depend .\objects\hal_op.d)
+I (Lib\HAL_op.h)(0x5D90263A)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+F (.\Lib\HAL_pwr.c)(0x5D8DDCC4)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_pwr.o --omf_browse .\objects\hal_pwr.crf --depend .\objects\hal_pwr.d)
+I (Lib\HAL_pwr.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (Lib\HAL_rcc.h)(0x626BCAFA)
+F (.\Lib\HAL_rcc.c)(0x5D8DDCC4)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_rcc.o --omf_browse .\objects\hal_rcc.crf --depend .\objects\hal_rcc.d)
+I (Lib\HAL_rcc.h)(0x626BCAFA)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+F (.\Lib\HAL_spi.c)(0x5E23A982)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_spi.o --omf_browse .\objects\hal_spi.crf --depend .\objects\hal_spi.d)
+I (Lib\HAL_spi.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (Lib\HAL_rcc.h)(0x626BCAFA)
+F (.\Lib\HAL_syscfg.c)(0x5D8DDCC4)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_syscfg.o --omf_browse .\objects\hal_syscfg.crf --depend .\objects\hal_syscfg.d)
+I (Lib\HAL_syscfg.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+F (.\Lib\HAL_tim.c)(0x5D8DDCC4)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_tim.o --omf_browse .\objects\hal_tim.crf --depend .\objects\hal_tim.d)
+I (Lib\HAL_tim.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (Lib\HAL_rcc.h)(0x626BCAFA)
+F (.\Lib\HAL_uart.c)(0x5D8DDCC4)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_uart.o --omf_browse .\objects\hal_uart.crf --depend .\objects\hal_uart.d)
+I (Lib\HAL_uart.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (Lib\HAL_rcc.h)(0x626BCAFA)
+F (.\Lib\HAL_wwdg.c)(0x5D8DDCC4)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\hal_wwdg.o --omf_browse .\objects\hal_wwdg.crf --depend .\objects\hal_wwdg.d)
+I (Lib\HAL_wwdg.h)(0x5D8DDCC4)
+I (.\User\HAL_device.h)(0x5D8DDCC4)
+I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (.\CMSIS\core_cm0.h)(0x5D5372D8)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x5CB55A34)
+I (.\CMSIS\core_cmFunc.h)(0x5CB55A34)
+I (.\User\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (Lib\HAL_rcc.h)(0x626BCAFA)
+F (.\Startup\startup_MM32SPIN2xx_p.s)(0x62370B14)(--cpu Cortex-M0 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 525" --pd "MM32SPIN27PF SETA 1"--list .\listings\startup_mm32spin2xx_p.lst --xref -o .\objects\startup_mm32spin2xx_p.o --depend .\objects\startup_mm32spin2xx_p.d)

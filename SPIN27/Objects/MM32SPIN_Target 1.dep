@@ -1,5 +1,5 @@
 Dependencies for Project 'MM32SPIN', Target 'Target 1': (DO NOT MODIFY !)
-F (.\User\main.c)(0x6281C07A)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\User\main.c)(0x62860067)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (User\HAL_device.h)(0x5D8DDCC4)
 I (User\MM32SPIN2xx_p.h)(0x5D9033D4)
 I (.\CMSIS\core_cm0.h)(0x5D5372D8)
@@ -32,7 +32,7 @@ I (.\HardWare\NVIC\NIVC.H)(0x62370FFE)
 I (C:\Keil\ARM\ARMCC\include\math.h)(0x599ECD2E)
 I (.\HardWare\PWM\PWM.H)(0x6273FA68)
 I (.\HardWare\RCC\RCC.H)(0x62529CEB)
-I (.\HardWare\ADC\ADC.H)(0x6274B5CE)
+I (.\HardWare\ADC\ADC.H)(0x6285DD6A)
 F (.\User\system_MM32SPIN2xx_p.c)(0x627B1A07)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\system_mm32spin2xx_p.o --omf_browse .\objects\system_mm32spin2xx_p.crf --depend .\objects\system_mm32spin2xx_p.d)
 I (User\HAL_device.h)(0x5D8DDCC4)
 I (User\MM32SPIN2xx_p.h)(0x5D9033D4)
@@ -99,7 +99,7 @@ I (.\Lib\HAL_uart.h)(0x5D8DDCC4)
 I (.\Lib\HAL_wwdg.h)(0x5D8DDCC4)
 I (.\Lib\HAL_misc.h)(0x5D8DDCC4)
 I (.\Lib\HAL_syscfg.h)(0x5D8DDCC4)
-F (.\HardWare\PWM\PWM.C)(0x6274DDCB)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
+F (.\HardWare\PWM\PWM.C)(0x6285FB7B)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
 I (HardWare\PWM\PWM.H)(0x6273FA68)
 I (.\User\HAL_device.h)(0x5D8DDCC4)
 I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
@@ -157,8 +157,8 @@ I (.\Lib\HAL_uart.h)(0x5D8DDCC4)
 I (.\Lib\HAL_wwdg.h)(0x5D8DDCC4)
 I (.\Lib\HAL_misc.h)(0x5D8DDCC4)
 I (.\Lib\HAL_syscfg.h)(0x5D8DDCC4)
-F (.\HardWare\ADC\ADC.C)(0x6274B5D4)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
-I (HardWare\ADC\ADC.H)(0x6274B5CE)
+F (.\HardWare\ADC\ADC.C)(0x6285FFA5)(--c99 --gnu -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\Lib -I .\Startup -I .\User -I .\HardWare\USART -I .\HardWare\NVIC -I .\HardWare\PWM -I .\HardWare\RCC -I .\HardWare\ADC -I .\HardWare\motor-I.\RTE\_Target_1-IC:\Keil\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IC:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STEP_DEVICE-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (HardWare\ADC\ADC.H)(0x6285DD6A)
 I (.\User\HAL_device.h)(0x5D8DDCC4)
 I (.\User\MM32SPIN2xx_p.h)(0x5D9033D4)
 I (.\CMSIS\core_cm0.h)(0x5D5372D8)

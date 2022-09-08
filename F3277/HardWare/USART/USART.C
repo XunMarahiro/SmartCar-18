@@ -61,7 +61,7 @@ void UART3_GPIO_Init(void)
     GPIO_InitStruct.GPIO_Mode = GPIO_Mode_IPU;
     GPIO_Init(GPIOB, &GPIO_InitStruct);
 }
-void USART3_Init(int bundrate){
+void USART3_Init(int bundrate){ // TX--PB10  RX--PB11
 	UART3_GPIO_Init();
 	RCC_APB1PeriphClockCmd(RCC_APB1ENR_UART3, ENABLE);
     //Baud rate
@@ -102,7 +102,7 @@ void UART4_GPIO_Init(void)
     GPIO_InitStruct.GPIO_Mode = GPIO_Mode_IPU;
     GPIO_Init(GPIOC, &GPIO_InitStruct);
 }
-void USART4_Init(int bundrate){
+void USART4_Init(int bundrate){   //TX--PC10  RX--PC11
 	UART4_GPIO_Init();
 	RCC_APB1PeriphClockCmd(RCC_APB1ENR_UART4, ENABLE);
     //Baud rate

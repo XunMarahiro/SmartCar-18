@@ -1,0 +1,9 @@
+.\objects\hal_misc.o: Lib\hal_misc.c
+.\objects\hal_misc.o: Lib\hal_misc.h
+.\objects\hal_misc.o: Lib\types.h
+.\objects\hal_misc.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hal_misc.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\hal_misc.o: Lib\reg_common.h
+.\objects\hal_misc.o: .\CMSIS\core_cm3.h
+.\objects\hal_misc.o: .\CMSIS\cmsis_compiler.h
+.\objects\hal_misc.o: .\CMSIS\cmsis_armcc.h

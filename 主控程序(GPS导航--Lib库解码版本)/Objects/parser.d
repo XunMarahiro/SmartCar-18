@@ -1,0 +1,12 @@
+.\objects\parser.o: HardWare\GPS-Lib\parser.c
+.\objects\parser.o: HardWare\GPS-Lib\nmea/tok.h
+.\objects\parser.o: HardWare\GPS-Lib\nmea/config.h
+.\objects\parser.o: C:\Keil\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\parser.o: HardWare\GPS-Lib\nmea/parse.h
+.\objects\parser.o: HardWare\GPS-Lib\nmea/sentence.h
+.\objects\parser.o: HardWare\GPS-Lib\nmea/info.h
+.\objects\parser.o: HardWare\GPS-Lib\nmea/time.h
+.\objects\parser.o: HardWare\GPS-Lib\nmea/parser.h
+.\objects\parser.o: HardWare\GPS-Lib\nmea/context.h
+.\objects\parser.o: C:\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\parser.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h

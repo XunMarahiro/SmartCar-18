@@ -1,0 +1,10 @@
+.\objects\tok.o: HardWare\GPS-Lib\tok.c
+.\objects\tok.o: HardWare\GPS-Lib\nmea/tok.h
+.\objects\tok.o: HardWare\GPS-Lib\nmea/config.h
+.\objects\tok.o: C:\Keil\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\tok.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\tok.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\tok.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\tok.o: C:\Keil\ARM\ARMCC\Bin\..\include\ctype.h
+.\objects\tok.o: C:\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\tok.o: C:\Keil\ARM\ARMCC\Bin\..\include\limits.h

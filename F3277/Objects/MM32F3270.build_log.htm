@@ -21,24 +21,22 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
 Dialog DLL:      TCM.DLL V1.35.1.0
  
 <h2>Project:</h2>
-C:\Users\28016\OneDrive\桌面\智能车工程历史归档\主控程序(GPS导航)\MM32F3270.uvprojx
+C:\Users\28016\OneDrive\桌面\智能车工程历史归档\F3277\MM32F3270.uvprojx
 Project File Date:  05/10/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil\ARM\ARMCC\Bin'
 Build target 'Target 1'
-compiling PWM.C...
-HardWare\PWM\PWM.H(5): warning:  #1-D: last line of file ends without a newline
-  #endif
+compiling USART.C...
 .\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
   #endif
 .\HardWare\systick\systick.h(10): warning:  #1-D: last line of file ends without a newline
   #endif
 .\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
   #endif
-HardWare\PWM\PWM.C(40): warning:  #1-D: last line of file ends without a newline
+HardWare\USART\USART.C(130): warning:  #1-D: last line of file ends without a newline
   }
-HardWare\PWM\PWM.C: 5 warnings, 0 errors
+HardWare\USART\USART.C: 4 warnings, 0 errors
 compiling main.c...
 .\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -65,26 +63,10 @@ User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
 .\HardWare\PWM\PWM.H(5): warning:  #1-D: last line of file ends without a newline
   #endif
 User\main.c: 12 warnings, 0 errors
-compiling GPS.C...
-.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
-  #endif
-.\HardWare\systick\systick.h(10): warning:  #1-D: last line of file ends without a newline
-  #endif
-.\User\SETTING.H(14): warning:  #1-D: last line of file ends without a newline
-  #endif
-HardWare\GPS\GPS.H(5): warning:  #1295-D: Deprecated declaration GPS_UpDate - give arg types
-  void GPS_UpDate();
-.\HardWare\vector\vector.h(6): warning:  #1-D: last line of file ends without a newline
-  #endif
-HardWare\GPS\GPS.C(172): warning:  #236-D: controlling expression is constant
-  	while(target_find);//如果返回值不为{
-HardWare\GPS\GPS.C(173): warning:  #111-D: statement is unreachable
-  	if(daohangcanshu>49){//证明导航结束 //此处 进行刹车制动
-HardWare\GPS\GPS.C: 7 warnings, 0 errors
 linking...
-Program Size: Code=3256 RO-data=432 RW-data=40 ZI-data=1024  
+Program Size: Code=12368 RO-data=864 RW-data=932 ZI-data=3332  
 FromELF: creating hex file...
-".\Objects\MM32F3270.axf" - 0 Error(s), 24 Warning(s).
+".\Objects\MM32F3270.axf" - 0 Error(s), 16 Warning(s).
 
 <h2>Software Packages used:</h2>
 

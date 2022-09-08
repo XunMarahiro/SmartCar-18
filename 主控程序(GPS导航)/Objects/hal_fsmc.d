@@ -1,0 +1,12 @@
+.\objects\hal_fsmc.o: Lib\hal_fsmc.c
+.\objects\hal_fsmc.o: Lib\reg_rcc.h
+.\objects\hal_fsmc.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hal_fsmc.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\hal_fsmc.o: Lib\types.h
+.\objects\hal_fsmc.o: Lib\reg_syscfg.h
+.\objects\hal_fsmc.o: Lib\hal_fsmc.h
+.\objects\hal_fsmc.o: Lib\reg_common.h
+.\objects\hal_fsmc.o: .\CMSIS\core_cm3.h
+.\objects\hal_fsmc.o: .\CMSIS\cmsis_compiler.h
+.\objects\hal_fsmc.o: .\CMSIS\cmsis_armcc.h
+.\objects\hal_fsmc.o: Lib\reg_fsmc.h

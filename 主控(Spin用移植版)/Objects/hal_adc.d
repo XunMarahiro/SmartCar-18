@@ -1,0 +1,10 @@
+.\objects\hal_adc.o: Lib\HAL_adc.c
+.\objects\hal_adc.o: Lib\HAL_adc.h
+.\objects\hal_adc.o: .\User\HAL_device.h
+.\objects\hal_adc.o: .\User\MM32SPIN2xx_p.h
+.\objects\hal_adc.o: .\CMSIS\core_cm0.h
+.\objects\hal_adc.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hal_adc.o: .\CMSIS\core_cmInstr.h
+.\objects\hal_adc.o: .\CMSIS\core_cmFunc.h
+.\objects\hal_adc.o: .\User\system_MM32SPIN2xx_p.h
+.\objects\hal_adc.o: Lib\HAL_rcc.h

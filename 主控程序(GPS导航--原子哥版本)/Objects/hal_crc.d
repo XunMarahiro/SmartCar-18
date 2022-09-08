@@ -1,0 +1,10 @@
+.\objects\hal_crc.o: Lib\hal_crc.c
+.\objects\hal_crc.o: Lib\hal_crc.h
+.\objects\hal_crc.o: Lib\types.h
+.\objects\hal_crc.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hal_crc.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\hal_crc.o: Lib\reg_common.h
+.\objects\hal_crc.o: .\CMSIS\core_cm3.h
+.\objects\hal_crc.o: .\CMSIS\cmsis_compiler.h
+.\objects\hal_crc.o: .\CMSIS\cmsis_armcc.h
+.\objects\hal_crc.o: Lib\reg_crc.h

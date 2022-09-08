@@ -1,8 +1,9 @@
 #ifndef ADC_H
 #define ADC_H
 
-#define ADC_Gain 18
+#define ADC_Gain 25
+#define ADC_Vref 5
 void ADC_User_Init();
-int Get_ADC_vale();
+float Get_ADC_vale();
 
 #endif

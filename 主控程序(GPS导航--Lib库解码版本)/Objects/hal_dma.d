@@ -1,0 +1,10 @@
+.\objects\hal_dma.o: Lib\hal_dma.c
+.\objects\hal_dma.o: Lib\types.h
+.\objects\hal_dma.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hal_dma.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\hal_dma.o: Lib\hal_dma.h
+.\objects\hal_dma.o: Lib\reg_common.h
+.\objects\hal_dma.o: .\CMSIS\core_cm3.h
+.\objects\hal_dma.o: .\CMSIS\cmsis_compiler.h
+.\objects\hal_dma.o: .\CMSIS\cmsis_armcc.h
+.\objects\hal_dma.o: Lib\reg_dma.h

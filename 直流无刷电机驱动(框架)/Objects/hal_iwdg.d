@@ -1,0 +1,9 @@
+.\objects\hal_iwdg.o: Lib\HAL_iwdg.c
+.\objects\hal_iwdg.o: Lib\HAL_iwdg.h
+.\objects\hal_iwdg.o: .\User\HAL_device.h
+.\objects\hal_iwdg.o: .\User\MM32SPIN2xx_p.h
+.\objects\hal_iwdg.o: .\CMSIS\core_cm0.h
+.\objects\hal_iwdg.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hal_iwdg.o: .\CMSIS\core_cmInstr.h
+.\objects\hal_iwdg.o: .\CMSIS\core_cmFunc.h
+.\objects\hal_iwdg.o: .\User\system_MM32SPIN2xx_p.h

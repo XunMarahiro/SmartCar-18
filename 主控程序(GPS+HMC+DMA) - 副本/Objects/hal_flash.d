@@ -1,0 +1,10 @@
+.\objects\hal_flash.o: Lib\hal_flash.c
+.\objects\hal_flash.o: Lib\hal_flash.h
+.\objects\hal_flash.o: Lib\types.h
+.\objects\hal_flash.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hal_flash.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\hal_flash.o: Lib\reg_common.h
+.\objects\hal_flash.o: .\CMSIS\core_cm3.h
+.\objects\hal_flash.o: .\CMSIS\cmsis_compiler.h
+.\objects\hal_flash.o: .\CMSIS\cmsis_armcc.h
+.\objects\hal_flash.o: Lib\reg_flash.h

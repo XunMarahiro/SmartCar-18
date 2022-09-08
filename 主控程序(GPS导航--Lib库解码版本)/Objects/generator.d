@@ -1,0 +1,12 @@
+.\objects\generator.o: HardWare\GPS-Lib\generator.c
+.\objects\generator.o: HardWare\GPS-Lib\nmea/gmath.h
+.\objects\generator.o: HardWare\GPS-Lib\nmea/info.h
+.\objects\generator.o: HardWare\GPS-Lib\nmea/time.h
+.\objects\generator.o: HardWare\GPS-Lib\nmea/config.h
+.\objects\generator.o: C:\Keil\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\generator.o: HardWare\GPS-Lib\nmea/generate.h
+.\objects\generator.o: HardWare\GPS-Lib\nmea/sentence.h
+.\objects\generator.o: HardWare\GPS-Lib\nmea/generator.h
+.\objects\generator.o: HardWare\GPS-Lib\nmea/context.h
+.\objects\generator.o: C:\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\generator.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
